@@ -4,3 +4,661 @@
 [00:00:08.349] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
 [00:00:08.349] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
 [00:00:08.349] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763585743229}
+[20:09:28.486] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[20:09:28.700] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[20:09:28.700] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[20:09:28.701] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763658303251}
+[20:11:19.027] Server  LOG      ✓ Compiled in 399ms
+[20:11:29.549] Server  LOG      ✓ Compiled in 260ms
+[20:11:42.620] Server  LOG      ✓ Compiled in 262ms
+[20:11:53.120] Server  LOG      ✓ Compiled in 250ms
+[20:12:11.066] Server  LOG      ✓ Compiled in 210ms
+[20:12:23.185] Server  LOG      ✓ Compiled in 228ms
+[20:13:55.131] Server  LOG      ✓ Compiled in 270ms
+[20:15:49.198] Server  LOG      ○ Compiling /_not-found/page ...
+[20:15:54.917] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[20:15:55.684] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[20:15:55.685] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[20:15:55.685] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/#contact","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763658690227}
+[20:15:56.710] Browser WARN    Image with src "http://localhost:3001/modern-cable-manufacturing-factory-interior-with-m.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[20:16:57.405] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[20:16:57.626] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[20:16:57.626] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[20:16:57.627] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/#contact","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763658752167}
+[21:07:59.014] Server  LOG      ✓ Compiled in 947ms
+[21:09:08.355] Server  LOG      ✓ Compiled in 254ms
+[21:09:56.098] Server  LOG      ✓ Compiled in 223ms
+[21:10:33.610] Server  LOG      ✓ Compiled in 206ms
+[21:10:53.139] Server  LOG      ✓ Compiled in 77ms
+[21:11:04.954] Server  LOG      ✓ Compiled in 201ms
+[21:11:24.553] Browser ERROR   ./app/page.tsx:7:1
+Export Markets doesn't exist in target module
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+The export Markets was not found in module [project]/components/markets.tsx [app-rsc] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[21:11:24.553] Browser ERROR   ./app/page.tsx:7:1
+Export Markets doesn't exist in target module
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+The export Markets was not found in module [project]/components/markets.tsx [app-rsc] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[21:12:32.349] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.362] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.364] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.366] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.368] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.368] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.370] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.373] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.381] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.386] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.390] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.391] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.392] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.394] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.395] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.396] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.397] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.399] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.400] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.401] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.406] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.408] Server  ERROR    ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[21:12:32.547] Browser ERROR   ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[21:12:32.551] Browser ERROR   ./app/page.tsx:7:1
+Module not found: Can't resolve '@/components/markets'
+   5 | import { Factory } from '@/components/factory'
+   6 | import { Products } from '@/components/products'
+>  7 | import { Markets } from '@/components/markets'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Quality } from '@/components/quality'
+   9 | import { Sustainability } from '@/components/sustainability'
+  10 | import { Partnership } from '@/components/partnership'
+
+Import map: aliased to relative './components/markets' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[21:12:56.414] Server  LOG      ✓ Compiled in 402ms
+[21:12:57.070] Server  ERROR    ⨯ Error: Attempted to call createMotionComponent() from the server but createMotionComponent is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.
+[21:12:57.152] Server  ERROR    ⨯ Error: Attempted to call createMotionComponent() from the server but createMotionComponent is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.
+[21:12:57.557] Browser ERROR   uncaughtError: Error: Attempted to call createMotionComponent() from the server but createMotionComponent is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.
+[21:13:02.551] Browser ERROR   uncaughtError: Error: Attempted to call createMotionComponent() from the server but createMotionComponent is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.
+[21:13:35.030] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[21:13:35.053] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[21:13:35.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[21:13:35.303] Server  LOG      ✓ Compiled in 1ms
+[21:13:35.551] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[21:13:35.551] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[21:13:35.551] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763662150140}
+[21:14:32.553] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[21:14:32.553] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[21:14:32.553] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763662206560}
+[21:14:38.692] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:14:40.324] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:16:03.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[21:16:03.788] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[21:16:03.788] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[21:16:03.788] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763662298437}
+[21:16:34.827] Server  LOG      ✓ Compiled in 207ms
+[21:16:53.710] Server  LOG      ✓ Compiled in 110ms
+[21:18:00.905] Server  LOG      ✓ Compiled in 371ms
+[21:18:12.049] Server  LOG      ✓ Compiled in 170ms
+[21:21:54.691] Server  LOG      ✓ Compiled in 587ms
+[21:22:03.833] Server  LOG      ✓ Compiled in 284ms
+[21:23:05.469] Server  LOG      ✓ Compiled in 137ms
+[21:23:34.970] Server  LOG      ✓ Compiled in 87ms
+[21:23:42.404] Server  LOG      ✓ Compiled in 105ms
+[21:23:46.116] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[21:23:46.855] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[21:23:47.251] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[21:23:47.251] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[21:23:47.251] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763662761907}
+[21:23:55.076] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:24:12.162] Server  LOG      ✓ Compiled in 155ms
+[21:24:14.987] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[21:24:15.701] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[21:24:15.701] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[21:24:15.701] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763662790357}
+[21:24:35.893] Server  LOG      ✓ Compiled in 130ms
+[21:24:40.912] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:25:02.706] Server  LOG      ✓ Compiled in 98ms
+[21:25:11.478] Server  LOG      ✓ Compiled in 217ms
+[21:25:16.651] Server  LOG      ✓ Compiled in 124ms
+[21:25:19.779] Server  LOG      ✓ Compiled in 48ms
+[21:25:23.390] Server  LOG      ✓ Compiled in 46ms
+[21:25:31.052] Server  LOG      ✓ Compiled in 112ms
+[21:25:38.799] Server  LOG      ✓ Compiled in 54ms
+[21:26:11.119] Server  LOG      ✓ Compiled in 192ms
+[21:26:27.310] Server  LOG      ✓ Compiled in 734ms
+[21:26:28.049] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:26:34.314] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:26:40.331] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:26:40.560] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:26:49.202] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:26:49.567] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:27:00.728] Server  LOG      ✓ Compiled in 257ms
+[21:27:06.218] Server  LOG      ✓ Compiled in 116ms
+[21:28:07.629] Server  LOG      ✓ Compiled in 319ms
+[21:28:18.453] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:28:18.453] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:28:18.453] Browser WARN    'oklab(0.999994 0.0000455678 0.0000200868 / 0.15)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[21:29:22.967] Server  LOG      ✓ Compiled in 194ms
+[21:29:23.548] Browser ERROR   ./components/navigation.tsx:82:23
+Parsing ecmascript source code failed
+  80 |             animate={{ opacity: 1, y: 0 }}
+  81 |             exit={{ opacity: 0, y: -10 }}
+> 82 |             className=cn("md:hidden bg-[#050a14]/95 border-t border-white/10 text-white backdrop-blur-xl")
+     |                       ^^
+  83 |           >
+  84 |             <div className="px-4 py-4 space-y-3">
+  85 |               {links.map((link) => (
+
+Expected '</', got 'cn'
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/page.tsx
+[21:29:23.549] Browser ERROR   ./components/navigation.tsx:82:23
+Parsing ecmascript source code failed
+  80 |             animate={{ opacity: 1, y: 0 }}
+  81 |             exit={{ opacity: 0, y: -10 }}
+> 82 |             className=cn("md:hidden bg-[#050a14]/95 border-t border-white/10 text-white backdrop-blur-xl")
+     |                       ^^
+  83 |           >
+  84 |             <div className="px-4 py-4 space-y-3">
+  85 |               {links.map((link) => (
+
+Expected '</', got 'cn'
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/page.tsx
+[21:29:26.572] Browser ERROR   ./components/navigation.tsx:82:23
+Parsing ecmascript source code failed
+  80 |             animate={{ opacity: 1, y: 0 }}
+  81 |             exit={{ opacity: 0, y: -10 }}
+> 82 |             className=cn("md:hidden bg-[#050a14]/95 border-t border-white/10 text-white backdrop-blur-xl", scrolled ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]" : "bg-transparent border-transparent")
+     |                       ^^
+  83 |             )}
+  84 |           >
+  85 |             <div className="px-4 py-4 space-y-3">
+
+Expected '</', got 'cn'
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/page.tsx
+[21:29:26.581] Browser ERROR   ./components/navigation.tsx:82:23
+Parsing ecmascript source code failed
+  80 |             animate={{ opacity: 1, y: 0 }}
+  81 |             exit={{ opacity: 0, y: -10 }}
+> 82 |             className=cn("md:hidden bg-[#050a14]/95 border-t border-white/10 text-white backdrop-blur-xl", scrolled ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]" : "bg-transparent border-transparent")
+     |                       ^^
+  83 |             )}
+  84 |           >
+  85 |             <div className="px-4 py-4 space-y-3">
+
+Expected '</', got 'cn'
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/page.tsx
+[21:29:31.559] Browser ERROR   ./components/navigation.tsx:82:23
+Parsing ecmascript source code failed
+  80 |             animate={{ opacity: 1, y: 0 }}
+  81 |             exit={{ opacity: 0, y: -10 }}
+> 82 |             className=cn("md:hidden bg-[#050a14]/95 border-t border-white/10 text-white backdrop-blur-xl", scrolled ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]" : "bg-transparent border-transparent")
+     |                       ^^
+  83 |             )}
+  84 |           >
+  85 |             <div className="px-4 py-4 space-y-3">
+
+Expected '</', got 'cn'
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/page.tsx
+[21:29:31.560] Browser ERROR   ./components/navigation.tsx:82:23
+Parsing ecmascript source code failed
+  80 |             animate={{ opacity: 1, y: 0 }}
+  81 |             exit={{ opacity: 0, y: -10 }}
+> 82 |             className=cn("md:hidden bg-[#050a14]/95 border-t border-white/10 text-white backdrop-blur-xl", scrolled ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]" : "bg-transparent border-transparent")
+     |                       ^^
+  83 |             )}
+  84 |           >
+  85 |             <div className="px-4 py-4 space-y-3">
+
+Expected '</', got 'cn'
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/page.tsx
+[21:29:34.548] Browser ERROR   ./components/navigation.tsx:82:23
+Parsing ecmascript source code failed
+  80 |             animate={{ opacity: 1, y: 0 }}
+  81 |             exit={{ opacity: 0, y: -10 }}
+> 82 |             className=cn("md:hidden bg-[#050a14]/95 border-t border-white/10 text-white backdrop-blur-xl", scrolled ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]" : "bg-transparent border-transparent")
+     |                       ^^
+  83 |             )}
+  84 |           >
+  85 |             <div className="px-4 py-4 space-y-3">
+
+Expected '</', got 'cn'
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/page.tsx
+[21:29:34.548] Browser ERROR   ./components/navigation.tsx:82:23
+Parsing ecmascript source code failed
+  80 |             animate={{ opacity: 1, y: 0 }}
+  81 |             exit={{ opacity: 0, y: -10 }}
+> 82 |             className=cn("md:hidden bg-[#050a14]/95 border-t border-white/10 text-white backdrop-blur-xl", scrolled ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]" : "bg-transparent border-transparent")
+     |                       ^^
+  83 |             )}
+  84 |           >
+  85 |             <div className="px-4 py-4 space-y-3">
+
+Expected '</', got 'cn'
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/page.tsx
+[21:30:08.366] Server  LOG      ✓ Compiled in 147ms
+[21:30:08.554] Browser ERROR   ./components/navigation.tsx:83:13
+Parsing ecmascript source code failed
+  81 |             exit={{ opacity: 0, y: -10 }}
+  82 |             className={cn("md:hidden bg-[#050a14]/95 border-t border-white/10 text-white backdrop-blur-xl", scrolled ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]" : "bg-transparent border-transparent")
+> 83 |             )}>
+     |             ^
+  84 |
+  85 |             <div className="px-4 py-4 space-y-3">
+  86 |               {links.map((link) => (
+
+Expected '</', got ')'
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/page.tsx
+[21:30:08.555] Browser ERROR   ./components/navigation.tsx:83:13
+Parsing ecmascript source code failed
+  81 |             exit={{ opacity: 0, y: -10 }}
+  82 |             className={cn("md:hidden bg-[#050a14]/95 border-t border-white/10 text-white backdrop-blur-xl", scrolled ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]" : "bg-transparent border-transparent")
+> 83 |             )}>
+     |             ^
+  84 |
+  85 |             <div className="px-4 py-4 space-y-3">
+  86 |               {links.map((link) => (
+
+Expected '</', got ')'
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/page.tsx
+[21:30:13.960] Server  LOG      ✓ Compiled in 144ms

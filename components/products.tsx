@@ -46,8 +46,9 @@ export function Products() {
   ]
 
   return (
-    <section id="products" className="py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
-      <div className="max-w-7xl mx-auto">
+    <section id="products" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-[#f5f0ea] to-white">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,148,80,0.08),transparent_45%)]" />
+      <div className="relative max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -57,7 +58,7 @@ export function Products() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance">
             {'Engineered for Africa\'s Power Infrastructure'}
           </h2>
-          <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
+          <p className="text-lg text-slate-600 text-pretty leading-relaxed">
             {'Our complete portfolio delivers reliable, high-performance cables designed to withstand Ethiopia\'s diverse climates—from highland regions to humid lowlands.'}
           </p>
         </motion.div>
@@ -71,7 +72,7 @@ export function Products() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               onHoverStart={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
-              className="group bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20"
+              className="group bg-white/90 rounded-2xl overflow-hidden border border-orange-100 hover:border-primary/30 transition-all duration-300 shadow-lg hover:-translate-y-2"
             >
               <motion.div 
                 className="aspect-video overflow-hidden bg-muted relative"
@@ -109,9 +110,9 @@ export function Products() {
                     {product.voltage}
                   </motion.span>
                 </div>
-                <h3 className="text-2xl font-bold mb-3">{product.category}</h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">{product.description}</p>
-                <div className="text-sm text-muted-foreground font-mono">{product.standards}</div>
+                <h3 className="text-2xl font-bold mb-3 text-slate-900">{product.category}</h3>
+                <p className="text-slate-600 mb-4 leading-relaxed">{product.description}</p>
+                <div className="text-sm text-slate-500 font-mono">{product.standards}</div>
               </div>
             </motion.div>
           ))}
@@ -121,7 +122,7 @@ export function Products() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-12 p-8 rounded-xl bg-primary/10 border border-primary/20"
+          className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-primary/15 to-accent/20 border border-primary/30"
         >
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div>

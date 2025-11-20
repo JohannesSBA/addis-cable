@@ -11,8 +11,9 @@ export function About() {
   const cardsInView = useInView(cardsRef, { once: true, margin: "-100px" })
 
   return (
-    <section id="about" className="py-24 bg-background">
-      <div className="container mx-auto px-4 max-w-7xl">
+    <section id="about" className="relative py-24 bg-gradient-to-b from-white via-[#fff9f4] to-white text-slate-900 overflow-hidden">
+      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#ffe5cf]/60 to-transparent pointer-events-none" />
+      <div className="container mx-auto px-4 max-w-7xl relative">
         {/* Story - Added fade-in animation */}
         <motion.div
           ref={ref}
@@ -24,7 +25,7 @@ export function About() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
             Our Story: Building a Connected Africa from Ethiopia
           </h2>
-          <div className="prose prose-lg max-w-none text-muted-foreground">
+          <div className="prose prose-lg max-w-none text-slate-600">
             <motion.p
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -95,7 +96,7 @@ export function About() {
                 scale: 1.02,
               }}
               style={{ transformStyle: 'preserve-3d' }}
-              className="bg-card border border-border rounded-xl p-8 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300"
+              className="bg-white/90 border border-orange-100 rounded-2xl p-8 shadow-xl hover:-translate-y-1 hover:border-primary/40 transition-all duration-300"
             >
               <motion.div 
                 className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4"

@@ -3,7 +3,7 @@ import { ArrowRight, Mail, Phone } from 'lucide-react'
 
 export function CTA() {
   return (
-    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-[#fff7ef] to-white">
       <div className="max-w-7xl mx-auto">
         <div className="relative rounded-2xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-accent/20" />

@@ -19,13 +19,14 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4 max-w-7xl">
+    <section id="contact" className="relative py-24 bg-[#04050a] text-white overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_25%,rgba(255,255,255,0.1),transparent_55%)]" />
+      <div className="container mx-auto px-4 max-w-7xl relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
             Contact Us
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-white/70 max-w-3xl mx-auto">
             Get in touch with our team of experts
           </p>
         </div>
@@ -33,7 +34,7 @@ export function Contact() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-bold mb-6">Addis Cable Manufacturing PLC</h3>
+            <h3 className="text-2xl font-bold mb-6 text-white">Addis Cable Manufacturing PLC</h3>
             
             <div className="space-y-6 mb-8">
               <div className="flex items-start gap-4">
@@ -44,8 +45,8 @@ export function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Address</h4>
-                  <p className="text-muted-foreground">Gelan Industrial Zone<br />Sheger City, Ethiopia</p>
+                  <h4 className="font-semibold mb-1 text-white">Address</h4>
+                  <p className="text-white/70">Gelan Industrial Zone<br />Sheger City, Ethiopia</p>
                 </div>
               </div>
 
@@ -56,8 +57,8 @@ export function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Email</h4>
-                  <p className="text-muted-foreground">info@addiscable.com</p>
+                  <h4 className="font-semibold mb-1 text-white">Email</h4>
+                  <p className="text-white/70">info@addiscable.com</p>
                 </div>
               </div>
 
@@ -68,34 +69,34 @@ export function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Website</h4>
-                  <p className="text-muted-foreground">www.addiscable.com</p>
+                  <h4 className="font-semibold mb-1 text-white">Website</h4>
+                  <p className="text-white/70">www.addiscable.com</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-card border border-border rounded-xl p-6">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h4 className="font-semibold mb-4">Departments:</h4>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-copper rounded-full"></div>
-                  <span className="text-muted-foreground">Sales & Customer Support</span>
+                  <span className="text-white/70">Sales & Customer Support</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-copper rounded-full"></div>
-                  <span className="text-muted-foreground">Technical & Product Design</span>
+                  <span className="text-white/70">Technical & Product Design</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-copper rounded-full"></div>
-                  <span className="text-muted-foreground">Procurement & Partnerships</span>
+                  <span className="text-white/70">Procurement & Partnerships</span>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-card border border-border rounded-xl p-8">
-            <h3 className="text-2xl font-bold mb-6">Send us a message</h3>
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur">
+            <h3 className="text-2xl font-bold mb-6 text-white">Send us a message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
@@ -104,7 +105,7 @@ export function Contact() {
                   id="name"
                   value={formData.name}
                   onChange={(e) => setFormData({...formData, name: e.target.value})}
-                  className="w-full px-4 py-2 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-copper"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-copper"
                   required
                 />
               </div>
@@ -115,7 +116,7 @@ export function Contact() {
                   id="email"
                   value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
-                  className="w-full px-4 py-2 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-copper"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-copper"
                   required
                 />
               </div>
@@ -126,7 +127,7 @@ export function Contact() {
                   id="company"
                   value={formData.company}
                   onChange={(e) => setFormData({...formData, company: e.target.value})}
-                  className="w-full px-4 py-2 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-copper"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-copper"
                 />
               </div>
               <div>
@@ -135,7 +136,7 @@ export function Contact() {
                   id="department"
                   value={formData.department}
                   onChange={(e) => setFormData({...formData, department: e.target.value})}
-                  className="w-full px-4 py-2 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-copper"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/20 rounded-lg text-white bg-transparent"
                 >
                   <option value="sales">Sales & Customer Support</option>
                   <option value="technical">Technical & Product Design</option>
@@ -149,7 +150,7 @@ export function Contact() {
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
                   rows={4}
-                  className="w-full px-4 py-2 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-copper resize-none"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-copper resize-none"
                   required
                 />
               </div>
