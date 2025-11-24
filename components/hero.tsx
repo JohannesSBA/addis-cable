@@ -99,9 +99,7 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.4 }}
               >
-                {
-                  "From low-voltage building solutions to armored high-voltage conductors, Addis Cable builds the resilient grid architecture fueling East Africa’s megaprojects."
-                }
+                {`From low-voltage building solutions to armored high-voltage conductors, Addis Cable builds the resilient grid architecture fueling Ethiopia's megaprojects.`}
               </motion.p>
             </div>
 
@@ -143,11 +141,7 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.8 }}
             >
-              {[
-                "ISO 9001 Certified",
-                "IEC Type-Tested",
-                "Serving 7+ Countries",
-              ].map((text, i) => (
+              {["ISO 9001 Certified", "IEC Type-Tested"].map((text, i) => (
                 <motion.div
                   key={text}
                   className="flex items-center gap-2"
