@@ -1,16 +1,16 @@
 export function Partnership() {
   const partners = [
-    'Global cable manufacturers',
-    'Development finance institutions',
-    'EPC contractors & infrastructure investors',
-    'BRI-aligned corporations seeking African manufacturing bases'
+    'Chinese and global cable manufacturers',
+    'Development finance institutions (DFIs)',
+    'Infrastructure investors localizing Belt and Road supply',
+    'EPC contractors seeking Ethiopian manufacturing bases'
   ]
 
   const advantages = [
     {
       icon: '📍',
       title: 'Strategic Location',
-      description: 'Prime position in East Africa for regional distribution'
+      description: "Gelan Industrial Zone hub with proximity to Ethiopia's mega projects"
     },
     {
       icon: '⚡',
@@ -25,12 +25,12 @@ export function Partnership() {
     {
       icon: '💼',
       title: 'Favorable Investment',
-      description: 'Supportive business environment in Ethiopia'
+      description: 'Supportive investment climate with local market access'
     },
     {
       icon: '📈',
-      title: 'Growing Regional Demand',
-      description: 'Expanding infrastructure across East Africa'
+      title: 'Growing National Demand',
+      description: 'Expanding infrastructure across Ethiopia'
     }
   ]
 
@@ -42,7 +42,7 @@ export function Partnership() {
             Partnership & Investment Opportunities
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Join us in powering Africa's infrastructure revolution
+            Empowering Ethiopia's industrial growth
           </p>
         </div>
 
@@ -56,6 +56,10 @@ export function Partnership() {
             ))}
           </div>
         </div>
+
+        <p className="text-slate-600 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
+          Our Gelan factory offers an investment platform that combines local market access, logistics proximity, favorable tax policies, and a skilled workforce ready to deliver world-class cables for Ethiopia's growth.
+        </p>
 
         <div>
           <h3 className="text-2xl font-bold mb-8 text-center">Our Competitive Advantages</h3>

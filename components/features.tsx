@@ -1,6 +1,6 @@
 "use client";
 
-import { Factory, Shield, Zap, Globe, Leaf, Award } from "lucide-react";
+import { Factory, Shield, Zap, Leaf, Award } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -12,34 +12,34 @@ export function Features() {
   const features = [
     {
       icon: Factory,
-      title: "State-of-the-Art Manufacturing",
+      title: "Unmatched Local Capacity",
       description:
-        "26 synchronized production lines across drawing, stranding, extrusion, armoring, enamelling, and automated QC bays.",
+        "One of Ethiopia's largest and most advanced cable factories, ensuring security of supply, faster delivery, and reduced import dependency.",
     },
     {
       icon: Shield,
       title: "International Standards",
       description:
-        "ISO 9001, IEC, ESA with complete conductor-resistance, tensile, and partial-discharge testing in-house.",
+        "Manufactured to IEC, ISO 9001, and ES 601 standards with rigorous in-house conductor resistance, tensile, and dielectric testing.",
     },
     {
       icon: Zap,
-      title: "Complete Portfolio",
+      title: "Complete Product Range",
       description:
-        "From LV building wires to 132kV+ armored HV, aerial bundled, and specialty transposition conductors.",
+        "Low-voltage building wires, MV/HV transmission cables, aerial bundled conductors, and specialty enamelled winding wires.",
     },
 
     {
-      icon: Leaf,
-      title: "Sustainable Processes",
+      icon: Award,
+      title: "Trusted National Partner",
       description:
-        "Closed-loop water systems, energy recovery furnaces, and recyclable packaging aligned with CRGE goals.",
+        "Supplying EEU, Ethiopian Railways, real estate developers, government projects, and mission-critical infrastructure builds.",
     },
     {
-      icon: Award,
-      title: "Proven Excellence",
+      icon: Leaf,
+      title: "Sustainable Manufacturing",
       description:
-        "Commissioned for sovereign electrification drives, industrial parks, airports, economic corridors, and data hubs.",
+        "Recyclable materials, energy-efficient systems, and waste reduction aligned with Ethiopia's Green Economy Strategy and UN SDG 7.",
     },
   ];
 
@@ -48,7 +48,6 @@ export function Features() {
     "lg:col-span-1",
     "lg:col-span-1",
     "lg:col-span-2",
-    "lg:col-span-1",
     "lg:col-span-1",
   ];
 
@@ -70,14 +69,14 @@ export function Features() {
           className="max-w-3xl mb-16 space-y-6"
         >
           <p className="uppercase tracking-[0.4em] text-xs text-white/50">
-            Capabilities
+            Why Choose Addis Cable
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">
-            {"Nonlinear engineering for Africa’s high-voltage ambitions"}
+            {"Engineered and built in Ethiopia for Ethiopia"}
           </h2>
           <p className="text-lg text-white/70 text-pretty leading-relaxed">
             {
-              "From rod-breakdown to turnkey cable delivery, Addis Cable operates as a systems partner with design intelligence, not just a factory floor."
+              "Security of supply, local expertise, and end-to-end production depth that keep Ethiopia's electrification and construction projects moving."
             }
           </p>
         </motion.div>

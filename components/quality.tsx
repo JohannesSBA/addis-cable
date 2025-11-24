@@ -2,23 +2,27 @@ export function Quality() {
   const values = [
     {
       name: 'Trust & Transparency',
-      description: 'Ethical business built on honesty and reliability.'
+      description: 'Long-term partnerships built on honesty and reliability.'
+    },
+    {
+      name: 'Ethical Leadership',
+      description: 'Upholding integrity and professionalism in all operations.'
     },
     {
       name: 'Customer Commitment',
-      description: 'Consistently delivering on performance and timelines.'
+      description: 'Delivering beyond expectations with on-time performance.'
     },
     {
       name: 'Technical Mastery',
-      description: 'Skilled engineers and advanced manufacturing practices.'
+      description: 'Skilled engineers and global best practices.'
     },
     {
-      name: 'Innovation',
-      description: 'Continuous investment in R&D and modern machinery.'
+      name: 'Innovation & Technology',
+      description: 'Continuous investment in modern equipment and R&D.'
     },
     {
-      name: 'Social Responsibility',
-      description: 'Sustainable operations, job creation, and community support.'
+      name: 'Social & Environmental Responsibility',
+      description: 'Supporting education, job creation, and sustainability.'
     }
   ]
 
@@ -45,10 +49,11 @@ export function Quality() {
       <div className="container mx-auto px-4 max-w-7xl relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Quality, Innovation & Values
+            Quality, innovation & values
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Uncompromising standards in every meter of cable we produce
+            Our foundation: integrity, knowledge, and precision in every meter
+            of cable we produce
           </p>
         </div>
 
@@ -57,7 +62,7 @@ export function Quality() {
           <div>
             <h3 className="text-3xl font-bold mb-6">Quality Assurance</h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
-              We comply with international and national standards to ensure every product meets the highest quality benchmarks.
+              We comply with ISO 9001:2015, IEC 60228, IEC 60502, and Ethiopian Standard Agency requirements. Every batch undergoes routine, type, and sample testing to guarantee dependable performance.
             </p>
             <div className="space-y-3 mb-8">
               <h4 className="font-semibold text-lg mb-3">Standards We Meet:</h4>

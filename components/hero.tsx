@@ -5,9 +5,9 @@ import { ArrowRight, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 const heroMetrics = [
-  { label: "Annual Capacity", value: "13,836t", detail: "Copper & Aluminum" },
+  { label: "Annual Capacity", value: "13,836t", detail: "Copper & aluminum" },
   { label: "Production Lines", value: "26", detail: "Full-stack processes" },
-  { label: "Specialty", value: "Winding Wire", detail: "Thermal 200°C+" },
+  { label: "Specialty", value: "Winding Wire", detail: "Thermal 200C+" },
 ];
 
 const marqueeItems = [
@@ -15,8 +15,8 @@ const marqueeItems = [
   "EEP",
   "Industrial Parks",
   "Renewables",
-  "Mega Real Estate",
-  "Data Centers",
+  "National Rail",
+  "Real Estate",
 ];
 
 export function Hero() {
@@ -90,7 +90,7 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
               >
-                {"Copper-grade power systems for a continent in motion"}
+                {"Powering Ethiopia's future - wired for excellence"}
               </motion.h1>
 
               <motion.p
@@ -99,7 +99,7 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.4 }}
               >
-                {`From low-voltage building solutions to armored high-voltage conductors, Addis Cable builds the resilient grid architecture fueling Ethiopia's megaprojects.`}
+                {`Addis Cable Manufacturing PLC is Ethiopia's leading producer of copper and aluminum electrical cables. From our Gelan Industrial Zone base, we deliver world-class conductors that electrify cities, power industries, and connect communities across the nation.`}
               </motion.p>
             </div>
 
@@ -117,7 +117,7 @@ export function Hero() {
                   size="lg"
                   className="w-full rounded-2xl bg-gradient-to-r from-primary via-accent to-primary text-white shadow-[0_20px_60px_rgba(0,0,0,0.6)] border border-white/10 py-5 text-base"
                 >
-                  {"Get a Quote"}
+                  {"Contact a Sales Engineer"}
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </motion.div>
@@ -130,7 +130,7 @@ export function Hero() {
                   variant="outline"
                   className="w-full rounded-2xl border-white/25 bg-white/5 text-white hover:bg-white/10 py-5 text-base"
                 >
-                  {"Download Catalog"}
+                  {"Download Product Catalog"}
                 </Button>
               </motion.div>
             </motion.div>
@@ -197,7 +197,7 @@ export function Hero() {
             </div>
 
             <p className="text-white/70 mb-6 leading-relaxed">
-              {`High-spec XLPE, armored MV/HV lines, and precision enamelled conductors engineered for Ethiopia's voltage ambitions.`}
+              {`High-spec XLPE, armored MV/HV lines, and precision enamelled conductors engineered for Ethiopia's grid build-out and national reliability goals.`}
             </p>
 
             <div className="grid grid-cols-1 gap-4">
@@ -230,7 +230,7 @@ export function Hero() {
                 Full Conductor Diagnostics
               </p>
               <p className="text-xs text-white/60">
-                Resistance • Insulation • Tension
+                Resistance | Insulation | Tension
               </p>
             </motion.div>
           </motion.div>

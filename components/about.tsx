@@ -26,7 +26,7 @@ export function About() {
           className="mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Our Story: Building a Connected Africa from Ethiopia
+            Our Story: Building Ethiopia's Connected Future
           </h2>
           <div className="prose prose-lg max-w-none text-slate-600">
             <motion.p
@@ -35,10 +35,10 @@ export function About() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg leading-relaxed mb-4"
             >
-              Addis Cable Manufacturing PLC traces its origins back to August
-              2011, when the factory was first established as a national
-              investment project to support Ethiopia's growing demand for
-              reliable electrical infrastructure materials.
+              Founded under the umbrella of Chombe Seyoum Electrical Product
+              Manufacturing (CSEPM), Addis Cable was built to reinforce
+              Ethiopia's industrial base with reliable, locally produced
+              electrical cables that meet the highest international standards.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -20 }}
@@ -46,12 +46,11 @@ export function About() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-lg leading-relaxed mb-4"
             >
-              Production began in late 2017 and operated intermittently until
-              mid-2024, when the company was officially acquired and revitalized
-              under Ato Chombe Seyoum. The company was restructured and
-              rebranded as Chombe Seyoum Electrical Product Manufacturing
-              (CSEPM)—ushering in a new era of excellence, innovation, and
-              industrial expansion.
+              Operating from the Gelan Industrial Zone, we leverage modern
+              European and Asian technology in conductor drawing, extrusion,
+              armoring, and testing to reduce Ethiopia's import dependency while
+              creating skilled opportunities for local engineers and
+              technicians.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -20 }}
@@ -59,10 +58,9 @@ export function About() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg leading-relaxed"
             >
-              Today, Addis Cable is preparing for a full-scale production
-              restart for the 2025/26 manufacturing year, equipped with new
-              leadership, modern machinery upgrades, and a strengthened market
-              vision.
+              Addis Cable embodies Ethiopia's drive toward industrialization,
+              self-reliance, and export-ready quality, powering cities, rural
+              networks, and industries essential to the nation's growth.
             </motion.p>
           </div>
         </motion.div>
@@ -87,7 +85,7 @@ export function About() {
                 </svg>
               ),
               title: "Our Mission",
-              text: "To empower Ethiopia, East Africa, and the wider African continent with high-quality, innovative, and affordable cable solutions that accelerate industrialization, electrification, and sustainable development.",
+              text: "To empower Ethiopia with high-quality, innovative, and affordable cable solutions that accelerate industrialization, electrification, and sustainable development.",
             },
             {
               icon: (
@@ -112,7 +110,7 @@ export function About() {
                 </svg>
               ),
               title: "Our Vision",
-              text: `To become Africa's most trusted and technologically advanced cable manufacturer, recognized for engineering excellence, and product reliability in energy connectivity.`,
+              text: `To become Ethiopia's most trusted and technologically advanced cable manufacturer, recognized for reliability, innovation, and excellence in powering national infrastructure.`,
             },
             {
               icon: (

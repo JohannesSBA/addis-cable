@@ -274,23 +274,27 @@ function Quality() {
     const values = [
         {
             name: 'Trust & Transparency',
-            description: 'Ethical business built on honesty and reliability.'
+            description: 'Long-term partnerships built on honesty and reliability.'
+        },
+        {
+            name: 'Ethical Leadership',
+            description: 'Upholding integrity and professionalism in all operations.'
         },
         {
             name: 'Customer Commitment',
-            description: 'Consistently delivering on performance and timelines.'
+            description: 'Delivering beyond expectations with on-time performance.'
         },
         {
             name: 'Technical Mastery',
-            description: 'Skilled engineers and advanced manufacturing practices.'
+            description: 'Skilled engineers and global best practices.'
         },
         {
-            name: 'Innovation',
-            description: 'Continuous investment in R&D and modern machinery.'
+            name: 'Innovation & Technology',
+            description: 'Continuous investment in modern equipment and R&D.'
         },
         {
-            name: 'Social Responsibility',
-            description: 'Sustainable operations, job creation, and community support.'
+            name: 'Social & Environmental Responsibility',
+            description: 'Supporting education, job creation, and sustainability.'
         }
     ];
     const standards = [
@@ -316,7 +320,7 @@ function Quality() {
                 className: "absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle,_rgba(255,205,164,0.18),_transparent_55%)]"
             }, void 0, false, {
                 fileName: "[project]/components/quality.tsx",
-                lineNumber: 44,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -327,24 +331,24 @@ function Quality() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "text-4xl md:text-5xl font-bold mb-6 text-balance",
-                                children: "Quality, Innovation & Values"
+                                children: "Quality, innovation & values"
                             }, void 0, false, {
                                 fileName: "[project]/components/quality.tsx",
-                                lineNumber: 47,
+                                lineNumber: 51,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-xl text-slate-600 max-w-3xl mx-auto",
-                                children: "Uncompromising standards in every meter of cable we produce"
+                                children: "Our foundation: integrity, knowledge, and precision in every meter of cable we produce"
                             }, void 0, false, {
                                 fileName: "[project]/components/quality.tsx",
-                                lineNumber: 50,
+                                lineNumber: 54,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/quality.tsx",
-                        lineNumber: 46,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -357,15 +361,15 @@ function Quality() {
                                         children: "Quality Assurance"
                                     }, void 0, false, {
                                         fileName: "[project]/components/quality.tsx",
-                                        lineNumber: 58,
+                                        lineNumber: 63,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-slate-600 mb-6 leading-relaxed",
-                                        children: "We comply with international and national standards to ensure every product meets the highest quality benchmarks."
+                                        children: "We comply with ISO 9001:2015, IEC 60228, IEC 60502, and Ethiopian Standard Agency requirements. Every batch undergoes routine, type, and sample testing to guarantee dependable performance."
                                     }, void 0, false, {
                                         fileName: "[project]/components/quality.tsx",
-                                        lineNumber: 59,
+                                        lineNumber: 64,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -376,7 +380,7 @@ function Quality() {
                                                 children: "Standards We Meet:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/quality.tsx",
-                                                lineNumber: 63,
+                                                lineNumber: 68,
                                                 columnNumber: 15
                                             }, this),
                                             standards.map((standard)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -386,26 +390,26 @@ function Quality() {
                                                             className: "w-2 h-2 bg-copper rounded-full"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/quality.tsx",
-                                                            lineNumber: 66,
+                                                            lineNumber: 71,
                                                             columnNumber: 19
                                                         }, this),
                                                         standard
                                                     ]
                                                 }, standard, true, {
                                                     fileName: "[project]/components/quality.tsx",
-                                                    lineNumber: 65,
+                                                    lineNumber: 70,
                                                     columnNumber: 17
                                                 }, this))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/quality.tsx",
-                                        lineNumber: 62,
+                                        lineNumber: 67,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/quality.tsx",
-                                lineNumber: 57,
+                                lineNumber: 62,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -415,7 +419,7 @@ function Quality() {
                                         children: "Every Batch is Tested For:"
                                     }, void 0, false, {
                                         fileName: "[project]/components/quality.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 78,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -435,12 +439,12 @@ function Quality() {
                                                                 clipRule: "evenodd"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/quality.tsx",
-                                                                lineNumber: 79,
+                                                                lineNumber: 84,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/quality.tsx",
-                                                            lineNumber: 78,
+                                                            lineNumber: 83,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -448,35 +452,35 @@ function Quality() {
                                                             children: test
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/quality.tsx",
-                                                            lineNumber: 81,
+                                                            lineNumber: 86,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/quality.tsx",
-                                                    lineNumber: 77,
+                                                    lineNumber: 82,
                                                     columnNumber: 19
                                                 }, this)
                                             }, test, false, {
                                                 fileName: "[project]/components/quality.tsx",
-                                                lineNumber: 76,
+                                                lineNumber: 81,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/quality.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 79,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/quality.tsx",
-                                lineNumber: 72,
+                                lineNumber: 77,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/quality.tsx",
-                        lineNumber: 56,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -486,7 +490,7 @@ function Quality() {
                                 children: "Core Values"
                             }, void 0, false, {
                                 fileName: "[project]/components/quality.tsx",
-                                lineNumber: 91,
+                                lineNumber: 96,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -502,7 +506,7 @@ function Quality() {
                                                         children: index + 1
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/quality.tsx",
-                                                        lineNumber: 99,
+                                                        lineNumber: 104,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -510,13 +514,13 @@ function Quality() {
                                                         children: value.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/quality.tsx",
-                                                        lineNumber: 102,
+                                                        lineNumber: 107,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/quality.tsx",
-                                                lineNumber: 98,
+                                                lineNumber: 103,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -524,36 +528,36 @@ function Quality() {
                                                 children: value.description
                                             }, void 0, false, {
                                                 fileName: "[project]/components/quality.tsx",
-                                                lineNumber: 104,
+                                                lineNumber: 109,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, value.name, true, {
                                         fileName: "[project]/components/quality.tsx",
-                                        lineNumber: 94,
+                                        lineNumber: 99,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/quality.tsx",
-                                lineNumber: 92,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/quality.tsx",
-                        lineNumber: 90,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/quality.tsx",
-                lineNumber: 45,
+                lineNumber: 49,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/quality.tsx",
-        lineNumber: 43,
+        lineNumber: 47,
         columnNumber: 5
     }, this);
 }
@@ -613,7 +617,7 @@ function Sustainability() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-xl text-white/70 max-w-3xl mx-auto",
-                                children: "Building a greener future for Ethiopia and East Africa"
+                                children: "Building a greener future for Ethiopia"
                             }, void 0, false, {
                                 fileName: "[project]/components/sustainability.tsx",
                                 lineNumber: 31,
@@ -850,16 +854,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 ;
 function Partnership() {
     const partners = [
-        'Global cable manufacturers',
-        'Development finance institutions',
-        'EPC contractors & infrastructure investors',
-        'BRI-aligned corporations seeking African manufacturing bases'
+        'Chinese and global cable manufacturers',
+        'Development finance institutions (DFIs)',
+        'Infrastructure investors localizing Belt and Road supply',
+        'EPC contractors seeking Ethiopian manufacturing bases'
     ];
     const advantages = [
         {
             icon: '📍',
             title: 'Strategic Location',
-            description: 'Prime position in East Africa for regional distribution'
+            description: "Gelan Industrial Zone hub with proximity to Ethiopia's mega projects"
         },
         {
             icon: '⚡',
@@ -874,12 +878,12 @@ function Partnership() {
         {
             icon: '💼',
             title: 'Favorable Investment',
-            description: 'Supportive business environment in Ethiopia'
+            description: 'Supportive investment climate with local market access'
         },
         {
             icon: '📈',
-            title: 'Growing Regional Demand',
-            description: 'Expanding infrastructure across East Africa'
+            title: 'Growing National Demand',
+            description: 'Expanding infrastructure across Ethiopia'
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -901,7 +905,7 @@ function Partnership() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-xl text-slate-600 max-w-3xl mx-auto",
-                            children: "Join us in powering Africa's infrastructure revolution"
+                            children: "Empowering Ethiopia's industrial growth"
                         }, void 0, false, {
                             fileName: "[project]/components/partnership.tsx",
                             lineNumber: 44,
@@ -952,6 +956,14 @@ function Partnership() {
                     lineNumber: 49,
                     columnNumber: 9
                 }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "text-slate-600 text-center max-w-3xl mx-auto mb-12 leading-relaxed",
+                    children: "Our Gelan factory offers an investment platform that combines local market access, logistics proximity, favorable tax policies, and a skilled workforce ready to deliver world-class cables for Ethiopia's growth."
+                }, void 0, false, {
+                    fileName: "[project]/components/partnership.tsx",
+                    lineNumber: 60,
+                    columnNumber: 9
+                }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -959,7 +971,7 @@ function Partnership() {
                             children: "Our Competitive Advantages"
                         }, void 0, false, {
                             fileName: "[project]/components/partnership.tsx",
-                            lineNumber: 61,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -972,7 +984,7 @@ function Partnership() {
                                             children: advantage.icon
                                         }, void 0, false, {
                                             fileName: "[project]/components/partnership.tsx",
-                                            lineNumber: 65,
+                                            lineNumber: 69,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -980,7 +992,7 @@ function Partnership() {
                                             children: advantage.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/partnership.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 70,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -988,24 +1000,24 @@ function Partnership() {
                                             children: advantage.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/partnership.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 71,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, advantage.title, true, {
                                     fileName: "[project]/components/partnership.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 68,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/partnership.tsx",
-                            lineNumber: 62,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/partnership.tsx",
-                    lineNumber: 60,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this)
             ]

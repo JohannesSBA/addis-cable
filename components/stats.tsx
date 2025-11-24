@@ -41,11 +41,12 @@ export function Stats() {
             Output Signals
           </p>
           <h2 className="text-4xl md:text-5xl font-semibold text-slate-900">
-            Copper-grade productivity tuned for African mega builds
+            Copper-grade productivity tuned for Ethiopia's build-out
           </h2>
           <p className="text-lg text-slate-600">
             Precision factories, redundant lines, and future-proofed chemistries
-            keep Addis Cable delivering when infrastructure can’t stall.
+            keep Addis Cable delivering when national infrastructure can't
+            stall.
           </p>
         </div>
 
@@ -54,7 +55,7 @@ export function Stats() {
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="relative overflow-hidden rounded-[24px] sm:rounded-[32px] bg-white/70 backdrop-blur-xl border border-orange-100/70 p-6 sm:p-10 shadow-[0_40px_90px_rgba(254,184,111,0.15)]"
+            className="relative rounded-[24px] sm:rounded-[32px] bg-white/70 backdrop-blur-xl border border-orange-100/70 p-6 sm:p-10 shadow-[0_40px_90px_rgba(254,184,111,0.15)]"
           >
             <div className="absolute inset-0 pointer-events-none">
               <motion.div
@@ -102,7 +103,7 @@ export function Stats() {
               </div>
             </div>
             <motion.div
-              className="hidden md:block absolute -bottom-8 -left-8 w-40 rounded-2xl border border-orange-100 bg-white shadow-xl p-4"
+              className="hidden md:block z-50 absolute -bottom-8 -left-8 w-40 rounded-2xl border border-orange-100 bg-white shadow-xl p-4"
               animate={{ y: [-4, 6, -4] }}
               transition={{ duration: 6, repeat: Infinity }}
             >
@@ -111,7 +112,7 @@ export function Stats() {
               </p>
               <p className="text-lg font-semibold text-slate-900">72 hr</p>
               <p className="text-xs text-slate-500">
-                Avg. regional delivery window
+                Avg. national delivery window
               </p>
             </motion.div>
           </motion.div>
@@ -142,12 +143,12 @@ export function Stats() {
               className="col-span-full rounded-3xl border border-orange-100 bg-gradient-to-br from-primary/10 via-white to-white px-6 py-8 shadow-[0_30px_80px_rgba(254,184,111,0.2)]"
             >
               <p className="text-xs uppercase tracking-[0.4em] text-slate-500 mb-4">
-                Regional Footprint
+                National Footprint
               </p>
               <p className="text-slate-700">
-                Service corridors span Ethiopia, Kenya, Djibouti, Tanzania, and
-                emerging Sahel electrification programs with on-ground technical
-                teams.
+                Field teams support EEU projects, industrial parks, and real
+                estate developments across Ethiopia with responsive delivery and
+                on-site technical coordination.
               </p>
             </motion.div>
           </div>

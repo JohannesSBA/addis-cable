@@ -73,7 +73,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$
 ;
 const metadata = {
     title: 'Addis Cable Manufacturing PLC - Wired for Excellence',
-    description: 'Ethiopia\'s largest producer of copper and aluminum electrical cables. Powering East Africa\'s infrastructure with 13,836 tons annual capacity.',
+    description: "Ethiopia's largest producer of copper and aluminum electrical cables, powering national infrastructure with 13,836 tons of annual capacity.",
     generator: 'v0.app',
     icons: {
         icon: [

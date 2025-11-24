@@ -29,7 +29,7 @@ export function Sustainability() {
             Sustainability & Impact
           </h2>
           <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            Building a greener future for Ethiopia and East Africa
+            Building a greener future for Ethiopia
           </p>
         </div>
 

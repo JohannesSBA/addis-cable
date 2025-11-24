@@ -5,12 +5,12 @@ import { motion } from 'framer-motion'
 
 export function Markets() {
   const markets = [
-    { icon: Zap, name: 'Power Utilities', description: 'EEU, EEP, rural electrification' },
-    { icon: Building2, name: 'Urban Development', description: 'Housing, commercial towers' },
-    { icon: Hammer, name: 'Infrastructure', description: 'Roads, airports, industrial parks' },
-    { icon: Train, name: 'Transport & Rail', description: 'Railways, signaling systems' },
-    { icon: Sun, name: 'Renewable Energy', description: 'Solar, wind, hybrid power' },
-    { icon: Store, name: 'Distribution', description: 'Wholesalers across East Africa' },
+    { icon: Zap, name: 'Energy & Power Utilities', description: 'Key supplier to EEU and EEP for grid modernization and rural electrification.' },
+    { icon: Building2, name: 'Urban Development & Real Estate', description: 'Reliable partner for residential and commercial projects in Addis Ababa, Adama, Hawassa, and beyond.' },
+    { icon: Hammer, name: 'Infrastructure & Construction', description: 'Powering airports, roads, factories, and government infrastructure under the Homegrown Economic Reform Plan.' },
+    { icon: Train, name: 'Transport & Rail Systems', description: 'Durable signaling and traction cables supporting Ethiopian Railways and national logistics corridors.' },
+    { icon: Sun, name: 'Renewable Energy Projects', description: "Solar and wind-compatible cables for Ethiopia's green energy transition." },
+    { icon: Store, name: 'Retail & Distribution Network', description: 'Partnering with wholesalers and electrical retailers across Ethiopia.' },
   ]
 
   return (
@@ -20,16 +20,16 @@ export function Markets() {
         <div className="space-y-8">
           <p className="uppercase tracking-[0.4em] text-xs text-white/50">Deployment</p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-            {'Powering East Africa\'s strategic assets'}
+            {"Powering Ethiopia's strategic assets"}
           </h2>
           <p className="text-lg text-white/70">
-            {'Addis Cable maps each conductor family to live demand across national utilities, private grids, heavy industry, and distributed energy developers.'}
+            {"Addis Cable maps each conductor family to live demand across national utilities, private grids, heavy industry, and distributed energy developers within Ethiopia."}
           </p>
           <div className="space-y-6">
             {[
-              { title: 'Mega Grid', text: 'HV transmission, substations, HVDC corridors' },
-              { title: 'Urban Growth', text: 'Transit-oriented development, airports, digital campuses' },
-              { title: 'Resilience', text: 'Hybrid microgrids, industrial redundancy, mission-critical systems' },
+              { title: 'Mega Grid', text: 'HV transmission, substations, and nationwide distribution corridors.' },
+              { title: 'Urban Growth', text: 'Transit-oriented development, airports, industrial parks, and digital campuses.' },
+              { title: 'Resilience', text: 'Hybrid microgrids, industrial redundancy, and mission-critical systems.' },
             ].map((item, idx) => (
               <div key={item.title} className="relative pl-8">
                 <div className="absolute left-0 top-0 h-full w-px bg-white/15" />
