@@ -2,7 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap } from "lucide-react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const heroMetrics = [
   { label: "Annual Capacity", value: "13,836t", detail: "Copper & aluminum" },
@@ -20,22 +21,47 @@ const marqueeItems = [
 ];
 
 export function Hero() {
+  const slideshowImages = [
+    "/slide/first.jpg",
+    "/slide/2.JPG",
+    "/slide/3.JPG",
+    "/slide/4.JPG",
+    "/slide/5.JPG",
+    "/slide/6.JPG",
+    "/slide/7.JPG",
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slideshowImages.length);
+    }, 5200);
+    return () => clearInterval(interval);
+  }, [slideshowImages.length]);
+
   return (
-    <section className="relative isolate overflow-hidden bg-[#010208] text-white pt-36 pb-24 px-4 sm:px-6 lg:px-8">
+    <section className="relative isolate overflow-hidden bg-[#010208] text-white pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <AnimatePresence mode="sync">
+          <motion.div
+            key={currentSlide}
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('${slideshowImages[currentSlide]}')`,
+              filter: "saturate(0.95)",
+            }}
+            initial={{ opacity: 0, scale: 1.04 }}
+            animate={{ opacity: 0.6, scale: 1 }}
+            exit={{ opacity: 0.1, scale: 1.02 }}
+            transition={{ duration: 1.3, ease: "easeInOut" }}
+          />
+        </AnimatePresence>
+      </div>
       <motion.div
-        className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat pointer-events-none"
-        style={{
-          backgroundImage: "url('/backg.jpeg')",
-          filter: "saturate(0.9)",
-        }}
-        initial={{ scale: 1.05, opacity: 0 }}
-        animate={{ scale: 1, opacity: 0.35 }}
-        transition={{ duration: 1.2 }}
-      />
-      <motion.div
-        className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_rgba(1,2,8,0.2))]"
+        className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_rgba(1,2,8,0.18))]"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        animate={{ opacity: 0.4 }}
         transition={{ duration: 1 }}
       />
       <motion.div
@@ -75,9 +101,9 @@ export function Hero() {
         }}
       />
 
-      <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 lg:gap-14 items-start">
-        <div className="w-full flex-1 max-w-3xl mx-auto lg:mx-0">
-          <div className="rounded-[28px] border border-white/10 bg-white/5 bg-gradient-to-b from-white/10 via-white/0 to-transparent p-5 sm:p-8 lg:p-10 backdrop-blur-xl shadow-[0_25px_80px_rgba(0,0,0,0.35)] space-y-8">
+      <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+        <div className="w-full flex-1 max-w-2xl mx-auto lg:mx-0">
+          <div className="rounded-[24px] border border-white/10 bg-black/30 p-4 sm:p-6 lg:p-7 backdrop-blur-xl shadow-[0_25px_80px_rgba(0,0,0,0.35)] space-y-7">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -95,7 +121,7 @@ export function Hero() {
 
             <div className="space-y-6">
               <motion.h1
-                className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-balance text-white leading-tight"
+                className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-balance text-white leading-tight"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
@@ -104,7 +130,7 @@ export function Hero() {
               </motion.h1>
 
               <motion.p
-                className="text-base sm:text-xl text-white/70 max-w-3xl text-pretty leading-relaxed"
+                className="text-base sm:text-lg text-white/70 max-w-3xl text-pretty leading-relaxed"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.4 }}
@@ -125,7 +151,7 @@ export function Hero() {
               >
                 <Button
                   size="lg"
-                  className="w-full rounded-2xl bg-gradient-to-r from-primary via-accent to-primary text-white shadow-[0_20px_60px_rgba(0,0,0,0.6)] border border-white/10 py-5 text-base"
+                  className="w-full rounded-2xl bg-gradient-to-r from-primary via-accent to-primary text-white shadow-[0_20px_60px_rgba(0,0,0,0.6)] border border-white/10 py-4 text-sm sm:text-base"
                 >
                   {"Contact a Sales Engineer"}
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -138,7 +164,7 @@ export function Hero() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full rounded-2xl border-white/25 bg-white/5 text-white hover:bg-white/10 py-5 text-base"
+                  className="w-full rounded-2xl border-white/25 bg-white/5 text-white hover:bg-white/10 py-4 text-sm sm:text-base"
                 >
                   {"Download Product Catalog"}
                 </Button>
@@ -181,19 +207,19 @@ export function Hero() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:max-w-md xl:max-w-lg relative mx-auto lg:mx-0">
+        <div className="w-full lg:max-w-sm xl:max-w-md relative mx-auto lg:mx-0">
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative rounded-[24px] sm:rounded-[32px] p-6 sm:p-10 bg-gradient-to-br from-white/5 via-white/10 to-transparent border border-white/15 backdrop-blur-3xl shadow-[0_40px_120px_rgba(0,0,0,0.45)]"
+            className="relative rounded-[20px] sm:rounded-[28px] p-5 sm:p-8 bg-gradient-to-br from-white/10 via-white/10 to-transparent border border-white/15 backdrop-blur-3xl shadow-[0_40px_120px_rgba(0,0,0,0.45)]"
           >
             <div className="flex items-center justify-between mb-6">
               <div>
                 <p className="text-sm uppercase tracking-[0.3em] text-white/60">
                   Flagship
                 </p>
-                <h3 className="text-3xl font-semibold">
+                <h3 className="text-2xl font-semibold">
                   Mega Grid Cable Suite
                 </h3>
               </div>
@@ -206,7 +232,7 @@ export function Hero() {
               </motion.div>
             </div>
 
-            <p className="text-white/70 mb-6 leading-relaxed">
+            <p className="text-white/70 mb-6 leading-relaxed text-sm sm:text-base">
               {`High-spec XLPE, armored MV/HV lines, and precision enamelled conductors engineered for Ethiopia's grid build-out and national reliability goals.`}
             </p>
 
@@ -218,12 +244,12 @@ export function Hero() {
                   whileHover={{ y: -4, borderColor: "rgba(255,255,255,0.4)" }}
                 >
                   <div>
-                    <p className="text-sm uppercase tracking-[0.35em] text-white/50">
+                    <p className="text-xs uppercase tracking-[0.35em] text-white/50">
                       {metric.label}
                     </p>
-                    <p className="text-xs text-white/50">{metric.detail}</p>
+                    <p className="text-[11px] text-white/50">{metric.detail}</p>
                   </div>
-                  <p className="text-2xl font-semibold">{metric.value}</p>
+                  <p className="text-xl font-semibold">{metric.value}</p>
                 </motion.div>
               ))}
             </div>
