@@ -77,10 +77,10 @@ export function Hero() {
           animate={{ opacity: [0.2, 0.35, 0.2] }}
           transition={{ duration: 12, repeat: Infinity }}
         />
-        <div className="relative w-full max-w-3xl mr-auto md:ml-32 space-y-4 sm:space-y-6 backdrop-blur-sm bg-white/10 p-6 rounded-2xl shadow-[0_18px_60px_rgba(0,0,0,0.28)] border border-white/10">
-          <div className="flex items-center gap-2 text-sm font-semibold text-white drop-shadow-[0_8px_30px_rgba(0,0,0,0.6)]">
+        <div className="relative w-full max-w-3xl mr-auto md:ml-32 space-y-4 sm:space-y-6">
+          <div className="flex items-center gap-2 text-sm font-semibold text-[var(--aluminum)] drop-shadow-[0_8px_30px_rgba(0,0,0,0.6)]">
             <Zap className="w-4 h-4" />
-            <span>{"Addis Cable Manufacturing PLC"}</span>
+            <span>{"Addis Cable"}</span>
           </div>
           <h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight drop-shadow-[0_10px_35px_rgba(0,0,0,0.65)] max-w-3xl"
@@ -98,7 +98,7 @@ export function Hero() {
           </p>
           <Button
             size="lg"
-            className="rounded-2xl bg-gradient-to-r from-primary via-accent to-primary text-white shadow-[0_18px_50px_rgba(0,0,0,0.45)] px-6 sm:px-8 border border-white/10 w-fit"
+            className="rounded-2xl bg-gradient-to-r from-[var(--accent)] via-[var(--accent)] to-[var(--accent)] text-white shadow-[0_18px_50px_rgba(0,0,0,0.45)] px-6 sm:px-8 border border-white/10 w-fit"
           >
             {"Discover our portfolio"}
             <ArrowRight className="w-4 h-4 ml-2" />
@@ -162,7 +162,7 @@ export function Hero() {
                 >
                   <Button
                     size="lg"
-                    className="w-full rounded-2xl bg-gradient-to-r from-primary via-accent to-primary text-white shadow-[0_20px_60px_rgba(0,0,0,0.6)] border border-white/10 py-4 text-sm sm:text-base"
+                    className="w-full rounded-2xl bg-gradient-to-r from-[var(--accent)] via-[var(--accent)] to-[var(--accent)] text-white shadow-[0_20px_60px_rgba(0,0,0,0.6)] border border-white/10 py-4 text-sm sm:text-base"
                   >
                     {"Contact a Sales Engineer"}
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -175,7 +175,7 @@ export function Hero() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full rounded-2xl border-white/25 bg-white/5 text-white hover:bg-white/10 py-4 text-sm sm:text-base"
+                    className="w-full rounded-2xl border-[color-mix(in_srgb,var(--accent)_70%,transparent)] bg-white/5 text-white hover:bg-white/10 py-4 text-sm sm:text-base"
                   >
                     {"Download Product Catalog"}
                   </Button>

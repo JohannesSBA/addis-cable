@@ -10,13 +10,10 @@ import { Sustainability } from '@/components/sustainability'
 import { Partnership } from '@/components/partnership'
 import { Contact } from '@/components/contact'
 import { CTA } from '@/components/cta'
-import { Footer } from '@/components/footer'
-import { Navigation } from '@/components/navigation'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Navigation />
       <Hero />
       <Stats />
       <Features />
@@ -29,7 +26,6 @@ export default function Home() {
       <Partnership />
       <Contact />
       <CTA />
-      <Footer />
     </main>
   )
 }

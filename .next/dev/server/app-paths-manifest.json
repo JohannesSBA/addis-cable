@@ -1,3 +1,18 @@
 {
-  "/page": "app/page.js"
+  "/company/our-story/page": "app/company/our-story/page.js",
+  "/company/partnerships/page": "app/company/partnerships/page.js",
+  "/company/sustainability/page": "app/company/sustainability/page.js",
+  "/page": "app/page.js",
+  "/privacy-policy/page": "app/privacy-policy/page.js",
+  "/products/conductors-abc/page": "app/products/conductors-abc/page.js",
+  "/products/high-voltage/page": "app/products/high-voltage/page.js",
+  "/products/low-voltage/page": "app/products/low-voltage/page.js",
+  "/products/medium-voltage/page": "app/products/medium-voltage/page.js",
+  "/products/winding-wires/page": "app/products/winding-wires/page.js",
+  "/resources/certifications/page": "app/resources/certifications/page.js",
+  "/resources/contact-support/page": "app/resources/contact-support/page.js",
+  "/resources/installation-guides/page": "app/resources/installation-guides/page.js",
+  "/resources/product-catalog/page": "app/resources/product-catalog/page.js",
+  "/resources/technical-specs/page": "app/resources/technical-specs/page.js",
+  "/sitemap/page": "app/sitemap/page.js"
 }

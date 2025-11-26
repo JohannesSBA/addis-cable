@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { MapPin } from 'lucide-react'
 
 export function Footer() {
@@ -16,41 +17,41 @@ export function Footer() {
               {'Wired for Excellence. Building Connections that Power Progress.'}
             </p>
             <div className="flex items-start gap-2 text-sm text-white/70">
-              <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-              <span>{'Gelan Industrial Zone, Sheger City, Ethiopia'}</span>
+              <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-[var(--aluminum)]" />
+              <span className="text-[color-mix(in srgb,var(--aluminum) 85%, var(--accent) 15%)]">{'Gelan Industrial Zone, Sheger City, Ethiopia'}</span>
             </div>
           </div>
 
           <div>
             <h3 className="font-semibold mb-4">Products</h3>
             <ul className="space-y-2 text-sm text-white/60">
-              <li><a href="#" className="hover:text-white transition-colors">Low Voltage Cables</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Medium Voltage Cables</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">High Voltage Cables</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Conductors & ABC</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Winding Wires</a></li>
+              <li><Link href="/products/low-voltage" className="hover:text-white transition-colors">Low Voltage Cables</Link></li>
+              <li><Link href="/products/medium-voltage" className="hover:text-white transition-colors">Medium Voltage Cables</Link></li>
+              <li><Link href="/products/high-voltage" className="hover:text-white transition-colors">High Voltage Cables</Link></li>
+              <li><Link href="/products/conductors-abc" className="hover:text-white transition-colors">Conductors & ABC</Link></li>
+              <li><Link href="/products/winding-wires" className="hover:text-white transition-colors">Winding Wires</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-sm text-white/60">
-              <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Our Story</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Quality Standards</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Sustainability</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Partnerships</a></li>
+              <li><Link href="/company/about-us" className="hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/company/our-story" className="hover:text-white transition-colors">Our Story</Link></li>
+              <li><Link href="/company/quality-standards" className="hover:text-white transition-colors">Quality Standards</Link></li>
+              <li><Link href="/company/sustainability" className="hover:text-white transition-colors">Sustainability</Link></li>
+              <li><Link href="/company/partnerships" className="hover:text-white transition-colors">Partnerships</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 text-sm text-white/60">
-              <li><a href="#" className="hover:text-white transition-colors">Product Catalog</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Technical Specs</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Installation Guides</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Certifications</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact Support</a></li>
+              <li><Link href="/resources/product-catalog" className="hover:text-white transition-colors">Product Catalog</Link></li>
+              <li><Link href="/resources/technical-specs" className="hover:text-white transition-colors">Technical Specs</Link></li>
+              <li><Link href="/resources/installation-guides" className="hover:text-white transition-colors">Installation Guides</Link></li>
+              <li><Link href="/resources/certifications" className="hover:text-white transition-colors">Certifications</Link></li>
+              <li><Link href="/resources/contact-support" className="hover:text-white transition-colors">Contact Support</Link></li>
             </ul>
           </div>
         </div>
@@ -60,9 +61,9 @@ export function Footer() {
             {'© 2025 Addis Cable Manufacturing PLC. All rights reserved.'}
           </p>
           <div className="flex items-center gap-6 text-sm text-white/60">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Sitemap</a>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/sitemap" className="hover:text-white transition-colors">Sitemap</Link>
           </div>
         </div>
       </div>

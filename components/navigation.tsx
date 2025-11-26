@@ -1,13 +1,21 @@
 "use client";
 
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Menu } from "lucide-react";
+import { ChevronDown, Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
+const productLinks = [
+  { href: "/products/low-voltage", label: "Low Voltage Cables" },
+  { href: "/products/medium-voltage", label: "Medium Voltage Cables" },
+  { href: "/products/high-voltage", label: "High Voltage Cables" },
+  { href: "/products/conductors-abc", label: "Conductors & ABC" },
+  { href: "/products/winding-wires", label: "Winding Wires" },
+];
+
 const links = [
-  { href: "#products", label: "Products" },
   { href: "#about", label: "About" },
   { href: "#markets", label: "Markets" },
   { href: "#contact", label: "Contact" },
@@ -15,6 +23,8 @@ const links = [
 
 export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -33,10 +43,10 @@ export function Navigation() {
           : "bg-transparent border-transparent",
       )}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 backdrop-blur-sm bg-white/10 p-4 rounded-2xl md:mt-2 shadow-[0_18px_60px_rgba(0,0,0,0.28)] border border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex items-center justify-between h-16 text-white">
           <div className="flex items-center gap-8">
-            <div className="relative flex items-center gap-3">
+            <Link href="/" className="relative flex items-center gap-3">
               <motion.div
                 className="w-10 h-10 rounded-2xl bg-gradient-to-br from-primary to-accent/80 flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
                 animate={{ rotate: [0, 6, 0] }}
@@ -52,8 +62,41 @@ export function Navigation() {
                   Cable
                 </span>
               </div>
-            </div>
-            <div className="hidden md:flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-2 py-1">
+            </Link>
+            <div className="hidden md:flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-2 py-1 relative">
+              <div
+                className="relative"
+                onMouseEnter={() => setProductsOpen(true)}
+                onMouseLeave={() => setProductsOpen(false)}
+              >
+                <button className="px-4 py-1.5 rounded-full text-sm text-white hover:text-white hover:bg-white/10 transition-all inline-flex items-center gap-1">
+                  Products
+                  <ChevronDown className="w-4 h-4" />
+                </button>
+                <AnimatePresence>
+                  {productsOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 8 }}
+                      transition={{ duration: 0.15 }}
+                      className="absolute left-0 mt-2 min-w-[240px] rounded-2xl border border-white/10 bg-[#0b1020]/95 backdrop-blur-xl shadow-[0_18px_60px_rgba(0,0,0,0.35)] p-3"
+                    >
+                      <div className="flex flex-col">
+                        {productLinks.map((item) => (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            className="px-3 py-2 rounded-xl text-sm text-white/80 hover:text-white hover:bg-white/10 transition-colors"
+                          >
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
               {links.map((link) => (
                 <a
                   key={link.href}
@@ -69,13 +112,13 @@ export function Navigation() {
             <Button
               variant="ghost"
               size="sm"
-              className="text-white hover:text-primary-foreground hover:bg-white/10"
+              className="hover:bg-white/10 text-[var(--accent)] border border-[color-mix(in_srgb,var(--accent)_70%,transparent)]"
             >
               Download Catalog
             </Button>
             <Button
               size="sm"
-              className="bg-gradient-to-r from-primary via-accent to-primary text-white border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
+              className="bg-gradient-to-r from-[var(--accent)] via-[var(--accent)] to-[var(--accent)] text-white border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
             >
               Get Quote
             </Button>
@@ -83,6 +126,7 @@ export function Navigation() {
           <button
             className="md:hidden text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
           >
             <Menu className="w-6 h-6" />
           </button>
@@ -102,6 +146,42 @@ export function Navigation() {
             )}
           >
             <div className="px-4 py-4 space-y-3">
+              <div>
+                <button
+                  className="w-full flex items-center justify-between text-sm text-white/90 hover:text-white hover:bg-white/5 rounded-lg px-3 py-2"
+                  onClick={() => setMobileProductsOpen((v) => !v)}
+                >
+                  <span>Products</span>
+                  <ChevronDown
+                    className={cn(
+                      "w-4 h-4 transition-transform",
+                      mobileProductsOpen ? "rotate-180" : "",
+                    )}
+                  />
+                </button>
+                <AnimatePresence>
+                  {mobileProductsOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.15 }}
+                      className="pl-3 space-y-2 pt-2"
+                    >
+                      {productLinks.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className="block text-sm text-white/80 hover:text-white hover:bg-white/5 rounded-lg px-3 py-2"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
               {links.map((link) => (
                 <a
                   key={link.href}
@@ -116,13 +196,13 @@ export function Navigation() {
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="w-full text-white hover:bg-white/10"
+                  className="w-full text-[var(--accent)] hover:bg-white/10 border border-[color-mix(in_srgb,var(--accent)_70%,transparent)]"
                 >
                   Download Catalog
                 </Button>
                 <Button
                   size="sm"
-                  className="w-full bg-gradient-to-r from-primary to-accent text-white"
+                  className="w-full bg-gradient-to-r from-[var(--accent)] to-[var(--accent)] text-white"
                 >
                   Get Quote
                 </Button>

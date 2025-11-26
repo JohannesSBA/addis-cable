@@ -74,11 +74,11 @@ export function Products() {
               onHoverEnd={() => setHoveredIndex(null)}
               className="group bg-white/90 rounded-2xl overflow-hidden border border-orange-100 hover:border-primary/30 transition-all duration-300 shadow-lg hover:-translate-y-2"
             >
-              <motion.div
-                className="aspect-video overflow-hidden bg-muted relative"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.4 }}
-              >
+                <motion.div
+                  className="aspect-video overflow-hidden bg-muted relative border border-[color-mix(in_srgb,var(--aluminum)_30%,transparent)]"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.4 }}
+                >
                 <motion.img
                   src={product.image || "/placeholder.svg"}
                   alt={product.category}
@@ -97,14 +97,23 @@ export function Products() {
               <div className="p-8">
                 <div className="flex items-start justify-between mb-4">
                   <motion.div
-                    className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center"
+                    className="w-10 h-10 rounded-lg flex items-center justify-center"
                     whileHover={{ rotate: 180, scale: 1.1 }}
                     transition={{ duration: 0.3 }}
+                    style={{
+                      background:
+                        "linear-gradient(135deg, color-mix(in srgb, var(--primary) 70%, transparent) 0%, color-mix(in srgb, var(--accent) 60%, transparent) 100%)",
+                    }}
                   >
-                    <product.icon className="w-5 h-5 text-primary" />
+                    <product.icon className="w-5 h-5" style={{ color: "var(--accent)" }} />
                   </motion.div>
                   <motion.span
-                    className="text-sm font-mono text-primary bg-primary/10 px-3 py-1 rounded-full"
+                    className="text-sm font-mono px-3 py-1 rounded-full border"
+                    style={{
+                      color: "var(--aluminum)",
+                      borderColor: "color-mix(in srgb, var(--aluminum) 70%, transparent)",
+                      backgroundColor: "rgba(255,255,255,0.04)",
+                    }}
                     whileHover={{ scale: 1.1 }}
                   >
                     {product.voltage}

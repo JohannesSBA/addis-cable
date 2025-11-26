@@ -101,6 +101,34 @@ export function Factory() {
           </motion.div>
         </div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="relative overflow-hidden rounded-[2rem] border border-white/12 bg-[#0a0f1c]/80 shadow-[0_25px_80px_rgba(0,0,0,0.55)] mb-16"
+        >
+          <div className="aspect-video">
+            <video
+              src="/facility.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-full w-full object-cover"
+              aria-label="Facility production reel showing line calibration and QA"
+            />
+          </div>
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 p-6 text-sm text-white/80">
+            <div className="text-xs uppercase tracking-[0.3em] text-white/60">
+              Production Floor Reel
+            </div>
+            <p className="mt-3 text-base font-medium text-white/90">
+              Final calibration run capturing line tension, extrusion uniformity, and operator readiness checks.
+            </p>
+          </div>
+        </motion.div>
+
         {/* Production Stats - Added counter animation effect */}
         <div
           ref={statsRef}
