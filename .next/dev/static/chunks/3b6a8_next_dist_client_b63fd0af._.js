@@ -11,8 +11,16 @@ Object.defineProperty(exports, "Portal", {
         return Portal;
     }
 });
-const _react = __turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/index.js [client] (ecmascript)");
-const _reactdom = __turbopack_context__.r("[project]/node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/index.js [client] (ecmascript)");
+const _react = (()=>{
+    const e = new Error("Cannot find module 'react'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
+const _reactdom = (()=>{
+    const e = new Error("Cannot find module 'react-dom'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 const Portal = ({ children, type })=>{
     const [portalNode, setPortalNode] = (0, _react.useState)(null);
     (0, _react.useEffect)(()=>{
@@ -907,9 +915,21 @@ _export(exports, {
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
 const _interop_require_wildcard = __turbopack_context__.r("[project]/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [client] (ecmascript)");
-const _jsxruntime = __turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js [client] (ecmascript)");
-const _reactdom = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/index.js [client] (ecmascript)"));
-const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/index.js [client] (ecmascript)"));
+const _jsxruntime = (()=>{
+    const e = new Error("Cannot find module 'react/jsx-runtime'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
+const _reactdom = /*#__PURE__*/ _interop_require_default._((()=>{
+    const e = new Error("Cannot find module 'react-dom'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
+const _react = /*#__PURE__*/ _interop_require_wildcard._((()=>{
+    const e = new Error("Cannot find module 'react'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
 const _headmanagercontextsharedruntime = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/shared/lib/head-manager-context.shared-runtime.js [client] (ecmascript)");
 const _setattributesfromprops = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/set-attributes-from-props.js [client] (ecmascript)");
 const _requestidlecallback = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/request-idle-callback.js [client] (ecmascript)");
@@ -1462,8 +1482,16 @@ Object.defineProperty(exports, "default", {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _jsxruntime = __turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/index.js [client] (ecmascript)"));
+const _jsxruntime = (()=>{
+    const e = new Error("Cannot find module 'react/jsx-runtime'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
+const _react = /*#__PURE__*/ _interop_require_default._((()=>{
+    const e = new Error("Cannot find module 'react'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
 const _router = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/router.js [client] (ecmascript)");
 function withRouter(ComposedComponent) {
     function WithRouterWrapper(props) {
@@ -1530,7 +1558,11 @@ _export(exports, {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/index.js [client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_default._((()=>{
+    const e = new Error("Cannot find module 'react'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
 const _router = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/shared/lib/router/router.js [client] (ecmascript)"));
 const _routercontextsharedruntime = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/shared/lib/router-context.shared-runtime.js [client] (ecmascript)");
 const _iserror = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/lib/is-error.js [client] (ecmascript)"));
@@ -1702,8 +1734,16 @@ _export(exports, {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _jsxruntime = __turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/index.js [client] (ecmascript)"));
+const _jsxruntime = (()=>{
+    const e = new Error("Cannot find module 'react/jsx-runtime'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
+const _react = /*#__PURE__*/ _interop_require_default._((()=>{
+    const e = new Error("Cannot find module 'react'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
 const _router = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/router.js [client] (ecmascript)");
 const nextjsRouteAnnouncerStyles = {
     border: 0,
@@ -2158,7 +2198,11 @@ _export(exports, {
     }
 });
 const _forwardlogs = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/next-devtools/userspace/app/forward-logs.js [client] (ecmascript)");
-const _hotreloadertypes = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/server/dev/hot-reloader-types.js [client] (ecmascript)");
+const _hotreloadertypes = (()=>{
+    const e = new Error("Cannot find module '../../../../server/dev/hot-reloader-types'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 const _getsocketurl = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/dev/hot-reloader/get-socket-url.js [client] (ecmascript)");
 const _constants = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/lib/constants.js [client] (ecmascript)");
 let source;
@@ -2542,10 +2586,18 @@ _export(exports, {
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
 const _nextdevtools = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/compiled/next-devtools/index.js (raw)");
 const _pagesdevoverlaysetup = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/next-devtools/userspace/pages/pages-dev-overlay-setup.js [client] (ecmascript)");
-const _stripansi = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/compiled/strip-ansi/index.js [client] (ecmascript)"));
+const _stripansi = /*#__PURE__*/ _interop_require_default._((()=>{
+    const e = new Error("Cannot find module 'next/dist/compiled/strip-ansi'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
 const _websocket = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js [client] (ecmascript)");
 const _formatwebpackmessages = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/shared/lib/format-webpack-messages.js [client] (ecmascript)"));
-const _hotreloadertypes = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/server/dev/hot-reloader-types.js [client] (ecmascript)");
+const _hotreloadertypes = (()=>{
+    const e = new Error("Cannot find module '../../../../server/dev/hot-reloader-types'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 const _shared = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/dev/hot-reloader/shared.js [client] (ecmascript)");
 const _runtimeerrorhandler = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/dev/runtime-error-handler.js [client] (ecmascript)");
 const _reporthmrlatency = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/dev/report-hmr-latency.js [client] (ecmascript)"));
@@ -2996,10 +3048,22 @@ _export(exports, {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _jsxruntime = __turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js [client] (ecmascript)");
+const _jsxruntime = (()=>{
+    const e = new Error("Cannot find module 'react/jsx-runtime'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/build/polyfills/polyfill-module.js [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/index.js [client] (ecmascript)"));
-const _client = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/client.js [client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_default._((()=>{
+    const e = new Error("Cannot find module 'react'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
+const _client = /*#__PURE__*/ _interop_require_default._((()=>{
+    const e = new Error("Cannot find module 'react-dom/client'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
 const _headmanagercontextsharedruntime = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/shared/lib/head-manager-context.shared-runtime.js [client] (ecmascript)");
 const _mitt = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/shared/lib/mitt.js [client] (ecmascript)"));
 const _routercontextsharedruntime = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/shared/lib/router-context.shared-runtime.js [client] (ecmascript)");
@@ -3516,7 +3580,11 @@ async function hydrate(opts) {
         }
         CachedComponent = pageEntrypoint.component;
         if ("TURBOPACK compile-time truthy", 1) {
-            const { isValidElementType } = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/compiled/react-is/index.js [client] (ecmascript)");
+            const { isValidElementType } = (()=>{
+                const e = new Error("Cannot find module 'next/dist/compiled/react-is'");
+                e.code = 'MODULE_NOT_FOUND';
+                throw e;
+            })();
             if (!isValidElementType(CachedComponent)) {
                 throw Object.defineProperty(new Error(`The default export is not a React Component in page: "${initialData.page}"`), "__NEXT_ERROR_CODE", {
                     value: "E286",
@@ -3530,7 +3598,11 @@ async function hydrate(opts) {
         initialErr = (0, _iserror.getProperError)(error);
     }
     if ("TURBOPACK compile-time truthy", 1) {
-        const getServerError = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/server/dev/node-stack-frames.js [client] (ecmascript)").getServerError;
+        const getServerError = (()=>{
+            const e = new Error("Cannot find module '../server/dev/node-stack-frames'");
+            e.code = 'MODULE_NOT_FOUND';
+            throw e;
+        })().getServerError;
         // Server-side runtime errors need to be re-thrown on the client-side so
         // that the overlay is rendered.
         if (initialErr) {
@@ -3622,7 +3694,11 @@ Object.defineProperty(exports, "default", {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _hotreloadertypes = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/server/dev/hot-reloader-types.js [client] (ecmascript)");
+const _hotreloadertypes = (()=>{
+    const e = new Error("Cannot find module '../../server/dev/hot-reloader-types'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 const _hotreloaderpages = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js [client] (ecmascript)"));
 const _websocket = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js [client] (ecmascript)");
 let reloading = false;
@@ -3797,7 +3873,11 @@ const _ondemandentriesclient = /*#__PURE__*/ _interop_require_default._(__turbop
 const _fouc = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/dev/fouc.js [client] (ecmascript)");
 const _websocket = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js [client] (ecmascript)");
 const _querystring = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/shared/lib/router/utils/querystring.js [client] (ecmascript)");
-const _hotreloadertypes = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/server/dev/hot-reloader-types.js [client] (ecmascript)");
+const _hotreloadertypes = (()=>{
+    const e = new Error("Cannot find module '../server/dev/hot-reloader-types'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 const _runtimeerrorhandler = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/dev/runtime-error-handler.js [client] (ecmascript)");
 const _shared = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/dev/hot-reloader/shared.js [client] (ecmascript)");
 const _hotreloaderpages = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js [client] (ecmascript)");

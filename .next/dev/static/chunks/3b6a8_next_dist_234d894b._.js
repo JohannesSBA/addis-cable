@@ -748,7 +748,11 @@ _export(exports, {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/index.js [client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_default._((()=>{
+    const e = new Error("Cannot find module 'react'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
 const _iserror = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/lib/is-error.js [client] (ecmascript)"));
 const ownerStacks = new WeakMap();
 function getOwnerStack(error) {
@@ -1126,7 +1130,11 @@ Object.defineProperty(exports, "PagesDevOverlayErrorBoundary", {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/index.js [client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_default._((()=>{
+    const e = new Error("Cannot find module 'react'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
 class PagesDevOverlayErrorBoundary extends _react.default.PureComponent {
     static getDerivedStateFromError(error) {
         return {
@@ -1887,8 +1895,16 @@ _export(exports, {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _jsxruntime = __turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/index.js [client] (ecmascript)"));
+const _jsxruntime = (()=>{
+    const e = new Error("Cannot find module 'react/jsx-runtime'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
+const _react = /*#__PURE__*/ _interop_require_default._((()=>{
+    const e = new Error("Cannot find module 'react'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
 const _nextdevtools = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/compiled/next-devtools/index.js (raw)");
 const _hydrationerrorstate = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/next-devtools/userspace/pages/hydration-error-state.js [client] (ecmascript)");
 const _router = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/client/router.js [client] (ecmascript)");
@@ -2183,8 +2199,16 @@ Object.defineProperty(exports, /**
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _jsxruntime = __turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/react@19.2.0/node_modules/react/index.js [client] (ecmascript)"));
+const _jsxruntime = (()=>{
+    const e = new Error("Cannot find module 'react/jsx-runtime'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
+const _react = /*#__PURE__*/ _interop_require_default._((()=>{
+    const e = new Error("Cannot find module 'react'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
 const _head = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0/node_modules/next/dist/shared/lib/head.js [client] (ecmascript)"));
 const statusCodes = {
     400: 'Bad Request',

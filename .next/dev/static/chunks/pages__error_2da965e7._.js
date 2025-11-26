@@ -7,8 +7,7 @@
   "static/chunks/3b6a8_next_dist_234d894b._.js",
   "static/chunks/3b6a8_next_error_f7ba1239.js",
   "static/chunks/[next]_entry_page-loader_ts_4b8445c5._.js",
-  "static/chunks/76102_react-dom_44795136._.js",
-  "static/chunks/node_modules__pnpm_7136f466._.js",
+  "static/chunks/69652_@swc_helpers_cjs_014e222f._.js",
   "static/chunks/[root-of-the-server]__092393de._.js"
 ],
     source: "entry"

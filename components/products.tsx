@@ -18,7 +18,7 @@ export function Products() {
       description:
         "PVC insulated & jacketed conductors for residential, commercial, and light industrial installations across Ethiopia.",
       standards: "IEC 60227 | ES Standards",
-      image: "/electrical-copper-cables-coiled-on-industrial-spoo.jpg",
+      image: "/low-voltage.jpeg",
     },
     {
       icon: Zap,

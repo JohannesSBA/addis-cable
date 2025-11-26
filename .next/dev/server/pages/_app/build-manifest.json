@@ -6,17 +6,10 @@
   "rootMainFiles": [],
   "pages": {
     "/_app": [
-      "static/chunks/3b6a8_next_dist_compiled_3fa463cd._.js",
-      "static/chunks/3b6a8_next_dist_shared_lib_296a00cb._.js",
-      "static/chunks/3b6a8_next_dist_client_b63fd0af._.js",
-      "static/chunks/3b6a8_next_dist_7bc2dca2._.js",
-      "static/chunks/3b6a8_next_app_6615aee2.js",
-      "static/chunks/[next]_entry_page-loader_ts_dec3a048._.js",
-      "static/chunks/76102_react-dom_44795136._.js",
-      "static/chunks/node_modules__pnpm_7136f466._.js",
+      "static/chunks/[root-of-the-server]__c65f476e._.js",
       "static/chunks/[root-of-the-server]__45f039c3._.js",
       "static/chunks/pages__app_2da965e7._.js",
-      "static/chunks/turbopack-pages__app_b32aceb1._.js"
+      "static/chunks/turbopack-pages__app_d1bfcd33._.js"
     ]
   },
   "ampFirstPages": []

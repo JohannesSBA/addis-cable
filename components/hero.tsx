@@ -23,6 +23,16 @@ export function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-[#010208] text-white pt-36 pb-24 px-4 sm:px-6 lg:px-8">
       <motion.div
+        className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat pointer-events-none"
+        style={{
+          backgroundImage: "url('/backg.jpeg')",
+          filter: "saturate(0.9)",
+        }}
+        initial={{ scale: 1.05, opacity: 0 }}
+        animate={{ scale: 1, opacity: 0.35 }}
+        transition={{ duration: 1.2 }}
+      />
+      <motion.div
         className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_rgba(1,2,8,0.2))]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
