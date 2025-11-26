@@ -33,7 +33,7 @@ export function Navigation() {
           : "bg-transparent border-transparent",
       )}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 backdrop-blur-sm bg-white/10 p-4 rounded-2xl md:mt-2 shadow-[0_18px_60px_rgba(0,0,0,0.28)] border border-white/10">
         <div className="flex items-center justify-between h-16 text-white">
           <div className="flex items-center gap-8">
             <div className="relative flex items-center gap-3">
@@ -58,7 +58,7 @@ export function Navigation() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="px-4 py-1.5 rounded-full text-sm text-white/70 hover:text-white hover:bg-white/10 transition-all"
+                  className="px-4 py-1.5 rounded-full text-sm text-white hover:text-white hover:bg-white/10 transition-all"
                 >
                   {link.label}
                 </a>
