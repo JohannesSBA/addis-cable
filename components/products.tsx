@@ -56,7 +56,7 @@ export function Products() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance">
             {"Engineered for Ethiopia's power infrastructure"}
           </h2>
-          <p className="text-lg text-slate-300 text-pretty leading-relaxed">
+          <p className="text-lg text-slate-600 text-pretty leading-relaxed">
             {
               "A comprehensive portfolio built for Ethiopia's environments, from high-altitude industrial zones to humid lowlands, ensuring conductivity, insulation strength, and long-term durability."
             }
@@ -72,7 +72,7 @@ export function Products() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               onHoverStart={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
-              className="group bg-gradient-to-br from-black via-[#0a0b16] to-black rounded-2xl overflow-hidden border border-white/10 hover:border-primary/40 transition-all duration-300 shadow-lg hover:-translate-y-2"
+              className="group bg-white/90 rounded-2xl overflow-hidden border border-orange-100 hover:border-primary/30 transition-all duration-300 shadow-lg hover:-translate-y-2"
             >
               <motion.div
                 className="aspect-video overflow-hidden bg-muted relative border border-[color-mix(in_srgb,var(--aluminum)_30%,transparent)]"
@@ -123,13 +123,13 @@ export function Products() {
                     {product.voltage}
                   </motion.span>
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-white">
+                <h3 className="text-2xl font-bold mb-3 text-slate-900">
                   {product.category}
                 </h3>
-                <p className="text-slate-300 mb-4 leading-relaxed">
+                <p className="text-slate-600 mb-4 leading-relaxed">
                   {product.description}
                 </p>
-                <div className="text-sm text-slate-400 font-mono">
+                <div className="text-sm text-slate-500 font-mono">
                   {product.standards}
                 </div>
               </div>
@@ -154,13 +154,6 @@ export function Products() {
                 }
               </p>
             </div>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="whitespace-nowrap px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
-            >
-              {"Download Full Technical Specifications"}
-            </motion.button>
           </div>
         </motion.div>
       </div>
