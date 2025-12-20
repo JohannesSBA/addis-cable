@@ -118,13 +118,6 @@ export function Navigation() {
           </div>
           <div className="hidden md:flex items-center gap-3">
             <Button
-              variant="ghost"
-              size="sm"
-              className="hover:bg-white/10 text-[var(--accent)] border border-[color-mix(in_srgb,var(--accent)_70%,transparent)]"
-            >
-              Download Catalog
-            </Button>
-            <Button
               size="sm"
               className="bg-gradient-to-r from-[var(--accent)] via-[var(--accent)] to-[var(--accent)] text-white border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
             >
@@ -201,13 +194,6 @@ export function Navigation() {
                 </a>
               ))}
               <div className="pt-3 space-y-2">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="w-full text-[var(--accent)] hover:bg-white/10 border border-[color-mix(in_srgb,var(--accent)_70%,transparent)]"
-                >
-                  Download Catalog
-                </Button>
                 <Button
                   size="sm"
                   className="w-full bg-gradient-to-r from-[var(--accent)] to-[var(--accent)] text-white"

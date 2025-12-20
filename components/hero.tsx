@@ -165,18 +165,6 @@ export function Hero() {
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                >
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="w-full rounded-2xl border-[color-mix(in_srgb,var(--accent)_70%,transparent)] bg-white/5 text-white hover:bg-white/10 py-4 text-sm sm:text-base"
-                  >
-                    {"Download Product Catalog"}
-                  </Button>
-                </motion.div>
               </motion.div>
 
               <motion.div
