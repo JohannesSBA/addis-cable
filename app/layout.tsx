@@ -20,6 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="Yv08BcKxGBXuAJfHLLv-uEiTb2pHQdmfB5PCZJx0dZU"
+      />
       <body className={`font-sans antialiased`}>
         <Navigation />
         {children}
