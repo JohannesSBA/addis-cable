@@ -23,12 +23,9 @@ const marqueeItems = [
 export function Hero() {
   const slideshowImages = [
     "/slide-optimized/first.jpg",
-    "/slide-optimized/2.jpg",
-    "/slide-optimized/3.jpg",
-    "/slide-optimized/4.jpg",
     "/slide-optimized/5.jpg",
+    "/slide-optimized/2.jpg",
     "/slide-optimized/6.jpg",
-    "/slide-optimized/7.jpg",
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

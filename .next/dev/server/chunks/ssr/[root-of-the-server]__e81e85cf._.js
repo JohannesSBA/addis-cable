@@ -127,15 +127,15 @@ const productLinks = [
 ];
 const links = [
     {
-        href: "#about",
+        href: "/about",
         label: "About"
     },
     {
-        href: "#markets",
+        href: "/markets",
         label: "Markets"
     },
     {
-        href: "#contact",
+        href: "/contact",
         label: "Contact"
     }
 ];

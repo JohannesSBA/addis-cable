@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { ChevronDown, Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const productLinks = [
   { href: "/products/low-voltage", label: "Low Voltage Cables" },
@@ -16,9 +17,11 @@ const productLinks = [
 ];
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#markets", label: "Markets" },
-  { href: "#contact", label: "Contact" },
+  { href: "/about", label: "About" },
+  { href: "/markets", label: "Markets" },
+  { href: "/csr", label: "CSR" },
+  { href: "/factory", label: "Factory" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Navigation() {
@@ -34,6 +37,8 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const pathName = usePathname();
+
   return (
     <nav
       className={cn(
@@ -41,6 +46,9 @@ export function Navigation() {
         scrolled
           ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
           : "bg-transparent border-transparent",
+        pathName === "/about" || pathName === "/csr"
+          ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
+          : "",
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">

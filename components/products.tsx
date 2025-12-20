@@ -43,7 +43,7 @@ export function Products() {
   return (
     <section
       id="products"
-      className="relative py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-[#f5f0ea] to-white"
+      className="relative isolate overflow-hidden bg-[#010208] text-white min-h-[70vh] sm:min-h-[80vh] flex items-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,148,80,0.08),transparent_45%)]" />
       <div className="relative max-w-7xl mx-auto">
@@ -56,7 +56,7 @@ export function Products() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance">
             {"Engineered for Ethiopia's power infrastructure"}
           </h2>
-          <p className="text-lg text-slate-600 text-pretty leading-relaxed">
+          <p className="text-lg text-slate-300 text-pretty leading-relaxed">
             {
               "A comprehensive portfolio built for Ethiopia's environments, from high-altitude industrial zones to humid lowlands, ensuring conductivity, insulation strength, and long-term durability."
             }
@@ -72,13 +72,13 @@ export function Products() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               onHoverStart={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
-              className="group bg-white/90 rounded-2xl overflow-hidden border border-orange-100 hover:border-primary/30 transition-all duration-300 shadow-lg hover:-translate-y-2"
+              className="group bg-gradient-to-br from-black via-[#0a0b16] to-black rounded-2xl overflow-hidden border border-white/10 hover:border-primary/40 transition-all duration-300 shadow-lg hover:-translate-y-2"
             >
-                <motion.div
-                  className="aspect-video overflow-hidden bg-muted relative border border-[color-mix(in_srgb,var(--aluminum)_30%,transparent)]"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.4 }}
-                >
+              <motion.div
+                className="aspect-video overflow-hidden bg-muted relative border border-[color-mix(in_srgb,var(--aluminum)_30%,transparent)]"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.4 }}
+              >
                 <motion.img
                   src={product.image || "/placeholder.svg"}
                   alt={product.category}
@@ -105,13 +105,17 @@ export function Products() {
                         "linear-gradient(135deg, color-mix(in srgb, var(--primary) 70%, transparent) 0%, color-mix(in srgb, var(--accent) 60%, transparent) 100%)",
                     }}
                   >
-                    <product.icon className="w-5 h-5" style={{ color: "var(--accent)" }} />
+                    <product.icon
+                      className="w-5 h-5"
+                      style={{ color: "var(--accent)" }}
+                    />
                   </motion.div>
                   <motion.span
                     className="text-sm font-mono px-3 py-1 rounded-full border"
                     style={{
                       color: "var(--aluminum)",
-                      borderColor: "color-mix(in srgb, var(--aluminum) 70%, transparent)",
+                      borderColor:
+                        "color-mix(in srgb, var(--aluminum) 70%, transparent)",
                       backgroundColor: "rgba(255,255,255,0.04)",
                     }}
                     whileHover={{ scale: 1.1 }}
@@ -119,13 +123,13 @@ export function Products() {
                     {product.voltage}
                   </motion.span>
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-slate-900">
+                <h3 className="text-2xl font-bold mb-3 text-white">
                   {product.category}
                 </h3>
-                <p className="text-slate-600 mb-4 leading-relaxed">
+                <p className="text-slate-300 mb-4 leading-relaxed">
                   {product.description}
                 </p>
-                <div className="text-sm text-slate-500 font-mono">
+                <div className="text-sm text-slate-400 font-mono">
                   {product.standards}
                 </div>
               </div>

@@ -1,50 +1,53 @@
 export function Quality() {
   const values = [
     {
-      name: 'Trust & Transparency',
-      description: 'Long-term partnerships built on honesty and reliability.'
+      name: "Trust & Transparency",
+      description: "Long-term partnerships built on honesty and reliability.",
     },
     {
-      name: 'Ethical Leadership',
-      description: 'Upholding integrity and professionalism in all operations.'
+      name: "Ethical Leadership",
+      description: "Upholding integrity and professionalism in all operations.",
     },
     {
-      name: 'Customer Commitment',
-      description: 'Delivering beyond expectations with on-time performance.'
+      name: "Customer Commitment",
+      description: "Delivering beyond expectations with on-time performance.",
     },
     {
-      name: 'Technical Mastery',
-      description: 'Skilled engineers and global best practices.'
+      name: "Technical Mastery",
+      description: "Skilled engineers and global best practices.",
     },
     {
-      name: 'Innovation & Technology',
-      description: 'Continuous investment in modern equipment and R&D.'
+      name: "Innovation & Technology",
+      description: "Continuous investment in modern equipment and R&D.",
     },
     {
-      name: 'Social & Environmental Responsibility',
-      description: 'Supporting education, job creation, and sustainability.'
-    }
-  ]
+      name: "Social & Environmental Responsibility",
+      description: "Supporting education, job creation, and sustainability.",
+    },
+  ];
 
   const standards = [
-    'ISO 9001:2015',
-    'IEC 60228',
-    'IEC 60502',
-    'IEC 60227',
-    'Ethiopian Standards (ESA)'
-  ]
+    "ISO 9001:2015",
+    "IEC 60228",
+    "IEC 60502",
+    "IEC 60227",
+    "Ethiopian Standards (ESA)",
+  ];
 
   const tests = [
-    'Conductor resistance',
-    'Tensile strength',
-    'Insulation thickness',
-    'Voltage endurance',
-    'Heat aging & flame resistance',
-    'Elongation & dielectric strength'
-  ]
+    "Conductor resistance",
+    "Tensile strength",
+    "Insulation thickness",
+    "Voltage endurance",
+    "Heat aging & flame resistance",
+    "Elongation & dielectric strength",
+  ];
 
   return (
-    <section id="quality" className="relative py-24 bg-gradient-to-b from-white via-[#fff7ee] to-white">
+    <section
+      id="quality"
+      className="relative py-24 bg-gradient-to-b from-white via-[#fff7ee] to-white"
+    >
       <div className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle,_rgba(255,205,164,0.18),_transparent_55%)]" />
       <div className="container mx-auto px-4 max-w-7xl relative">
         <div className="text-center mb-16">
@@ -62,12 +65,17 @@ export function Quality() {
           <div>
             <h3 className="text-3xl font-bold mb-6">Quality Assurance</h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
-              We comply with ISO 9001:2015, IEC 60228, IEC 60502, and Ethiopian Standard Agency requirements. Every batch undergoes routine, type, and sample testing to guarantee dependable performance.
+              We comply with ISO 9001:2015, IEC 60228, IEC 60502, and Ethiopian
+              Standard Agency requirements. Every batch undergoes routine, type,
+              and sample testing to guarantee dependable performance.
             </p>
             <div className="space-y-3 mb-8">
               <h4 className="font-semibold text-lg mb-3">Standards We Meet:</h4>
               {standards.map((standard) => (
-                <div key={standard} className="flex items-center gap-3 text-muted-foreground">
+                <div
+                  key={standard}
+                  className="flex items-center gap-3 text-muted-foreground"
+                >
                   <div className="w-2 h-2 bg-copper rounded-full"></div>
                   {standard}
                 </div>
@@ -75,13 +83,26 @@ export function Quality() {
             </div>
           </div>
           <div>
-            <h4 className="font-semibold text-lg mb-4">Every Batch is Tested For:</h4>
+            <h4 className="font-semibold text-lg mb-4">
+              Every Batch is Tested For:
+            </h4>
             <div className="grid grid-cols-2 gap-4">
               {tests.map((test) => (
-                <div key={test} className="bg-white rounded-xl p-4 border border-orange-100 shadow-sm">
+                <div
+                  key={test}
+                  className="bg-white rounded-xl p-4 border border-orange-100 shadow-sm"
+                >
                   <div className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-copper flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    <svg
+                      className="w-5 h-5 text-copper flex-shrink-0 mt-0.5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
                     </svg>
                     <span className="text-sm text-slate-600">{test}</span>
                   </div>
@@ -96,7 +117,7 @@ export function Quality() {
           <h3 className="text-3xl font-bold mb-8 text-center">Core Values</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((value, index) => (
-              <div 
+              <div
                 key={value.name}
                 className="bg-white rounded-2xl p-6 border border-orange-100 hover:-translate-y-1 hover:shadow-lg transition-all"
               >
@@ -106,12 +127,14 @@ export function Quality() {
                   </div>
                   <h4 className="font-bold text-lg">{value.name}</h4>
                 </div>
-                <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {value.description}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
