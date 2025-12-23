@@ -55,21 +55,10 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16 text-white">
           <div className="flex items-center gap-8">
             <Link href="/" className="relative flex items-center gap-3">
-              <motion.div
-                className="w-10 h-10 rounded-2xl bg-gradient-to-br from-primary to-accent/80 flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
-                animate={{ rotate: [0, 6, 0] }}
-                transition={{ duration: 6, repeat: Infinity }}
-              >
-                <span className="text-white font-bold text-sm">AC</span>
-              </motion.div>
-              <div className="flex flex-col -space-y-2">
-                <span className="font-semibold uppercase tracking-[0.3em] text-xs text-white/70">
-                  Addis
-                </span>
-                <span className="text-lg font-semibold leading-tight">
-                  Cable
-                </span>
-              </div>
+              <img src="/logos.svg" alt="Addis Cable" width={73} height={73} />
+              <span className="text-lg font-bold text-white/70">
+                Addis Cable
+              </span>
             </Link>
             <div className="hidden md:flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-2 py-1 relative">
               <div

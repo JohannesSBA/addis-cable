@@ -15,7 +15,12 @@ interface InfoPageProps {
   primaryCta?: CTA;
 }
 
-export function InfoPage({ title, intro, sections = [], primaryCta }: InfoPageProps) {
+export function InfoPage({
+  title,
+  intro,
+  sections = [],
+  primaryCta,
+}: InfoPageProps) {
   return (
     <main className="bg-[#0a0c12] text-white min-h-screen">
       <section className="relative isolate overflow-hidden py-16 sm:py-20">
@@ -27,7 +32,8 @@ export function InfoPage({ title, intro, sections = [], primaryCta }: InfoPagePr
               backgroundImage:
                 "linear-gradient(120deg, rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
               backgroundSize: "220px 180px",
-              maskImage: "radial-gradient(circle at center, black, transparent 70%)",
+              maskImage:
+                "radial-gradient(circle at center, black, transparent 70%)",
             }}
           />
         </div>
@@ -44,7 +50,7 @@ export function InfoPage({ title, intro, sections = [], primaryCta }: InfoPagePr
           {primaryCta && (
             <Link
               href={primaryCta.href}
-              className="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-primary via-accent to-primary text-white px-5 py-3 text-sm sm:text-base shadow-[0_18px_50px_rgba(0,0,0,0.45)] border border-white/10"
+              className="inline-flex items-center gap-2 rounded-2xl bg-accent text-white px-5 py-3 text-sm sm:text-base shadow-[0_18px_50px_rgba(0,0,0,0.45)] border border-white/10"
             >
               {primaryCta.label}
             </Link>
@@ -57,7 +63,9 @@ export function InfoPage({ title, intro, sections = [], primaryCta }: InfoPagePr
                   key={section.title}
                   className="rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-6 shadow-[0_16px_50px_rgba(0,0,0,0.35)]"
                 >
-                  <h2 className="text-xl font-semibold mb-2">{section.title}</h2>
+                  <h2 className="text-xl font-semibold mb-2">
+                    {section.title}
+                  </h2>
                   {section.description && (
                     <p className="text-sm text-white/70 leading-relaxed mb-3">
                       {section.description}

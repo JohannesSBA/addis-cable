@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: "Addis Cable Manufacturing PLC - Wired for Excellence",
   description:
     "Ethiopia's largest producer of copper and aluminum electrical cables, powering national infrastructure with 13,836 tons of annual capacity.",
+  icons: {
+    icon: "/logos.svg",
+    shortcut: "/logos.svg",
+    apple: "/logos.svg",
+  },
 };
 
 export default function RootLayout({

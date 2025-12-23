@@ -4,21 +4,21 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Copper-themed color palette inspired by Stripe's elegance */
+  /* Bright orange accents with crisp aluminum neutrals */
   --background: oklch(0.98 0.005 40);
   --foreground: oklch(0.15 0.01 40);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.15 0.01 40);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.15 0.01 40);
-  /* Aluminum-forward (60) / Copper-accent (40) palette */
-  --primary: oklch(0.82 0.03 250); /* aluminum */
-  --primary-foreground: oklch(0.18 0.02 250);
+  /* Aluminum-forward (60) / Bright-orange accent (40) palette */
+  --primary: oklch(0.88 0.04 250); /* brighter aluminum */
+  --primary-foreground: oklch(0.16 0.025 250);
   --secondary: oklch(0.95 0.01 40);
   --secondary-foreground: oklch(0.15 0.01 40);
   --muted: oklch(0.94 0.01 40);
   --muted-foreground: oklch(0.52 0.02 40);
-  --accent: oklch(0.62 0.15 30); /* copper */
+  --accent: oklch(0.72 0.24 55); /* vivid orange */
   --accent-foreground: oklch(0.98 0.005 40);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0.005 40);
@@ -33,31 +33,31 @@
   --radius: 0.5rem;
   --sidebar: oklch(0.98 0.005 40);
   --sidebar-foreground: oklch(0.15 0.01 40);
-  --sidebar-primary: oklch(0.52 0.12 35);
+  --sidebar-primary: oklch(0.72 0.24 55);
   --sidebar-primary-foreground: oklch(0.98 0.005 40);
   --sidebar-accent: oklch(0.95 0.01 40);
   --sidebar-accent-foreground: oklch(0.15 0.01 40);
   --sidebar-border: oklch(0.88 0.01 40);
-  --sidebar-ring: oklch(0.52 0.12 35);
-  --aluminum: oklch(0.82 0.03 250);
-  --aluminum-foreground: oklch(0.18 0.02 250);
+  --sidebar-ring: oklch(0.72 0.24 55);
+  --aluminum: oklch(0.88 0.04 250);
+  --aluminum-foreground: oklch(0.16 0.025 250);
 }
 
 .dark {
-  /* Dark theme with rich copper accents on near-black background */
+  /* Dark theme with vivid orange accents on near-black background */
   --background: oklch(0.12 0.015 40);
   --foreground: oklch(0.95 0.01 40);
   --card: oklch(0.15 0.015 40);
   --card-foreground: oklch(0.95 0.01 40);
   --popover: oklch(0.15 0.015 40);
   --popover-foreground: oklch(0.95 0.01 40);
-  --primary: oklch(0.72 0.025 250); /* aluminum in dark */
-  --primary-foreground: oklch(0.12 0.015 40);
+  --primary: oklch(0.78 0.035 250); /* brighter aluminum in dark */
+  --primary-foreground: oklch(0.12 0.015 250);
   --secondary: oklch(0.22 0.02 40);
   --secondary-foreground: oklch(0.95 0.01 40);
   --muted: oklch(0.22 0.02 40);
   --muted-foreground: oklch(0.65 0.05 40);
-  --accent: oklch(0.62 0.15 30); /* copper */
+  --accent: oklch(0.68 0.22 55); /* vivid orange */
   --accent-foreground: oklch(0.95 0.01 40);
   --destructive: oklch(0.6 0.2 30);
   --destructive-foreground: oklch(0.95 0.01 40);
@@ -71,14 +71,14 @@
   --chart-5: oklch(0.4 0.08 35);
   --sidebar: oklch(0.15 0.015 40);
   --sidebar-foreground: oklch(0.95 0.01 40);
-  --sidebar-primary: oklch(0.72 0.18 35);
+  --sidebar-primary: oklch(0.68 0.22 55);
   --sidebar-primary-foreground: oklch(0.12 0.015 40);
   --sidebar-accent: oklch(0.22 0.02 40);
   --sidebar-accent-foreground: oklch(0.95 0.01 40);
   --sidebar-border: oklch(0.25 0.02 40);
-  --sidebar-ring: oklch(0.72 0.18 35);
-  --aluminum: oklch(0.72 0.025 250);
-  --aluminum-foreground: oklch(0.15 0.015 250);
+  --sidebar-ring: oklch(0.68 0.22 55);
+  --aluminum: oklch(0.78 0.035 250);
+  --aluminum-foreground: oklch(0.12 0.015 250);
 }
 
 @theme inline {

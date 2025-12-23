@@ -1,7 +1,6 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
+  "/[...catchall]/route": "app/[...catchall]/route.js",
   "/about/page": "app/about/page.js",
-  "/company/quality-standards/page": "app/company/quality-standards/page.js",
   "/contact/page": "app/contact/page.js",
   "/csr/page": "app/csr/page.js",
   "/factory/page": "app/factory/page.js",
@@ -11,7 +10,5 @@
   "/products/high-voltage/page": "app/products/high-voltage/page.js",
   "/products/low-voltage/page": "app/products/low-voltage/page.js",
   "/products/medium-voltage/page": "app/products/medium-voltage/page.js",
-  "/products/winding-wires/page": "app/products/winding-wires/page.js",
-  "/quality/page": "app/quality/page.js",
-  "/terms-of-service/page": "app/terms-of-service/page.js"
+  "/products/winding-wires/page": "app/products/winding-wires/page.js"
 }
