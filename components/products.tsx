@@ -56,7 +56,7 @@ export function Products() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance">
             {"Engineered for Ethiopia's power infrastructure"}
           </h2>
-          <p className="text-lg text-slate-600 text-pretty leading-relaxed">
+          <p className="text-lg text-accent/80 text-pretty leading-relaxed">
             {
               "A comprehensive portfolio built for Ethiopia's environments, from high-altitude industrial zones to humid lowlands, ensuring conductivity, insulation strength, and long-term durability."
             }

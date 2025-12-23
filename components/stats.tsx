@@ -71,7 +71,7 @@ export function Stats() {
               </p>
               <div className="flex flex-col gap-6">
                 <motion.div
-                  className="text-6xl font-bold text-primary"
+                  className="text-6xl font-bold text-accent"
                   initial={{ scale: 0.5 }}
                   animate={isInView ? { scale: 1 } : {}}
                   transition={{ duration: 0.6, type: "spring" }}
@@ -94,7 +94,7 @@ export function Stats() {
                       <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
                         {item}
                       </p>
-                      <p className="text-lg font-semibold text-primary/80">
+                      <p className="text-lg font-semibold text-accent/80">
                         {["9,109t", "4,727t", "Rapid"][index]}
                       </p>
                     </motion.div>
@@ -130,7 +130,7 @@ export function Stats() {
                 <p className="text-xs uppercase tracking-[0.4em] text-slate-400 mb-6">
                   {stat.label}
                 </p>
-                <p className="text-4xl font-bold text-primary mb-3">
+                <p className="text-4xl font-bold text-accent mb-3">
                   {stat.value}
                 </p>
                 <p className="text-sm text-slate-600">{stat.description}</p>

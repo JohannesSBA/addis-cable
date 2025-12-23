@@ -5,10 +5,5 @@
   "/csr/page": "app/csr/page.js",
   "/factory/page": "app/factory/page.js",
   "/markets/page": "app/markets/page.js",
-  "/page": "app/page.js",
-  "/products/conductors-abc/page": "app/products/conductors-abc/page.js",
-  "/products/high-voltage/page": "app/products/high-voltage/page.js",
-  "/products/low-voltage/page": "app/products/low-voltage/page.js",
-  "/products/medium-voltage/page": "app/products/medium-voltage/page.js",
-  "/products/winding-wires/page": "app/products/winding-wires/page.js"
+  "/page": "app/page.js"
 }

@@ -9,7 +9,7 @@ export function CTA() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="relative rounded-2xl overflow-hidden">
-          <div className="absolute inset-0 bg-cover bg-[url('/Addis_in_night.png')] opacity-90" />
+          <div className="absolute inset-0 sm:bg-center bg-bottom bg-cover bg-[url('/Addis_in_night.png')] opacity-90" />
 
           <div className="relative px-8 py-16 sm:px-12 sm:py-20 lg:px-16">
             <div className="max-w-3xl">

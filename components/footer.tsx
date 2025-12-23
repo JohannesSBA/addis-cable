@@ -12,7 +12,7 @@ export function Footer() {
               <img src="/logos.svg" alt="Addis Cable" width={73} height={73} />
             </div>
             <span className="text-lg font-bold text-white/70 mb-4">
-              Addis Cable Manufacturing PLC
+              Addis Cable
             </span>
             <p className="text-sm text-white/70 mb-4">
               {

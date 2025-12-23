@@ -250,11 +250,13 @@ export function Hero() {
                       <p className="text-xs uppercase tracking-[0.35em] text-white/50">
                         {metric.label}
                       </p>
-                      <p className="text-[11px] text-white/50">
+                      <p className="text-[11px]  text-accent">
                         {metric.detail}
                       </p>
                     </div>
-                    <p className="text-xl font-semibold">{metric.value}</p>
+                    <p className="text-xl font-semibold text-accent">
+                      {metric.value}
+                    </p>
                   </motion.div>
                 ))}
               </div>

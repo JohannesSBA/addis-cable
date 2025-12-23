@@ -124,7 +124,8 @@ export function Factory() {
               Production Floor Reel
             </div>
             <p className="mt-3 text-base font-medium text-white/90">
-              Final calibration run capturing line tension, extrusion uniformity, and operator readiness checks.
+              Final calibration run capturing line tension, extrusion
+              uniformity, and operator readiness checks.
             </p>
           </div>
         </motion.div>
@@ -156,7 +157,7 @@ export function Factory() {
                   delay: index * 0.1 + 0.2,
                   type: "spring",
                 }}
-                className="text-4xl font-bold text-primary mb-2"
+                className="text-4xl font-bold text-accent mb-2"
               >
                 {stat.value}
               </motion.div>
@@ -185,7 +186,7 @@ export function Factory() {
                 ],
               }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="text-primary font-bold"
+              className="text-accent font-bold"
             >
               enamelled winding wires
             </motion.span>{" "}

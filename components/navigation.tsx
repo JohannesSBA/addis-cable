@@ -55,10 +55,10 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16 text-white">
           <div className="flex items-center gap-8">
             <Link href="/" className="relative flex items-center gap-3">
-              <img src="/logos.svg" alt="Addis Cable" width={73} height={73} />
-              <span className="text-lg font-bold text-white/70">
+              <img src="/logo.png" alt="Addis Cable" width={73} height={73} />
+              {/* <span className="text-lg font-bold text-white/70">
                 Addis Cable
-              </span>
+              </span> */}
             </Link>
             <div className="hidden md:flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-2 py-1 relative">
               <div
