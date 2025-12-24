@@ -75,3 +75,435 @@
 [00:31:33.908] Server  LOG      ✓ Compiled in 114ms
 [00:31:49.495] Server  LOG      ✓ Compiled in 93ms
 [00:33:23.017] Server  LOG      ✓ Compiled in 106ms
+[00:41:39.004] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:39.451] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:39.998] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.011] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.025] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.037] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.045] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.054] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.071] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.083] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.096] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.108] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.116] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.126] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.137] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.156] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.172] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.186] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.208] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.250] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.259] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.270] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.287] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.299] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.309] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.327] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.342] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.350] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.362] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.371] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.378] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.387] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.394] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.400] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.408] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.414] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.423] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.432] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.446] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.469] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:40.469] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:40.469] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:40.469] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:40.484] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.502] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.511] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.523] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.533] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.540] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.549] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.559] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.568] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.576] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.583] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.593] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.602] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.612] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.624] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:40.633] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:40.649] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:41.361] Browser ERROR   uncaughtError: Error: ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:42.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:42.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:42.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:42.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:42.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:42.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:42.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:42.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:43.782] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:43.821] Server  LOG      ✓ Compiled in 190ms
+[00:41:44.076] Browser ERROR   uncaughtError: Error: ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:44.572] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:45.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:45.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:45.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:45.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:45.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:45.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:45.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:45.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:41:46.692] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:41:47.453] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:42:23.452] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:42:30.454] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:42:46.451] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:42:56.460] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:43:15.488] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:43:16.239] Browser ERROR   uncaughtError: Error: ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:43:16.467] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:43:16.467] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:43:16.468] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:43:16.468] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:43:16.468] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:43:16.468] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:43:16.468] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:43:16.468] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:43:18.552] Server  ERROR    ⨯ ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:43:18.700] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:44:13.922] Server  LOG      ✓ Compiled in 194ms
+[00:44:14.322] Browser ERROR   uncaughtError: Error: ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+
+
+[00:44:15.470] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:44:15.484] Browser ERROR   ./app
+An issue occurred while preparing your Next.js app
+Conflicting page and metadata at /sitemap: page at /sitemap/page and metadata at /sitemap/route
+[00:44:39.417] Server  LOG      ✓ Compiled in 86ms

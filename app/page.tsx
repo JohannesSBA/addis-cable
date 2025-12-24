@@ -5,6 +5,7 @@ import { Quality } from "@/components/quality";
 import { Sustainability } from "@/components/sustainability";
 import { Partnership } from "@/components/partnership";
 import { CTA } from "@/components/cta";
+import { FAQ } from "@/components/faq";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Stats />
       <Products />
+      <FAQ />
       <CTA />
     </main>
   );

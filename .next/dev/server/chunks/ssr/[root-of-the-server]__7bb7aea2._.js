@@ -524,7 +524,7 @@ function Footer() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/sitemap",
+                                        href: "/site-map",
                                         className: "hover:text-white transition-colors",
                                         children: "Sitemap"
                                     }, void 0, false, {
@@ -579,24 +579,138 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx_
 ;
 ;
 const metadata = {
-    title: "Addis Cable Manufacturing PLC - Wired for Excellence",
-    description: "Ethiopia's largest producer of copper and aluminum electrical cables, powering national infrastructure with 13,836 tons of annual capacity.",
+    metadataBase: new URL("https://www.addiscable.com"),
+    title: {
+        default: "Addis Cable Manufacturing PLC | Ethiopia's Leading Cable & Conductor Manufacturer",
+        template: "%s | Addis Cable Manufacturing PLC"
+    },
+    applicationName: "Addis Cable Manufacturing PLC",
+    description: "Addis Cable Manufacturing PLC supplies Addis Ababa and Ethiopia with certified copper and aluminum electrical cables, conductors, and winding wires for utilities, infrastructure, industry, and real estate projects.",
+    keywords: [
+        "Addis Cable",
+        "Addis Ababa cable",
+        "Ethiopia cables",
+        "Ethiopian wires",
+        "electrical cables Ethiopia",
+        "power cables Addis",
+        "wires in Ethiopia",
+        "copper cable manufacturer Ethiopia",
+        "aluminum cable manufacturer Ethiopia",
+        "conductors Ethiopia"
+    ],
+    category: "Manufacturing",
+    alternates: {
+        canonical: "/"
+    },
+    openGraph: {
+        type: "website",
+        locale: "en_US",
+        url: "https://www.addiscable.com",
+        siteName: "Addis Cable Manufacturing PLC",
+        title: "Addis Cable Manufacturing PLC | Ethiopia's Leading Cable & Conductor Manufacturer",
+        description: "Ethiopia's trusted source for copper and aluminum power cables, conductors, and winding wires serving Addis Ababa and nationwide infrastructure.",
+        images: [
+            "/Addis_in_night.png"
+        ]
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Addis Cable Manufacturing PLC | Ethiopia's Leading Cable & Conductor Manufacturer",
+        description: "Certified copper and aluminum electrical cables engineered in Ethiopia for utilities, industrial parks, rail, and real estate projects.",
+        images: [
+            "/Addis_in_night.png"
+        ]
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            maxSnippet: -1,
+            maxImagePreview: "large",
+            maxVideoPreview: -1
+        }
+    },
     icons: {
         icon: "/logos.svg",
         shortcut: "/logos.svg",
         apple: "/logos.svg"
+    },
+    verification: {
+        google: "Yv08BcKxGBXuAJfHLLv-uEiTb2pHQdmfB5PCZJx0dZU"
     }
 };
 function RootLayout({ children }) {
+    const organizationSchema = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Addis Cable Manufacturing PLC",
+        url: "https://www.addiscable.com",
+        logo: "https://www.addiscable.com/logo.png",
+        sameAs: [
+            "https://www.addiscable.com"
+        ],
+        address: {
+            "@type": "PostalAddress",
+            streetAddress: "Gelan Industrial Zone, Sheger City",
+            addressLocality: "Sheger City",
+            addressRegion: "Oromia",
+            addressCountry: "ET"
+        },
+        contactPoint: [
+            {
+                "@type": "ContactPoint",
+                contactType: "Sales & Customer Support",
+                email: "info@addiscable.com",
+                areaServed: "ET",
+                availableLanguage: [
+                    "en"
+                ]
+            }
+        ]
+    };
+    const websiteSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Addis Cable Manufacturing PLC",
+        url: "https://www.addiscable.com",
+        inLanguage: "en",
+        potentialAction: {
+            "@type": "SearchAction",
+            target: "https://www.addiscable.com/resources/product-catalog?search={query}",
+            "query-input": "required name=query"
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
         lang: "en",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                name: "google-site-verification",
-                content: "Yv08BcKxGBXuAJfHLLv-uEiTb2pHQdmfB5PCZJx0dZU"
-            }, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("head", {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
+                        type: "application/ld+json",
+                        dangerouslySetInnerHTML: {
+                            __html: JSON.stringify(organizationSchema)
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/app/layout.tsx",
+                        lineNumber: 122,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
+                        type: "application/ld+json",
+                        dangerouslySetInnerHTML: {
+                            __html: JSON.stringify(websiteSchema)
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/app/layout.tsx",
+                        lineNumber: 128,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/app/layout.tsx",
-                lineNumber: 28,
+                lineNumber: 121,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
@@ -604,25 +718,25 @@ function RootLayout({ children }) {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$navigation$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Navigation"], {}, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 33,
+                        lineNumber: 136,
                         columnNumber: 9
                     }, this),
                     children,
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 35,
+                        lineNumber: 138,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/layout.tsx",
-                lineNumber: 32,
+                lineNumber: 135,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 27,
+        lineNumber: 120,
         columnNumber: 5
     }, this);
 }

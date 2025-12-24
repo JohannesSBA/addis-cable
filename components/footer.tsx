@@ -184,7 +184,7 @@ export function Footer() {
               Terms of Service
             </Link>
             <Link
-              href="/sitemap"
+              href="/site-map"
               className="hover:text-white transition-colors"
             >
               Sitemap
