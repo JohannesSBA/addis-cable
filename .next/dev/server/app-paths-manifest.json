@@ -1,9 +1,4 @@
 {
   "/[...catchall]/route": "app/[...catchall]/route.js",
-  "/about/page": "app/about/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/csr/page": "app/csr/page.js",
-  "/factory/page": "app/factory/page.js",
-  "/markets/page": "app/markets/page.js",
-  "/page": "app/page.js"
+  "/markets/page": "app/markets/page.js"
 }

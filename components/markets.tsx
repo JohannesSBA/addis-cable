@@ -119,7 +119,7 @@ export function Markets() {
             ))}
           </div>
           <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] h-[260px] sm:h-[320px]">
-            <div className="absolute inset-0 bg-[url('/lines.gif')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-[url('/lines1.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-r from-[#020710]/95 via-[#020710]/65 to-transparent" />
             <div className="relative z-10 h-full flex flex-col justify-between p-6 sm:p-8">
               <div className="flex items-center gap-3 text-sm text-white/80">
