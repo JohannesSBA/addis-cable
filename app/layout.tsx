@@ -58,9 +58,6 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxSnippet: -1,
-      maxImagePreview: "large",
-      maxVideoPreview: -1,
     },
   },
   icons: {
@@ -111,7 +108,8 @@ export default function RootLayout({
     inLanguage: "en",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://www.addiscable.com/resources/product-catalog?search={query}",
+      target:
+        "https://www.addiscable.com/resources/product-catalog?search={query}",
       "query-input": "required name=query",
     },
   };

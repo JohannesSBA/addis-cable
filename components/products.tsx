@@ -43,20 +43,23 @@ export function Products() {
   return (
     <section
       id="products"
-      className="relative isolate overflow-hidden bg-[#010208] text-white min-h-[70vh] sm:min-h-[80vh] flex items-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20"
+      className="relative isolate overflow-hidden bg-[#060912] text-white min-h-[70vh] sm:min-h-[80vh] flex items-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,148,80,0.08),transparent_45%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,148,80,0.08),transparent_45%),radial-gradient(circle_at_80%_10%,rgba(255,255,255,0.06),transparent_55%)]" />
       <div className="relative max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mb-16"
+          className="max-w-3xl mb-16 space-y-4"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance">
+          <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] uppercase tracking-[0.28em] text-white/60">
+            Product Portfolio
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">
             {"Engineered for Ethiopia's power infrastructure"}
           </h2>
-          <p className="text-lg text-accent/80 text-pretty leading-relaxed">
+          <p className="text-lg text-white/70 text-pretty leading-relaxed">
             {
               "A comprehensive portfolio built for Ethiopia's environments, from high-altitude industrial zones to humid lowlands, ensuring conductivity, insulation strength, and long-term durability."
             }
@@ -72,10 +75,10 @@ export function Products() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               onHoverStart={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
-              className="group bg-white/90 rounded-2xl overflow-hidden border border-orange-100 hover:border-primary/30 transition-all duration-300 shadow-lg hover:-translate-y-2"
+              className="group bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-[var(--accent)]/40 transition-all duration-300 shadow-[0_30px_80px_rgba(0,0,0,0.4)] hover:-translate-y-2"
             >
               <motion.div
-                className="aspect-video overflow-hidden bg-muted relative border border-[color-mix(in_srgb,var(--aluminum)_30%,transparent)]"
+                className="aspect-video overflow-hidden relative border border-white/5"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.4 }}
               >
@@ -111,25 +114,23 @@ export function Products() {
                     />
                   </motion.div>
                   <motion.span
-                    className="text-sm font-mono px-3 py-1 rounded-full border"
+                    className="text-sm font-mono px-3 py-1 rounded-full border text-white/70"
                     style={{
-                      color: "var(--aluminum)",
-                      borderColor:
-                        "color-mix(in srgb, var(--aluminum) 70%, transparent)",
-                      backgroundColor: "rgba(255,255,255,0.04)",
+                      borderColor: "color-mix(in srgb, var(--aluminum) 60%, transparent)",
+                      backgroundColor: "rgba(255,255,255,0.06)",
                     }}
                     whileHover={{ scale: 1.1 }}
                   >
                     {product.voltage}
                   </motion.span>
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-slate-900">
+                <h3 className="text-2xl font-bold mb-3 text-white">
                   {product.category}
                 </h3>
-                <p className="text-slate-600 mb-4 leading-relaxed">
+                <p className="text-white/70 mb-4 leading-relaxed">
                   {product.description}
                 </p>
-                <div className="text-sm text-slate-500 font-mono">
+                <div className="text-sm text-white/60 font-mono">
                   {product.standards}
                 </div>
               </div>
@@ -141,14 +142,14 @@ export function Products() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-primary/15 to-accent/20 border border-primary/30"
+          className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-white/5 via-white/5 to-transparent border border-white/10 text-white shadow-[0_25px_80px_rgba(0,0,0,0.35)]"
         >
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div>
               <h3 className="text-xl font-bold mb-2">
                 {"Specialty: Enamelled Winding Wires"}
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-white/70">
                 {
                   "Unique capability in Ethiopia. Thermal classes 130L-200C+ for motors, generators, and transformers."
                 }
