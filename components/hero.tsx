@@ -75,10 +75,6 @@ export function Hero() {
           transition={{ duration: 12, repeat: Infinity }}
         />
         <div className="relative w-full max-w-3xl mr-auto md:ml-32 space-y-4 sm:space-y-6">
-          <div className="flex items-center gap-2 text-sm font-semibold text-[var(--aluminum)] drop-shadow-[0_8px_30px_rgba(0,0,0,0.6)]">
-            <Zap className="w-4 h-4" />
-            <span>{"Addis Cable"}</span>
-          </div>
           <h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight drop-shadow-[0_10px_35px_rgba(0,0,0,0.65)] max-w-3xl"
             style={{ textShadow: "0 12px 35px rgba(0,0,0,0.55)" }}
@@ -108,22 +104,6 @@ export function Hero() {
         <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 items-start">
           <div className="w-full flex-1 max-w-xl sm:max-w-2xl mx-auto lg:mx-0">
             <div className="rounded-[22px] border border-white/5 bg-white/5 p-4 sm:p-6 lg:p-7 backdrop-blur-md shadow-[0_18px_60px_rgba(0,0,0,0.28)] space-y-6 sm:space-y-7">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.5 }}
-                className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-white/10 text-sm font-medium border border-white/10 shadow-[0_10px_50px_rgba(0,0,0,0.4)]"
-              >
-                <motion.div
-                  animate={{ rotate: [0, 15, 0] }}
-                  transition={{ duration: 6, repeat: Infinity }}
-                >
-                  <Zap className="w-4 h-4" />
-                </motion.div>
-                <span>{"Engineered for reliability"}</span>
-              </motion.div>
-
               <div className="space-y-5">
                 <motion.h2
                   className="text-3xl sm:text-4xl font-bold tracking-tight text-balance text-white leading-tight"
@@ -215,31 +195,9 @@ export function Hero() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.8 }}
-              className="relative rounded-[20px] sm:rounded-[28px] p-5 sm:p-8 bg-gradient-to-br from-white/10 via-white/10 to-transparent border border-white/12 backdrop-blur-2xl shadow-[0_40px_120px_rgba(0,0,0,0.45)]"
+              className="relative rounded-[20px] sm:rounded-[28px] p-5 sm:p-8 bg-gradient-to-br from-white/10 via-white/10 to-transparent backdrop-blur-2xl shadow-[0_40px_120px_rgba(0,0,0,0.45)]"
             >
-              <div className="flex items-center justify-between mb-6">
-                <div>
-                  <p className="text-sm uppercase tracking-[0.3em] text-white/60">
-                    Flagship
-                  </p>
-                  <h3 className="text-2xl font-semibold">
-                    Mega Grid Cable Suite
-                  </h3>
-                </div>
-                <motion.div
-                  className="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center"
-                  animate={{ rotate: [0, 10, 0] }}
-                  transition={{ duration: 8, repeat: Infinity }}
-                >
-                  <Zap className="w-7 h-7 text-primary" />
-                </motion.div>
-              </div>
-
-              <p className="text-white/70 mb-6 leading-relaxed text-sm sm:text-base">
-                {`High-spec XLPE, armored MV/HV lines, and precision enamelled conductors engineered for Ethiopia's grid build-out and national reliability goals.`}
-              </p>
-
-              <div className="grid grid-cols-1 gap-4">
+              <div className="grid grid-cols-1 gap-6">
                 {heroMetrics.map((metric) => (
                   <motion.div
                     key={metric.label}
@@ -250,7 +208,7 @@ export function Hero() {
                       <p className="text-xs uppercase tracking-[0.35em] text-white/50">
                         {metric.label}
                       </p>
-                      <p className="text-[11px]  text-accent">
+                      <p className="text-[14px]  text-accent">
                         {metric.detail}
                       </p>
                     </div>
@@ -260,22 +218,6 @@ export function Hero() {
                   </motion.div>
                 ))}
               </div>
-
-              <motion.div
-                className="hidden md:block absolute -bottom-12 -left-8 w-52 rounded-2xl border border-white/15 bg-[#050c16]/80 backdrop-blur-xl p-4 shadow-[0_20px_80px_rgba(0,0,0,0.4)]"
-                animate={{ y: [-6, 6, -6] }}
-                transition={{ duration: 6, repeat: Infinity }}
-              >
-                <p className="text-xs uppercase tracking-[0.45em] text-white/50 mb-2">
-                  Realtime QC
-                </p>
-                <p className="text-lg font-semibold">
-                  Full Conductor Diagnostics
-                </p>
-                <p className="text-xs text-white/60">
-                  Resistance | Insulation | Tension
-                </p>
-              </motion.div>
             </motion.div>
           </div>
         </div>

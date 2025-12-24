@@ -523,6 +523,14 @@
     top: calc(var(--spacing) * -16);
   }
 
+  .-top-24 {
+    top: calc(var(--spacing) * -24);
+  }
+
+  .-top-32 {
+    top: calc(var(--spacing) * -32);
+  }
+
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -1076,6 +1084,14 @@
     height: 260px;
   }
 
+  .h-\[900px\] {
+    height: 900px;
+  }
+
+  .h-\[1200px\] {
+    height: 1200px;
+  }
+
   .h-\[calc\(100\%-1px\)\] {
     height: calc(100% - 1px);
   }
@@ -1250,6 +1266,14 @@
 
   .w-\[100px\] {
     width: 100px;
+  }
+
+  .w-\[900px\] {
+    width: 900px;
+  }
+
+  .w-\[1200px\] {
+    width: 1200px;
   }
 
   .w-auto {
@@ -2074,6 +2098,10 @@
     background-color: var(--background);
   }
 
+  .bg-black {
+    background-color: var(--color-black);
+  }
+
   .bg-black\/50 {
     background-color: #00000080;
   }
@@ -2091,6 +2119,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-black\/70 {
       background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
+    }
+  }
+
+  .bg-black\/90 {
+    background-color: #000000e6;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-black\/90 {
+      background-color: color-mix(in oklab, var(--color-black) 90%, transparent);
     }
   }
 
@@ -2319,12 +2357,28 @@
     background-image: url("/Addis_in_night.png");
   }
 
+  .bg-\[url\(\'\/corridor\.jpg\'\)\] {
+    background-image: url("/corridor.jpg");
+  }
+
   .bg-\[url\(\'\/footer\.jpeg\'\)\] {
     background-image: url("/footer.jpeg");
   }
 
+  .bg-\[url\(\'\/glow\.gif\'\)\] {
+    background-image: url("/glow.gif");
+  }
+
+  .bg-\[url\(\'\/lines\.gif\'\)\] {
+    background-image: url("/lines.gif");
+  }
+
   .bg-\[url\(\'\/train_lines\.webp\'\)\] {
     background-image: url("/train_lines.webp");
+  }
+
+  .bg-\[url\(\'\/urban_dev\.jpeg\'\)\] {
+    background-image: url("/urban_dev.jpeg");
   }
 
   .from-\[\#020710\]\/95 {
@@ -2585,6 +2639,10 @@
   .to-white {
     --tw-gradient-to: var(--color-white);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .bg-contain {
+    background-size: contain;
   }
 
   .bg-cover {
@@ -2893,6 +2951,10 @@
     font-size: 11px;
   }
 
+  .text-\[14px\] {
+    font-size: 14px;
+  }
+
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
@@ -3056,16 +3118,6 @@
     color: var(--primary-foreground);
   }
 
-  .text-primary\/80 {
-    color: var(--primary);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .text-primary\/80 {
-      color: color-mix(in oklab, var(--primary) 80%, transparent);
-    }
-  }
-
   .text-secondary-foreground {
     color: var(--secondary-foreground);
   }
@@ -3226,12 +3278,20 @@
     opacity: .5;
   }
 
+  .opacity-60 {
+    opacity: .6;
+  }
+
   .opacity-70 {
     opacity: .7;
   }
 
   .opacity-90 {
     opacity: .9;
+  }
+
+  .mix-blend-screen {
+    mix-blend-mode: screen;
   }
 
   .shadow {

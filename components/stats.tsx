@@ -102,19 +102,6 @@ export function Stats() {
                 </div>
               </div>
             </div>
-            <motion.div
-              className="hidden md:block z-50 absolute -bottom-8 -left-8 w-40 rounded-2xl border border-orange-100 bg-white shadow-xl p-4"
-              animate={{ y: [-4, 6, -4] }}
-              transition={{ duration: 6, repeat: Infinity }}
-            >
-              <p className="text-xs uppercase tracking-[0.4em] text-slate-400 mb-1">
-                Dispatch
-              </p>
-              <p className="text-lg font-semibold text-slate-900">72 hr</p>
-              <p className="text-xs text-slate-500">
-                Avg. national delivery window
-              </p>
-            </motion.div>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 gap-6">

@@ -66,7 +66,6 @@ export function About() {
         />
         <div className="relative w-full max-w-3xl mr-auto md:ml-32 space-y-4 sm:space-y-6">
           <div className="flex items-center gap-2 text-sm font-semibold text-[var(--aluminum)] drop-shadow-[0_8px_30px_rgba(0,0,0,0.6)]">
-            <Zap className="w-4 h-4" />
             <span>{"Addis Cable"}</span>
           </div>
           <h1

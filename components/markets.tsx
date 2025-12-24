@@ -6,30 +6,6 @@ import { motion } from "framer-motion";
 export function Markets() {
   const markets = [
     {
-      icon: Zap,
-      name: "Energy & Power Utilities",
-      description:
-        "Key supplier to EEU and EEP for grid modernization and rural electrification.",
-    },
-    {
-      icon: Building2,
-      name: "Urban Development & Real Estate",
-      description:
-        "Reliable partner for residential and commercial projects in Addis Ababa, Adama, Hawassa, and beyond.",
-    },
-    {
-      icon: Hammer,
-      name: "Infrastructure & Construction",
-      description:
-        "Powering airports, roads, factories, and government infrastructure under the Homegrown Economic Reform Plan.",
-    },
-    {
-      icon: Train,
-      name: "Transport & Rail Systems",
-      description:
-        "Durable signaling and traction cables supporting Ethiopian Railways and national logistics corridors.",
-    },
-    {
       icon: Sun,
       name: "Renewable Energy Projects",
       description:
@@ -141,6 +117,77 @@ export function Markets() {
                 </motion.div>
               </motion.div>
             ))}
+          </div>
+          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] h-[260px] sm:h-[320px]">
+            <div className="absolute inset-0 bg-[url('/lines.gif')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#020710]/95 via-[#020710]/65 to-transparent" />
+            <div className="relative z-10 h-full flex flex-col justify-between p-6 sm:p-8">
+              <div className="flex items-center gap-3 text-sm text-white/80">
+                <div className="w-11 h-11 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md flex items-center justify-center">
+                  <Zap className="w-5 h-5 text-accent" />
+                </div>
+                <div>
+                  <p className="uppercase tracking-[0.3em] text-white/60 text-xs">
+                    Energy & Power Utilities
+                  </p>
+                  <p className="text-white/70">
+                    Key supplier to EEU and EEP for grid modernization and rural
+                    electrification.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p className="text-sm text-white/60">
+                  Energy & Power Utilities
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] h-[260px] sm:h-[320px]">
+            <div className="absolute inset-0 bg-[url('/urban_dev.jpeg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#020710]/95 via-[#020710]/65 to-transparent" />
+            <div className="relative z-10 h-full flex flex-col justify-between p-6 sm:p-8">
+              <div className="flex items-center gap-3 text-sm text-white/80">
+                <div className="w-11 h-11 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md flex items-center justify-center">
+                  <Building2 className="w-5 h-5 text-accent" />
+                </div>
+                <div>
+                  <p className="uppercase tracking-[0.3em] text-white/60 text-xs">
+                    Urban Development & Real Estate
+                  </p>
+                  <p className="text-white/70">
+                    Reliable partner for residential and commercial projects in
+                    Addis Ababa, Adama, Hawassa, and beyond.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p className="text-sm text-white/60">Urban Development</p>
+              </div>
+            </div>
+          </div>
+          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] h-[260px] sm:h-[320px]">
+            <div className="absolute inset-0 bg-[url('/corridor.jpg')] bg-bottom bg-cover transition-transform duration-700 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#020710]/95 via-[#020710]/65 to-transparent" />
+            <div className="relative z-10 h-full flex flex-col justify-between p-6 sm:p-8">
+              <div className="flex items-center gap-3 text-sm text-white/80">
+                <div className="w-11 h-11 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md flex items-center justify-center">
+                  <Hammer className="w-5 h-5 text-accent" />
+                </div>
+                <div>
+                  <p className="uppercase tracking-[0.3em] text-white/60 text-xs">
+                    Infastructure & Construction
+                  </p>
+                  <p className="text-white/70">
+                    Powering airports, roads, factories, and government
+                    infrastructure under the Homegrown Economic Reform Plan.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p className="text-sm text-white/60">Infrastructure</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -55,7 +55,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16 text-white">
           <div className="flex items-center gap-8">
             <Link href="/" className="relative flex items-center gap-3">
-              <img src="/logo.png" alt="Addis Cable" width={73} height={73} />
+              <img src="/logos.svg" alt="Addis Cable" width={73} height={73} />
               {/* <span className="text-lg font-bold text-white/70">
                 Addis Cable
               </span> */}

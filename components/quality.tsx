@@ -95,7 +95,7 @@ export function Quality() {
                   <div className="flex items-start gap-2">
                     <svg
                       className="w-5 h-5 text-copper flex-shrink-0 mt-0.5"
-                      fill="currentColor"
+                      fill="orange"
                       viewBox="0 0 20 20"
                     >
                       <path
