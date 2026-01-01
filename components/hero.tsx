@@ -99,14 +99,14 @@ export function Hero() {
         </div>
       </section>
 
-      <section className="relative bg-[#05070d] text-white/90 px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white/5 via-transparent to-transparent pointer-events-none" />
+      <section className="relative bg-gradient-to-b from-white via-[#f7f7fb] to-white text-slate-900 px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[var(--accent)]/12 via-transparent to-transparent pointer-events-none" />
         <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 items-start">
           <div className="w-full flex-1 max-w-xl sm:max-w-2xl mx-auto lg:mx-0">
-            <div className="rounded-[22px] border border-white/5 bg-white/5 p-4 sm:p-6 lg:p-7 backdrop-blur-md shadow-[0_18px_60px_rgba(0,0,0,0.28)] space-y-6 sm:space-y-7">
+            <div className="rounded-[22px] border border-slate-200 bg-white p-4 sm:p-6 lg:p-7 shadow-[0_20px_60px_rgba(15,23,42,0.12)] space-y-6 sm:space-y-7">
               <div className="space-y-5">
                 <motion.h2
-                  className="text-3xl sm:text-4xl font-bold tracking-tight text-balance text-white leading-tight"
+                  className="text-3xl sm:text-4xl font-bold tracking-tight text-balance text-slate-900 leading-tight"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
@@ -116,7 +116,7 @@ export function Hero() {
                 </motion.h2>
 
                 <motion.p
-                  className="text-base sm:text-lg text-white/70 max-w-3xl text-pretty leading-relaxed"
+                  className="text-base sm:text-lg text-slate-600 max-w-3xl text-pretty leading-relaxed"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
@@ -139,7 +139,7 @@ export function Hero() {
                 >
                   <Button
                     size="lg"
-                    className="w-full rounded-2xl bg-gradient-to-r from-[var(--accent)] via-[var(--accent)] to-[var(--accent)] text-white shadow-[0_20px_60px_rgba(0,0,0,0.6)] border border-white/10 py-4 text-sm sm:text-base"
+                    className="w-full rounded-2xl bg-gradient-to-r from-[var(--accent)] via-[var(--accent)] to-[var(--accent)] text-white shadow-[0_20px_60px_rgba(15,23,42,0.2)] border border-[var(--accent)]/35 py-4 text-sm sm:text-base"
                   >
                     {"Contact a Sales Engineer"}
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -148,7 +148,7 @@ export function Hero() {
               </motion.div>
 
               <motion.div
-                className="flex flex-wrap items-center gap-6 text-sm text-white/70"
+                className="flex flex-wrap items-center gap-6 text-sm text-slate-600"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, margin: "-60px" }}
@@ -163,15 +163,15 @@ export function Hero() {
                     viewport={{ once: true, margin: "-60px" }}
                     transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
                   >
-                    <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                    <div className="w-2 h-2 rounded-full bg-primary/90 animate-pulse" />
                     <span>{text}</span>
                   </motion.div>
                 ))}
               </motion.div>
 
-              <div className="overflow-hidden rounded-full border border-white/10 bg-white/5 px-4 py-3">
+              <div className="overflow-hidden rounded-full border border-slate-200 bg-white px-4 py-3 shadow-[0_18px_45px_rgba(15,23,42,0.08)]">
                 <motion.div
-                  className="flex gap-8 text-[0.65rem] sm:text-xs tracking-[0.35em] uppercase text-white/50 whitespace-nowrap"
+                  className="flex gap-8 text-[0.65rem] sm:text-xs tracking-[0.35em] uppercase text-slate-500 whitespace-nowrap"
                   animate={{ x: ["0%", "-50%"] }}
                   transition={{
                     duration: 25,
@@ -182,7 +182,7 @@ export function Hero() {
                   {[...marqueeItems, ...marqueeItems].map((item, index) => (
                     <div key={item + index} className="flex items-center gap-4">
                       <span>{item}</span>
-                      <div className="w-1 h-1 rounded-full bg-white/30" />
+                      <div className="w-1 h-1 rounded-full bg-slate-300/80" />
                     </div>
                   ))}
                 </motion.div>
@@ -195,17 +195,17 @@ export function Hero() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.8 }}
-              className="relative rounded-[20px] sm:rounded-[28px] p-5 sm:p-8 bg-gradient-to-br from-white/10 via-white/10 to-transparent backdrop-blur-2xl shadow-[0_40px_120px_rgba(0,0,0,0.45)]"
+              className="relative rounded-[20px] sm:rounded-[28px] p-5 sm:p-8 bg-gradient-to-br from-white via-[#f4f7fd] to-white shadow-[0_35px_110px_rgba(15,23,42,0.14)] border border-slate-200"
             >
               <div className="grid grid-cols-1 gap-6">
                 {heroMetrics.map((metric) => (
                   <motion.div
                     key={metric.label}
-                    className="flex items-center justify-between rounded-2xl border border-white/15 bg-white/5 px-5 py-4"
-                    whileHover={{ y: -4, borderColor: "rgba(255,255,255,0.4)" }}
+                    className="flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-5 py-4"
+                    whileHover={{ y: -4, borderColor: "rgba(250,143,67,0.45)" }}
                   >
                     <div>
-                      <p className="text-xs uppercase tracking-[0.35em] text-white/50">
+                      <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
                         {metric.label}
                       </p>
                       <p className="text-[14px]  text-accent">

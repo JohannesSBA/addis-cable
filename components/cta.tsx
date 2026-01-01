@@ -10,13 +10,12 @@ export function CTA() {
       <div className="max-w-7xl mx-auto">
         <div className="relative rounded-2xl overflow-hidden">
           <div className="absolute inset-0 sm:bg-center bg-bottom bg-cover bg-[url('/Addis_in_night.png')] opacity-90" />
-
           <div className="relative px-8 py-16 sm:px-12 sm:py-20 lg:px-16">
             <div className="max-w-3xl">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance text-white">
                 {"Ready to Power Your Next Project?"}
               </h2>
-              <p className="text-lg text-white/70 mb-8 text-pretty leading-relaxed">
+              <p className="text-lg text-slate-100 mb-8 text-pretty leading-relaxed">
                 {
                   "Get in touch with our technical team for product specifications, pricing, or partnership opportunities."
                 }
@@ -25,7 +24,7 @@ export function CTA() {
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Button
                   size="lg"
-                  className="bg-primary text-primary-foreground hover:bg-primary/90"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg"
                 >
                   {"Request a Quote"}
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -57,16 +56,16 @@ export function CTA() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 shadow-sm">
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <div className="font-medium mb-1 text-white/70">
+                    <div className="font-medium mb-1 text-slate-800">
                       {"Call Sales"}
                     </div>
                     <a
                       href="tel:+251"
-                      className="text-sm text-white/70 hover:text-primary transition-colors"
+                      className="text-sm text-slate-700 hover:text-primary transition-colors"
                     >
                       {"+251 (0) XXX XXX XXX"}
                     </a>

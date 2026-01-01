@@ -43,9 +43,9 @@ export function Products() {
   return (
     <section
       id="products"
-      className="relative isolate overflow-hidden bg-[#060912] text-white min-h-[70vh] sm:min-h-[80vh] flex items-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20"
+      className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#f7f7fb] to-white text-slate-900 min-h-[70vh] sm:min-h-[80vh] flex items-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,148,80,0.08),transparent_45%),radial-gradient(circle_at_80%_10%,rgba(255,255,255,0.06),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(14,23,45,0.08),transparent_45%),radial-gradient(circle_at_80%_10%,rgba(250,143,67,0.1),transparent_55%)]" />
       <div className="relative max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -53,13 +53,13 @@ export function Products() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mb-16 space-y-4"
         >
-          <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] uppercase tracking-[0.28em] text-white/60">
+          <span className="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-[11px] uppercase tracking-[0.28em] text-slate-600 shadow-[0_10px_30px_rgba(15,23,42,0.08)]">
             Product Portfolio
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-balance text-slate-900">
             {"Engineered for Ethiopia's power infrastructure"}
           </h2>
-          <p className="text-lg text-white/70 text-pretty leading-relaxed">
+          <p className="text-lg text-slate-600 text-pretty leading-relaxed">
             {
               "A comprehensive portfolio built for Ethiopia's environments, from high-altitude industrial zones to humid lowlands, ensuring conductivity, insulation strength, and long-term durability."
             }
@@ -75,10 +75,10 @@ export function Products() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               onHoverStart={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
-              className="group bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-[var(--accent)]/40 transition-all duration-300 shadow-[0_30px_80px_rgba(0,0,0,0.4)] hover:-translate-y-2"
+              className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-[var(--accent)]/40 transition-all duration-300 shadow-[0_30px_80px_rgba(15,23,42,0.12)] hover:-translate-y-2"
             >
               <motion.div
-                className="aspect-video overflow-hidden relative border border-white/5"
+                className="aspect-video overflow-hidden relative border border-slate-100"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.4 }}
               >
@@ -92,7 +92,7 @@ export function Products() {
                   transition={{ duration: 0.6 }}
                 />
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
                   initial={{ opacity: 0 }}
                   whileHover={{ opacity: 1 }}
                 />
@@ -114,23 +114,23 @@ export function Products() {
                     />
                   </motion.div>
                   <motion.span
-                    className="text-sm font-mono px-3 py-1 rounded-full border text-white/70"
+                    className="text-sm font-mono px-3 py-1 rounded-full border border-slate-200 text-slate-700 bg-white shadow-[0_10px_25px_rgba(15,23,42,0.08)]"
                     style={{
                       borderColor: "color-mix(in srgb, var(--aluminum) 60%, transparent)",
-                      backgroundColor: "rgba(255,255,255,0.06)",
+                      backgroundColor: "rgba(255,255,255,0.8)",
                     }}
                     whileHover={{ scale: 1.1 }}
                   >
                     {product.voltage}
                   </motion.span>
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-white">
+                <h3 className="text-2xl font-bold mb-3 text-slate-900">
                   {product.category}
                 </h3>
-                <p className="text-white/70 mb-4 leading-relaxed">
+                <p className="text-slate-600 mb-4 leading-relaxed">
                   {product.description}
                 </p>
-                <div className="text-sm text-white/60 font-mono">
+                <div className="text-sm text-slate-500 font-mono">
                   {product.standards}
                 </div>
               </div>
@@ -142,14 +142,14 @@ export function Products() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-white/5 via-white/5 to-transparent border border-white/10 text-white shadow-[0_25px_80px_rgba(0,0,0,0.35)]"
+          className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-white via-white to-[#f4f7fb] border border-slate-200 text-slate-900 shadow-[0_25px_80px_rgba(15,23,42,0.1)]"
         >
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div>
               <h3 className="text-xl font-bold mb-2">
                 {"Specialty: Enamelled Winding Wires"}
               </h3>
-              <p className="text-white/70">
+              <p className="text-slate-600">
                 {
                   "Unique capability in Ethiopia. Thermal classes 130L-200C+ for motors, generators, and transformers."
                 }
