@@ -2370,6 +2370,10 @@
     background-image: url("/footer.jpeg");
   }
 
+  .bg-\[url\(\'\/image\.png\'\)\] {
+    background-image: url("/image.png");
+  }
+
   .bg-\[url\(\'\/lines1\.jpg\'\)\] {
     background-image: url("/lines1.jpg");
   }

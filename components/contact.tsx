@@ -96,6 +96,25 @@ export function Contact() {
                   <p className="text-white/70">info@addiscable.com</p>
                 </div>
               </div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-copper/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="w-6 h-6 text-copper"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1 text-white">Phone</h4>
+                  <p className="text-white/70">+251 114 62 78 41</p>
+                </div>
+              </div>
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-copper/10 rounded-lg flex items-center justify-center flex-shrink-0">

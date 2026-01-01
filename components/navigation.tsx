@@ -17,6 +17,7 @@ const productLinks = [
 ];
 
 const links = [
+  { href: "/home", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/markets", label: "Markets" },
   { href: "/csr", label: "CSR" },

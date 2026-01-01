@@ -4,21 +4,6 @@ import { Building2, Hammer, Train, Sun, Store, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function Markets() {
-  const markets = [
-    {
-      icon: Sun,
-      name: "Renewable Energy Projects",
-      description:
-        "Solar and wind-compatible cables for Ethiopia's green energy transition.",
-    },
-    {
-      icon: Store,
-      name: "Retail & Distribution Network",
-      description:
-        "Partnering with wholesalers and electrical retailers across Ethiopia.",
-    },
-  ];
-
   return (
     <section
       id="markets"
@@ -90,34 +75,6 @@ export function Markets() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {markets.map((market, index) => (
-              <motion.div
-                key={market.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-primary/40 transition-all duration-300 group p-6"
-              >
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.15),transparent)]" />
-                <market.icon className="w-8 h-8 text-primary mb-4 group-hover:scale-110 transition-transform relative z-10" />
-                <h3 className="text-lg font-semibold mb-2 text-white relative z-10">
-                  {market.name}
-                </h3>
-                <p className="text-sm text-white/70 relative z-10">
-                  {market.description}
-                </p>
-                <motion.div
-                  className="absolute bottom-4 right-4 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-xs uppercase tracking-[0.4em] text-white/50"
-                  animate={{ rotate: [0, 12, 0] }}
-                  transition={{ duration: 6, repeat: Infinity }}
-                >
-                  AC
-                </motion.div>
-              </motion.div>
-            ))}
-          </div>
           <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] h-[260px] sm:h-[320px]">
             <div className="absolute inset-0 bg-[url('/lines1.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-r from-[#020710]/95 via-[#020710]/65 to-transparent" />
@@ -139,6 +96,31 @@ export function Markets() {
               <div>
                 <p className="text-sm text-white/60">
                   Energy & Power Utilities
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] h-[260px] sm:h-[320px]">
+            <div className="absolute inset-0 bg-[url('/image.png')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#020710]/95 via-[#020710]/65 to-transparent" />
+            <div className="relative z-10 h-full flex flex-col justify-between p-6 sm:p-8">
+              <div className="flex items-center gap-3 text-sm text-white/80">
+                <div className="w-11 h-11 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md flex items-center justify-center">
+                  <Building2 className="w-5 h-5 text-accent" />
+                </div>
+                <div>
+                  <p className="uppercase tracking-[0.3em] text-white/60 text-xs">
+                    Renewable Energy Projects
+                  </p>
+                  <p className="text-white/70">
+                    Solar and wind-compatible cables for Ethiopia's green energy
+                    transition.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p className="text-sm text-white/60">
+                  Renewable Energy Projects
                 </p>
               </div>
             </div>

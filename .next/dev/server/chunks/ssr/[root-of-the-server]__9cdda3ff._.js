@@ -30,7 +30,7 @@ function InfoPage({ title, intro, sections = [], primaryCta }) {
                     className: "absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,112,52,0.16),transparent_50%)]"
                 }, void 0, false, {
                     fileName: "[project]/components/info-page.tsx",
-                    lineNumber: 22,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -44,12 +44,12 @@ function InfoPage({ title, intro, sections = [], primaryCta }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/info-page.tsx",
-                        lineNumber: 24,
+                        lineNumber: 29,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/info-page.tsx",
-                    lineNumber: 23,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -60,7 +60,7 @@ function InfoPage({ title, intro, sections = [], primaryCta }) {
                             children: "Addis Cable Manufacturing PLC"
                         }, void 0, false, {
                             fileName: "[project]/components/info-page.tsx",
-                            lineNumber: 35,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -68,7 +68,7 @@ function InfoPage({ title, intro, sections = [], primaryCta }) {
                             children: title
                         }, void 0, false, {
                             fileName: "[project]/components/info-page.tsx",
-                            lineNumber: 38,
+                            lineNumber: 44,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -76,16 +76,16 @@ function InfoPage({ title, intro, sections = [], primaryCta }) {
                             children: intro
                         }, void 0, false, {
                             fileName: "[project]/components/info-page.tsx",
-                            lineNumber: 41,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, this),
                         primaryCta && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                             href: primaryCta.href,
-                            className: "inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-primary via-accent to-primary text-white px-5 py-3 text-sm sm:text-base shadow-[0_18px_50px_rgba(0,0,0,0.45)] border border-white/10",
+                            className: "inline-flex items-center gap-2 rounded-2xl bg-accent text-white px-5 py-3 text-sm sm:text-base shadow-[0_18px_50px_rgba(0,0,0,0.45)] border border-white/10",
                             children: primaryCta.label
                         }, void 0, false, {
                             fileName: "[project]/components/info-page.tsx",
-                            lineNumber: 45,
+                            lineNumber: 51,
                             columnNumber: 13
                         }, this),
                         sections.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -98,7 +98,7 @@ function InfoPage({ title, intro, sections = [], primaryCta }) {
                                             children: section.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/info-page.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 66,
                                             columnNumber: 19
                                         }, this),
                                         section.description && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -106,7 +106,7 @@ function InfoPage({ title, intro, sections = [], primaryCta }) {
                                             children: section.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/info-page.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 70,
                                             columnNumber: 21
                                         }, this),
                                         section.bullets && section.bullets.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -118,53 +118,53 @@ function InfoPage({ title, intro, sections = [], primaryCta }) {
                                                             className: "mt-1 h-1.5 w-1.5 rounded-full bg-primary"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/info-page.tsx",
-                                                            lineNumber: 70,
+                                                            lineNumber: 78,
                                                             columnNumber: 27
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: item
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/info-page.tsx",
-                                                            lineNumber: 71,
+                                                            lineNumber: 79,
                                                             columnNumber: 27
                                                         }, this)
                                                     ]
                                                 }, item, true, {
                                                     fileName: "[project]/components/info-page.tsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 77,
                                                     columnNumber: 25
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/components/info-page.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 75,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, section.title, true, {
                                     fileName: "[project]/components/info-page.tsx",
-                                    lineNumber: 56,
+                                    lineNumber: 62,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/info-page.tsx",
-                            lineNumber: 54,
+                            lineNumber: 60,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/info-page.tsx",
-                    lineNumber: 34,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/info-page.tsx",
-            lineNumber: 21,
+            lineNumber: 26,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/info-page.tsx",
-        lineNumber: 20,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }

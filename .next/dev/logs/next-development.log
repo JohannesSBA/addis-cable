@@ -2,3 +2,13 @@
 [00:03:21.370] Server  LOG      ✓ Compiled in 146ms
 [00:03:37.838] Server  LOG      ✓ Compiled in 96ms
 [00:04:15.778] Server  LOG      ✓ Compiled in 142ms
+[00:11:06.737] Server  LOG      ✓ Compiled in 90ms
+[00:13:59.942] Server  LOG      ✓ Compiled in 123ms
+[00:14:17.961] Server  LOG      ✓ Compiled in 45ms
+[00:15:07.289] Server  LOG      ✓ Compiled in 111ms
+[00:15:07.662] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
+[00:15:11.120] Server  LOG      ✓ Compiled in 34ms
+[00:16:21.651] Server  LOG      ✓ Compiled in 65ms
+[00:16:52.185] Server  LOG      ✓ Compiled in 102ms
+[00:17:08.197] Server  LOG      ✓ Compiled in 53ms
+[00:17:17.757] Server  LOG      ✓ Compiled in 61ms
