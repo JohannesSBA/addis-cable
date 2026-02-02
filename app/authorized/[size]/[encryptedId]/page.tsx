@@ -196,6 +196,7 @@ export default async function AuthorizedCheckPage({ params }: PageProps) {
                     bullets={[
                       "Email: info@addiscable.com",
                       "Phone: +251 114 62 78 41",
+                      "Phone: +251 986 09 11 48",
                       "Site: addiscable.com/contact",
                     ]}
                   />
