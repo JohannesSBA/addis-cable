@@ -61,9 +61,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logos.svg",
-    shortcut: "/logos.svg",
-    apple: "/logos.svg",
+    icon: "/logo.jpeg",
+    shortcut: "/logo.jpeg",
+    apple: "/logo.jpeg",
   },
   verification: {
     google: "Yv08BcKxGBXuAJfHLLv-uEiTb2pHQdmfB5PCZJx0dZU",
@@ -80,7 +80,7 @@ export default function RootLayout({
     "@type": "Organization",
     name: "Addis Cable Manufacturing PLC",
     url: "https://www.addiscable.com",
-    logo: "https://www.addiscable.com/logo.png",
+    logo: "https://www.addiscable.com/logo.jpeg",
     sameAs: ["https://www.addiscable.com"],
     address: {
       "@type": "PostalAddress",
