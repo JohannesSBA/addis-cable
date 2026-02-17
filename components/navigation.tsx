@@ -20,6 +20,7 @@ const links = [
   { href: "/home", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/markets", label: "Markets" },
+  { href: "/authorized", label: "Verify Product" },
   { href: "/csr", label: "CSR" },
   { href: "/factory", label: "Factory" },
   { href: "/contact", label: "Contact" },
