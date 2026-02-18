@@ -1,21 +1,61 @@
-[00:00:03.453] Server  LOG      ✓ Ready in 3s
-[00:00:06.488] Server  LOG      ○ Compiling / ...
-[00:00:13.357] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:19.105] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:01.914] Server  LOG      ✓ Compiled in 205ms
-[00:02:18.339] Server  LOG      ✓ Compiled in 136ms
-[00:02:26.808] Server  LOG      ✓ Compiled in 148ms
-[00:02:36.210] Server  LOG      ✓ Compiled in 119ms
-[00:02:58.783] Server  LOG      ✓ Compiled in 126ms
-[00:03:20.584] Server  LOG      ✓ Compiled in 307ms
-[00:03:30.813] Server  LOG      ✓ Compiled in 159ms
-[00:03:44.059] Server  LOG      ✓ Compiled in 323ms
-[00:03:54.910] Server  LOG      ✓ Compiled in 310ms
-[00:04:06.571] Server  LOG      ✓ Compiled in 164ms
-[00:04:14.390] Server  LOG      ✓ Compiled in 118ms
-[00:04:29.663] Server  LOG      ✓ Compiled in 205ms
-[00:04:48.668] Server  LOG      ✓ Compiled in 187ms
-[00:04:57.522] Server  LOG      ✓ Compiled in 160ms
-[00:05:19.485] Server  LOG      ✓ Compiled in 541ms
-[00:05:26.641] Server  LOG      ✓ Compiled in 129ms
-[00:05:34.993] Server  LOG      ✓ Compiled in 135ms
+[00:00:01.949] Server  LOG      ✓ Ready in 1516ms
+[00:00:05.016] Server  LOG      ○ Compiling / ...
+[00:00:12.252] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:13.110] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:14.738] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+                            className="font-sans antialiased"
+-                           data-new-gr-c-s-check-loaded="14.1274.0"
+-                           data-gr-ext-installed=""
+-                           data-gr-ext-disabled="forever"
+                          >
+                  ...
+
+[00:00:39.366] Server  LOG      ✓ Compiled in 677ms
+[00:03:40.926] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:02.332] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:06.708] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:08.739] Browser ERROR   QR camera start failed {}
+[00:05:29.965] Server  LOG      ✓ Compiled in 251ms
+[00:05:48.770] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:50.648] Server  LOG      ✓ Compiled in 1591ms
+[00:08:05.015] Server  LOG      ✓ Compiled in 257ms
+[00:08:10.038] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:16.338] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:52.272] Server  LOG      ✓ Compiled in 188ms
+[00:08:58.728] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:02.989] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:03.990] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

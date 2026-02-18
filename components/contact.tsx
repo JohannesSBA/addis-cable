@@ -113,6 +113,7 @@ export function Contact() {
                 <div>
                   <h4 className="font-semibold mb-1 text-white">Phone</h4>
                   <p className="text-white/70">+251 114 62 78 41</p>
+                  <p className="text-white/70">+251 986 09 11 48</p>
                 </div>
               </div>
 

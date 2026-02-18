@@ -21,7 +21,8 @@ const sections: InfoSection[] = [
     title: "Reach Us",
     bullets: [
       "Email: sales@addiscable.et",
-      "Phone: +251 (0)11 123 4567",
+      "Phone: +251 114 62 78 41",
+      "Phone: +251 986 09 11 48",
       "Gelan Industrial Zone, Sheger City, Ethiopia",
     ],
   },
@@ -33,7 +34,10 @@ export default function ContactSupportPage() {
       title="Contact Support"
       intro="Tell us about your project and we will connect you with a sales engineer to recommend the right conductors."
       sections={sections}
-      primaryCta={{ label: "Email sales@addiscable.et", href: "mailto:sales@addiscable.et" }}
+      primaryCta={{
+        label: "Email sales@addiscable.et",
+        href: "mailto:sales@addiscable.et",
+      }}
     />
   );
 }

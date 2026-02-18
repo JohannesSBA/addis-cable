@@ -67,7 +67,8 @@ export function CTA() {
                       href="tel:+251"
                       className="text-sm text-slate-700 hover:text-primary transition-colors"
                     >
-                      {"+251 (0) XXX XXX XXX"}
+                      {"+251 114 62 78 41"}
+                      {"+251 986 09 11 48"}
                     </a>
                   </div>
                 </div>

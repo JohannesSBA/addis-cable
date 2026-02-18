@@ -125,10 +125,7 @@ export function Navigation() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             className={cn(
-              "md:hidden bg-[#050a14]/95 border-t border-white/10 text-black backdrop-blur-xl",
-              scrolled
-                ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
-                : "bg-transparent border-transparent",
+              "md:hidden bg-white/95 border-t border-white/10 text-black backdrop-blur-xl",
             )}
           >
             <div className="px-4 py-4 space-y-3">

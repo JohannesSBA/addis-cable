@@ -1,6 +1,6 @@
 {
-  "/[...catchall]/route": "app/[...catchall]/route.js",
   "/about/page": "app/about/page.js",
-  "/markets/page": "app/markets/page.js",
+  "/authorized/page": "app/authorized/page.js",
+  "/contact/page": "app/contact/page.js",
   "/page": "app/page.js"
 }

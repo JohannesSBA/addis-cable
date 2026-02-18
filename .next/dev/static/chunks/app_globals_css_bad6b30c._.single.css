@@ -2159,11 +2159,6 @@
     background-color: #04070f;
   }
 
-  .bg-\[\#04070f\]\/90 {
-    background-color: #04070fe6;
-    background-color: lab(1.88145% .0917912 -3.61613 / .9);
-  }
-
   .bg-\[\#05070d\] {
     background-color: #05070d;
   }
@@ -2216,6 +2211,10 @@
 
   .bg-background {
     background-color: var(--background);
+  }
+
+  .bg-black {
+    background-color: var(--color-black);
   }
 
   .bg-black\/5 {
@@ -4790,18 +4789,6 @@
   @media (hover: hover) {
     .hover\:bg-sidebar-accent:hover {
       background-color: var(--sidebar-accent);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-white\/5:hover {
-      background-color: #ffffff0d;
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-white\/5:hover {
-        background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
-      }
     }
   }
 

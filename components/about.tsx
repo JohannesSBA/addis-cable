@@ -84,7 +84,7 @@ export function About() {
           </p>
         </div>
       </section>
-      <section className="relative px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <section className="relative px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 bg-black">
         <div className="absolute inset-x-0 top-0 h-40  pointer-events-none" />
         <div className="container mx-auto px-4 max-w-7xl relative">
           {/* Story - Added fade-in animation */}
@@ -95,15 +95,15 @@ export function About() {
             transition={{ duration: 0.7 }}
             className="mb-20"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance text-white">
               Our Story: Building Ethiopia's Connected Future
             </h2>
-            <div className="prose prose-lg max-w-none text-slate-600">
+            <div className="prose prose-lg max-w-none text-white">
               <motion.p
                 initial={{ opacity: 0, x: -20 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-lg leading-relaxed mb-4"
+                className="text-lg leading-relaxed mb-4 text-white"
               >
                 Founded under the umbrella of Chombe Seyoum Electrical Product
                 Manufacturing (CSEPM), Addis Cable was built to reinforce
@@ -144,7 +144,7 @@ export function About() {
                     className="w-6 h-6 text-primary"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
+                    stroke="black"
                   >
                     <path
                       strokeLinecap="round"
@@ -163,7 +163,7 @@ export function About() {
                     className="w-6 h-6 text-primary"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
+                    stroke="black"
                   >
                     <path
                       strokeLinecap="round"
@@ -188,7 +188,7 @@ export function About() {
                     className="w-6 h-6 text-primary"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
+                    stroke="black"
                   >
                     <path
                       strokeLinecap="round"
