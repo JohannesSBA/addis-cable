@@ -1,59 +1,21 @@
-[00:00:11.947] Server  LOG      ✓ Ready in 11.6s
-[00:00:15.016] Server  LOG      ○ Compiling / ...
-[00:00:20.056] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:43.240] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:19.221] Browser ERROR   QR camera start failed {}
-[00:01:25.839] Browser ERROR   QR camera start failed {}
-[00:01:31.661] Browser ERROR   uncaughtError: TypeError: readerRef.current?.reset is not a function
-[00:01:34.668] Browser ERROR   QR camera start failed {}
-[00:01:44.448] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:48.941] Browser ERROR   QR camera start failed {}
-[00:02:19.082] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/authorized/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:02:19.083] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/authorized/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:02:19.117] Server  LOG      ✓ Compiled in 170ms
-[00:02:19.556] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:19.588] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:32.386] Browser ERROR   uncaughtError: TypeError: readerRef.current?.reset is not a function
-[00:02:32.386] Browser ERROR   uncaughtError: TypeError: readerRef.current?.reset is not a function
-[00:02:32.395] Browser ERROR   uncaughtError: TypeError: readerRef.current?.reset is not a function
-[00:02:32.395] Browser ERROR   uncaughtError: TypeError: readerRef.current?.reset is not a function
-[00:02:47.487] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:02:47.487] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/authorized/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:02:47.488] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:02:47.489] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:02:47.489] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/authorized/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:02:47.489] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:02:47.511] Server  LOG      ✓ Compiled in 225ms
-[00:02:48.287] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:48.291] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:18.336] Browser WARN    It was not possible to play the video. {}
-[00:09:18.481] Browser WARN    It was not possible to play the video. {}
-[00:09:18.612] Browser WARN    It was not possible to play the video. {}
-[00:09:19.968] Server  ERROR   DATABASE_URL is not set
-[00:09:20.014] Server  ERROR   DATABASE_URL is not set
-[00:09:20.064] Server  ERROR   DATABASE_URL is not set
-[00:09:33.245] Server  ERROR   DATABASE_URL is not set
-[00:09:33.478] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:36.471] Server  ERROR   DATABASE_URL is not set
-[00:09:36.646] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:38.664] Browser WARN    It was not possible to play the video. {}
-[00:10:31.276] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/authorized/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:10:31.277] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/authorized/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:10:31.298] Server  LOG      ✓ Compiled in 181ms
-[00:10:31.959] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:32.047] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:55.793] Server  ERROR   DATABASE_URL is not set
-[00:10:55.831] Server  ERROR   DATABASE_URL is not set
-[00:10:56.088] Server  ERROR   DATABASE_URL is not set
-[00:10:56.117] Browser WARN    It was not possible to play the video. {}
-[00:10:56.130] Server  ERROR   DATABASE_URL is not set
-[00:11:18.602] Browser WARN    It was not possible to play the video. {}
-[00:11:22.343] Server  ERROR   DATABASE_URL is not set
-[00:11:22.379] Server  ERROR   DATABASE_URL is not set
-[00:11:22.460] Browser WARN    It was not possible to play the video. {}
-[00:11:22.460] Browser WARN    Trying to play video that is already playing.
-[00:11:22.460] Browser WARN    It was not possible to play the video. {}
-[00:11:22.460] Browser WARN    Trying to play video that is already playing.
-[00:12:09.943] Server  LOG      ✓ Compiled in 150ms
-[00:49:27.053] Server  LOG      ✓ Compiled in 248ms
-[00:52:09.763] Server  LOG      ✓ Compiled in 110ms
+[00:00:03.453] Server  LOG      ✓ Ready in 3s
+[00:00:06.488] Server  LOG      ○ Compiling / ...
+[00:00:13.357] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:19.105] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:01.914] Server  LOG      ✓ Compiled in 205ms
+[00:02:18.339] Server  LOG      ✓ Compiled in 136ms
+[00:02:26.808] Server  LOG      ✓ Compiled in 148ms
+[00:02:36.210] Server  LOG      ✓ Compiled in 119ms
+[00:02:58.783] Server  LOG      ✓ Compiled in 126ms
+[00:03:20.584] Server  LOG      ✓ Compiled in 307ms
+[00:03:30.813] Server  LOG      ✓ Compiled in 159ms
+[00:03:44.059] Server  LOG      ✓ Compiled in 323ms
+[00:03:54.910] Server  LOG      ✓ Compiled in 310ms
+[00:04:06.571] Server  LOG      ✓ Compiled in 164ms
+[00:04:14.390] Server  LOG      ✓ Compiled in 118ms
+[00:04:29.663] Server  LOG      ✓ Compiled in 205ms
+[00:04:48.668] Server  LOG      ✓ Compiled in 187ms
+[00:04:57.522] Server  LOG      ✓ Compiled in 160ms
+[00:05:19.485] Server  LOG      ✓ Compiled in 541ms
+[00:05:26.641] Server  LOG      ✓ Compiled in 129ms
+[00:05:34.993] Server  LOG      ✓ Compiled in 135ms

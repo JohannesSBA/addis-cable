@@ -17,7 +17,7 @@ const productLinks = [
 ];
 
 const links = [
-  { href: "/home", label: "Home" },
+  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/markets", label: "Markets" },
   { href: "/authorized", label: "Verify Product" },
@@ -44,31 +44,25 @@ export function Navigation() {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        scrolled
-          ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
-          : "bg-transparent border-transparent",
-        pathName === "/about" || pathName === "/csr"
-          ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
-          : "",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]",
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex items-center justify-between h-16 text-white">
           <div className="flex items-center gap-8">
             <Link href="/" className="relative flex items-center gap-3">
-              <img src="/logos.svg" alt="Addis Cable" width={73} height={73} />
+              <img src="/logo.jpeg" alt="Addis Cable" width={73} height={73} />
               {/* <span className="text-lg font-bold text-white/70">
                 Addis Cable
               </span> */}
             </Link>
-            <div className="hidden md:flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-2 py-1 relative">
+            <div className="hidden md:flex items-center gap-2 rounded-full bg-black/5 border border-black/10 px-2 py-1 relative">
               <div
                 className="relative"
                 onMouseEnter={() => setProductsOpen(true)}
                 onMouseLeave={() => setProductsOpen(false)}
               >
-                <button className="px-4 py-1.5 rounded-full text-sm text-white hover:text-white hover:bg-white/10 transition-all inline-flex items-center gap-1">
+                <button className="px-4 py-1.5 rounded-full text-sm text-black hover:text-black hover:bg-white/10 transition-all inline-flex items-center gap-1">
                   Products
                   <ChevronDown className="w-4 h-4" />
                 </button>
@@ -86,7 +80,7 @@ export function Navigation() {
                           <Link
                             key={item.href}
                             href={item.href}
-                            className="px-3 py-2 rounded-xl text-sm text-white/80 hover:text-white hover:bg-white/10 transition-colors"
+                            className="px-3 py-2 rounded-xl text-sm text-black/80 hover:text-black hover:bg-black/10 transition-colors"
                           >
                             {item.label}
                           </Link>
@@ -100,7 +94,7 @@ export function Navigation() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="px-4 py-1.5 rounded-full text-sm text-white hover:text-white hover:bg-white/10 transition-all"
+                  className="px-4 py-1.5 rounded-full text-sm text-black hover:text-black hover:bg-black/10 transition-all"
                 >
                   {link.label}
                 </a>
@@ -110,13 +104,13 @@ export function Navigation() {
           <div className="hidden md:flex items-center gap-3">
             <Button
               size="sm"
-              className="bg-gradient-to-r from-[var(--accent)] via-[var(--accent)] to-[var(--accent)] text-white border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
+              className="bg-gradient-to-r from-[var(--accent)] via-[var(--accent)] to-[var(--accent)] text-black border border-black/10 shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
             >
               Get Quote
             </Button>
           </div>
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-black"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -131,7 +125,7 @@ export function Navigation() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             className={cn(
-              "md:hidden bg-[#050a14]/95 border-t border-white/10 text-white backdrop-blur-xl",
+              "md:hidden bg-[#050a14]/95 border-t border-white/10 text-black backdrop-blur-xl",
               scrolled
                 ? "bg-[#04070f]/90 backdrop-blur-2xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
                 : "bg-transparent border-transparent",
@@ -140,7 +134,7 @@ export function Navigation() {
             <div className="px-4 py-4 space-y-3">
               <div>
                 <button
-                  className="w-full flex items-center justify-between text-sm text-white/90 hover:text-white hover:bg-white/5 rounded-lg px-3 py-2"
+                  className="w-full flex items-center justify-between text-sm text-black/90 hover:text-black hover:bg-black/5 rounded-lg px-3 py-2"
                   onClick={() => setMobileProductsOpen((v) => !v)}
                 >
                   <span>Products</span>
@@ -164,7 +158,7 @@ export function Navigation() {
                         <Link
                           key={item.href}
                           href={item.href}
-                          className="block text-sm text-white/80 hover:text-white hover:bg-white/5 rounded-lg px-3 py-2"
+                          className="block text-sm text-black/80 hover:text-black hover:bg-black/5 rounded-lg px-3 py-2"
                           onClick={() => setMobileMenuOpen(false)}
                         >
                           {item.label}
@@ -178,7 +172,7 @@ export function Navigation() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="block text-sm text-white/80 hover:text-white hover:bg-white/5 rounded-lg px-3 py-2"
+                  className="block text-sm text-black/80 hover:text-black hover:bg-black/5 rounded-lg px-3 py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
