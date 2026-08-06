@@ -4,7 +4,6 @@ const sections: InfoSection[] = [
   {
     title: "Factory Certifications",
     bullets: [
-      "Quality management system aligned with ISO 9001",
       "Routine testing with documented records per batch",
       "Traceability from raw material to finished drums",
     ],
@@ -33,7 +32,10 @@ export default function CertificationsPage() {
       title="Certifications"
       intro="Certified processes and test evidence that demonstrate compliance with IEC and local standards."
       sections={sections}
-      primaryCta={{ label: "Request certificates", href: "/resources/contact-support" }}
+      primaryCta={{
+        label: "Request certificates",
+        href: "/resources/contact-support",
+      }}
     />
   );
 }

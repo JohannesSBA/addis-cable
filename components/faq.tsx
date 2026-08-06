@@ -2,14 +2,16 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "Why choose Addis Cable for electrical wires and cables in Ethiopia?",
+    question:
+      "Why choose Addis Cable for electrical wires and cables in Ethiopia?",
     answer:
-      "We are Ethiopia's largest integrated producer of copper and aluminum power cables, IEC type-tested and ISO 9001 certified, built for Addis Ababa grids, industrial parks, rail, and real estate projects.",
+      "We are Ethiopia's largest integrated producer of copper and aluminum power cables, IEC type-tested, built for Addis Ababa grids, industrial parks, rail, and real estate projects.",
     schemaAnswer:
-      "Addis Cable is Ethiopia's largest integrated producer of IEC type-tested, ISO 9001 certified copper and aluminum electrical cables for Addis Ababa and nationwide infrastructure.",
+      "Addis Cable is Ethiopia's largest integrated producer of IEC type-tested copper and aluminum electrical cables for Addis Ababa and nationwide infrastructure.",
   },
   {
-    question: "Do you serve Addis Ababa, Sheger City, and projects across Ethiopia?",
+    question:
+      "Do you serve Addis Ababa, Sheger City, and projects across Ethiopia?",
     answer:
       "Yes—our Gelan Industrial Zone plant serves Addis Ababa, Sheger City, and every region of Ethiopia with nationwide logistics partners for dependable delivery.",
     schemaAnswer:
@@ -25,9 +27,9 @@ const faqs = [
   {
     question: "What standards and certifications do your products meet?",
     answer:
-      "Our conductors and wires follow IEC and Ethiopian standards, type-tested and produced in an ISO 9001 quality system with full traceability and routine factory tests.",
+      "Our conductors and wires follow IEC and Ethiopian standards, type-tested and produced with full traceability and routine factory tests.",
     schemaAnswer:
-      "Addis Cable products follow IEC and Ethiopian standards, type-tested and produced in an ISO 9001 quality system with full traceability and routine factory tests.",
+      "Addis Cable products follow IEC and Ethiopian standards, type-tested and produced with full traceability and routine factory tests.",
   },
   {
     question: "How quickly can I get technical data sheets or a catalog?",

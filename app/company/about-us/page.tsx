@@ -20,7 +20,6 @@ const sections: InfoSection[] = [
   {
     title: "How We Operate",
     bullets: [
-      "Quality system aligned with ISO 9001",
       "End-to-end traceability from rod to finished drum",
       "Technical support for design, installation, and testing",
     ],

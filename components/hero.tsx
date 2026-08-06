@@ -154,7 +154,7 @@ export function Hero() {
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.7, delay: 0.4 }}
               >
-                {["ISO 9001 Certified", "IEC Type-Tested"].map((text, i) => (
+                {["IEC Type-Tested"].map((text, i) => (
                   <motion.div
                     key={text}
                     className="flex items-center gap-2"

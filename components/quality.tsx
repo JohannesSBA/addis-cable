@@ -27,7 +27,6 @@ export function Quality() {
   ];
 
   const standards = [
-    "ISO 9001:2015",
     "IEC 60228",
     "IEC 60502",
     "IEC 60227",
@@ -65,9 +64,9 @@ export function Quality() {
           <div>
             <h3 className="text-3xl font-bold mb-6">Quality Assurance</h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
-              We comply with ISO 9001:2015, IEC 60228, IEC 60502, and Ethiopian
-              Standard Agency requirements. Every batch undergoes routine, type,
-              and sample testing to guarantee dependable performance.
+              We comply with IEC 60228, IEC 60502, and Ethiopian Standard Agency
+              requirements. Every batch undergoes routine, type, and sample
+              testing to guarantee dependable performance.
             </p>
             <div className="space-y-3 mb-8">
               <h4 className="font-semibold text-lg mb-3">Standards We Meet:</h4>

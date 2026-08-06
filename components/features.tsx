@@ -20,7 +20,7 @@ export function Features() {
       icon: Shield,
       title: "International Standards",
       description:
-        "Manufactured to IEC, ISO 9001, and ES 601 standards with rigorous in-house conductor resistance, tensile, and dielectric testing.",
+        "Manufactured to IEC, and ES 601 standards with rigorous in-house conductor resistance, tensile, and dielectric testing.",
     },
     {
       icon: Zap,

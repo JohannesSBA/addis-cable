@@ -4,7 +4,6 @@ const sections: InfoSection[] = [
   {
     title: "Systems",
     bullets: [
-      "Quality management aligned with ISO 9001 principles",
       "Incoming inspection of rod, polymers, and armoring materials",
       "In-process controls on resistance, insulation thickness, eccentricity, and spark tests",
     ],
@@ -33,7 +32,10 @@ export default function QualityPage() {
       title="Quality Standards"
       intro="Disciplined quality control, certified processes, and documented testing underpin every cable that leaves our factory."
       sections={sections}
-      primaryCta={{ label: "Request a QA plan", href: "/resources/certifications" }}
+      primaryCta={{
+        label: "Request a QA plan",
+        href: "/resources/certifications",
+      }}
     />
   );
 }
