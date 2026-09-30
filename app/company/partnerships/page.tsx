@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Partnerships",
+  description:
+    "Building long-term relationships with utilities, EPCs, OEMs, and developers to deliver reliable power and connectivity.",
+  alternates: { canonical: "/company/partnerships" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [
@@ -33,7 +39,10 @@ export default function PartnershipsPage() {
       title="Partnerships"
       intro="Building long-term relationships with utilities, EPCs, OEMs, and developers to deliver reliable power and connectivity."
       sections={sections}
-      primaryCta={{ label: "Start a partnership discussion", href: "/resources/contact-support" }}
+      primaryCta={{
+        label: "Start a partnership discussion",
+        href: "/resources/contact-support",
+      }}
     />
   );
 }

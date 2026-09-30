@@ -1,6 +1,13 @@
-import Link from "next/link";
+export const metadata = {
+  title: "Site Map",
+  description:
+    "Discover Addis Cable Manufacturing PLC: precision electrical cables and conductors, proudly manufactured in Ethiopia.",
+  alternates: { canonical: "/site-map" },
+};
+import { Arrow } from "@/components/brand";
 
 const links = [
+  { label: "Verify Product", href: "/authorized" },
   { label: "Low Voltage Cables", href: "/products/low-voltage" },
   { label: "Medium Voltage Cables", href: "/products/medium-voltage" },
   { label: "High Voltage Cables", href: "/products/high-voltage" },
@@ -22,23 +29,24 @@ const links = [
 
 export default function SitemapPage() {
   return (
-    <main className="bg-[#0a0c12] text-white min-h-screen">
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-6">Sitemap</h1>
-        <p className="text-white/75 mb-8">
-          Quick links to key product, company, and resource pages across the Addis Cable site.
+    <main id="main-content" className="detail-page">
+      <section className="detail-hero wrap">
+        <span className="eyebrow">FIND YOUR CONNECTION</span>
+        <h1>
+          Explore Addis Cable<span>.</span>
+        </h1>
+        <p>
+          Products, manufacturing expertise, and resources for your next
+          project.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 hover:border-primary/60 transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
+      </section>
+      <section className="wrap site-map-links">
+        {links.map((link) => (
+          <a key={link.href} href={link.href}>
+            {link.label}
+            <Arrow diagonal />
+          </a>
+        ))}
       </section>
     </main>
   );

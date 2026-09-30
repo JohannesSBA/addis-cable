@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Our Story",
+  description:
+    "From local beginnings to a trusted national supplier, Addis Cable continues to scale capacity, quality, and service.",
+  alternates: { canonical: "/company/our-story" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [
@@ -33,7 +39,10 @@ export default function OurStoryPage() {
       title="Our Story"
       intro="From local beginnings to a trusted national supplier, Addis Cable continues to scale capacity, quality, and service."
       sections={sections}
-      primaryCta={{ label: "Explore our partnerships", href: "/company/partnerships" }}
+      primaryCta={{
+        label: "Explore our partnerships",
+        href: "/company/partnerships",
+      }}
     />
   );
 }

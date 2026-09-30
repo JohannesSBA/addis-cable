@@ -1,6 +1,9 @@
+export const dynamic = "force-static";
 import { MetadataRoute } from "next";
 
-const baseUrl = "https://www.addiscable.com";
+const baseUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "https://addis-cable.johannesbekele537.chatgpt.site";
 
 const routes = [
   "/",

@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Product Catalog",
+  description:
+    "Browse our conductor range with key dimensions, materials, and application guidance.",
+  alternates: { canonical: "/resources/product-catalog" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [
@@ -26,7 +32,10 @@ export default function ProductCatalogPage() {
       title="Product Catalog"
       intro="Browse our conductor range with key dimensions, materials, and application guidance."
       sections={sections}
-      primaryCta={{ label: "Request the catalog PDF", href: "/resources/contact-support" }}
+      primaryCta={{
+        label: "Request the catalog PDF",
+        href: "/resources/contact-support",
+      }}
     />
   );
 }

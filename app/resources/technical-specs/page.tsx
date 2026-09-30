@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Technical Specs",
+  description:
+    "Detailed datasheets, electrical parameters, and construction details to support design and procurement.",
+  alternates: { canonical: "/resources/technical-specs" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [
@@ -35,7 +41,10 @@ export default function TechnicalSpecsPage() {
       title="Technical Specs"
       intro="Detailed datasheets, electrical parameters, and construction details to support design and procurement."
       sections={sections}
-      primaryCta={{ label: "Request datasheets", href: "/resources/contact-support" }}
+      primaryCta={{
+        label: "Request datasheets",
+        href: "/resources/contact-support",
+      }}
     />
   );
 }

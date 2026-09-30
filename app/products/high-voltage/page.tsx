@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "High Voltage Cables",
+  description:
+    "High-voltage XLPE cables designed for Ethiopian transmission projects where uptime and efficiency matter most.",
+  alternates: { canonical: "/products/high-voltage" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [
@@ -34,7 +40,10 @@ export default function HighVoltagePage() {
       title="High Voltage Cables"
       intro="High-voltage XLPE cables designed for Ethiopian transmission projects where uptime and efficiency matter most."
       sections={sections}
-      primaryCta={{ label: "Plan a HV scope review", href: "/resources/technical-specs" }}
+      primaryCta={{
+        label: "Plan a HV scope review",
+        href: "/resources/technical-specs",
+      }}
     />
   );
 }

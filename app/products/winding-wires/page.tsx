@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Winding Wires",
+  description:
+    "Precision enamelled winding wires engineered for high thermal endurance and consistent coil performance.",
+  alternates: { canonical: "/products/winding-wires" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [
@@ -34,7 +40,10 @@ export default function WindingWiresPage() {
       title="Winding Wires"
       intro="Precision enamelled winding wires engineered for high thermal endurance and consistent coil performance."
       sections={sections}
-      primaryCta={{ label: "Request winding wire specs", href: "/resources/technical-specs" }}
+      primaryCta={{
+        label: "Request winding wire specs",
+        href: "/resources/technical-specs",
+      }}
     />
   );
 }

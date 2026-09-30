@@ -1,276 +1,136 @@
 "use client";
-
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-
+import { Arrow } from "./brand";
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    department: "sales",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const [prepared, setPrepared] = useState(false);
+  function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    console.log("[v0] Form submitted:", formData);
-    // Handle form submission
-  };
-
+    const data = new FormData(e.currentTarget);
+    const subject =
+      "Project enquiry — " + String(data.get("company") || data.get("name"));
+    const body =
+      "Name: " +
+      data.get("name") +
+      "\nEmail: " +
+      data.get("email") +
+      "\nCompany: " +
+      data.get("company") +
+      "\nProduct interest: " +
+      data.get("product") +
+      "\n\n" +
+      data.get("message");
+    window.location.href =
+      "mailto:info@addiscable.com?subject=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      encodeURIComponent(body);
+    setPrepared(true);
+  }
   return (
-    <section
-      id="contact"
-      className="relative py-24 bg-[#04050a] text-white overflow-hidden"
-    >
-      <div className="pointer-events-none absolute inset-0"></div>
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_25%,rgba(255,255,255,0.1),transparent_55%)]" />
-      <div className="container mx-auto px-4 max-w-7xl relative">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Contact Us
-          </h2>
-          <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            Get in touch with our team of experts
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
+    <main id="main-content" className="detail-page">
+      <section className="detail-hero wrap">
+        <span className="eyebrow">LET’S MAKE THE CONNECTION</span>
+        <h1>
+          Great projects
+          <br />
+          start with a conversation<span>.</span>
+        </h1>
+        <p>
+          Tell us what you’re building. Our team will help you choose the right
+          conductor, construction, and specification.
+        </p>
+      </section>
+      <section className="contact-grid wrap">
+        <div className="contact-details">
+          <h2>Talk to Addis Cable.</h2>
+          <a href="mailto:info@addiscable.com">
+            info@addiscable.com <Arrow diagonal />
+          </a>
+          <a href="tel:+251114627841">+251 114 62 78 41</a>
+          <a href="tel:+251986091148">+251 986 09 11 48</a>
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-white">
-              Addis Cable Manufacturing PLC
-            </h3>
-
-            <div className="space-y-6 mb-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-copper/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg
-                    className="w-6 h-6 text-copper"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1 text-white">Address</h4>
-                  <p className="text-white/70">
-                    Gelan Industrial Zone
-                    <br />
-                    Sheger City, Ethiopia
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-copper/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg
-                    className="w-6 h-6 text-copper"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1 text-white">Email</h4>
-                  <p className="text-white/70">info@addiscable.com</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-copper/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="w-6 h-6 text-copper"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1 text-white">Phone</h4>
-                  <p className="text-white/70">+251 114 62 78 41</p>
-                  <p className="text-white/70">+251 986 09 11 48</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-copper/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg
-                    className="w-6 h-6 text-copper"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1 text-white">Website</h4>
-                  <p className="text-white/70">www.addiscable.com</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-              <h4 className="font-semibold mb-4">Departments:</h4>
-              <div className="space-y-2">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-copper rounded-full"></div>
-                  <span className="text-white/70">
-                    Sales & Customer Support
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-copper rounded-full"></div>
-                  <span className="text-white/70">
-                    Technical & Product Design
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-copper rounded-full"></div>
-                  <span className="text-white/70">
-                    Procurement & Partnerships
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur">
-            <h3 className="text-2xl font-bold mb-6 text-white">
-              Send us a message
-            </h3>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium mb-2"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  value={formData.name}
-                  onChange={(e) =>
-                    setFormData({ ...formData, name: e.target.value })
-                  }
-                  className="w-full px-4 py-2 bg-white/5 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-copper"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium mb-2"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  value={formData.email}
-                  onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
-                  className="w-full px-4 py-2 bg-white/5 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-copper"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="company"
-                  className="block text-sm font-medium mb-2"
-                >
-                  Company
-                </label>
-                <input
-                  type="text"
-                  id="company"
-                  value={formData.company}
-                  onChange={(e) =>
-                    setFormData({ ...formData, company: e.target.value })
-                  }
-                  className="w-full px-4 py-2 bg-white/5 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-copper"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="department"
-                  className="block text-sm font-medium mb-2"
-                >
-                  Department
-                </label>
-                <select
-                  id="department"
-                  value={formData.department}
-                  onChange={(e) =>
-                    setFormData({ ...formData, department: e.target.value })
-                  }
-                  className="w-full px-4 py-2 bg-white/5 border border-white/20 rounded-lg text-white bg-transparent"
-                >
-                  <option value="sales">Sales & Customer Support</option>
-                  <option value="technical">Technical & Product Design</option>
-                  <option value="procurement">
-                    Procurement & Partnerships
-                  </option>
-                </select>
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium mb-2"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
-                  rows={4}
-                  className="w-full px-4 py-2 bg-white/5 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-copper resize-none"
-                  required
-                />
-              </div>
-              <Button type="submit" className="w-full">
-                Send Message
-              </Button>
-            </form>
+            <span className="eyebrow">VISIT OUR FACILITY</span>
+            <p>
+              Gelan Industrial Zone
+              <br />
+              Sheger City, Ethiopia
+            </p>
+            <a
+              className="text-link"
+              href="https://www.google.com/maps/search/?api=1&query=Addis+Cable+Manufacturing+Gelan+Ethiopia"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Find us on the map <Arrow diagonal />
+            </a>
           </div>
         </div>
-      </div>
-    </section>
+        <form onSubmit={submit} className="enquiry-form">
+          <div className="form-row">
+            <label>
+              Your name
+              <input
+                required
+                name="name"
+                autoComplete="name"
+                placeholder="Full name"
+              />
+            </label>
+            <label>
+              Email address
+              <input
+                required
+                type="email"
+                name="email"
+                autoComplete="email"
+                placeholder="you@company.com"
+              />
+            </label>
+          </div>
+          <label>
+            Company
+            <input
+              name="company"
+              autoComplete="organization"
+              placeholder="Company or organization"
+            />
+          </label>
+          <label>
+            What are you looking for?
+            <select name="product">
+              <option>Help selecting a cable</option>
+              <option>Low voltage cables</option>
+              <option>Medium & high voltage cables</option>
+              <option>Overhead conductors & ABC</option>
+              <option>Winding & enamelled wires</option>
+              <option>Product catalog & technical specifications</option>
+            </select>
+          </label>
+          <label>
+            Tell us about your project
+            <textarea
+              required
+              name="message"
+              rows={5}
+              placeholder="Application, voltage, quantities, location, and timeline…"
+            />
+          </label>
+          <p className="form-note">
+            This prepares an enquiry in your email app. Send it from there to
+            reach our team.
+          </p>
+          <button type="submit" className="button ink">
+            Prepare email enquiry <Arrow diagonal />
+          </button>
+          {prepared && (
+            <p role="status" className="form-status">
+              Your email draft is ready. If your email app didn’t open, contact{" "}
+              <a href="mailto:info@addiscable.com">info@addiscable.com</a>{" "}
+              directly.
+            </p>
+          )}
+        </form>
+      </section>
+    </main>
   );
 }

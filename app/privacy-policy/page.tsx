@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Privacy Policy",
+  description:
+    "How Addis Cable collects, uses, and protects your information when you interact with us online or offline.",
+  alternates: { canonical: "/privacy-policy" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [

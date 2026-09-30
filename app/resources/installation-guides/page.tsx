@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Installation Guides",
+  description:
+    "Best practices for storing, installing, terminating, and commissioning Addis Cable products safely.",
+  alternates: { canonical: "/resources/installation-guides" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [
@@ -34,7 +40,10 @@ export default function InstallationGuidesPage() {
       title="Installation Guides"
       intro="Best practices for storing, installing, terminating, and commissioning Addis Cable products safely."
       sections={sections}
-      primaryCta={{ label: "Get installation guidance", href: "/resources/contact-support" }}
+      primaryCta={{
+        label: "Get installation guidance",
+        href: "/resources/contact-support",
+      }}
     />
   );
 }

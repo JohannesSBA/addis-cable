@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Sustainability",
+  description:
+    "Reducing waste, improving energy efficiency, and building skills so our products and operations contribute to a more sustainable grid.",
+  alternates: { canonical: "/company/sustainability" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [
@@ -33,7 +39,10 @@ export default function SustainabilityPage() {
       title="Sustainability"
       intro="Reducing waste, improving energy efficiency, and building skills so our products and operations contribute to a more sustainable grid."
       sections={sections}
-      primaryCta={{ label: "See our initiatives", href: "/company/partnerships" }}
+      primaryCta={{
+        label: "See our initiatives",
+        href: "/company/partnerships",
+      }}
     />
   );
 }
