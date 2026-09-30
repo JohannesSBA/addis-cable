@@ -7,6 +7,7 @@ export const metadata = {
 import { Arrow } from "@/components/brand";
 
 const links = [
+  { label: "Verify Product", href: "/authorized" },
   { label: "Low Voltage Cables", href: "/products/low-voltage" },
   { label: "Medium Voltage Cables", href: "/products/medium-voltage" },
   { label: "High Voltage Cables", href: "/products/high-voltage" },

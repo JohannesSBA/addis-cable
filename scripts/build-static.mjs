@@ -23,7 +23,10 @@ for (const name of [
   "package.json",
   "pnpm-lock.yaml",
 ])
-  cpSync(path.join(root, name), path.join(scratch, name), { recursive: true });
+  if (existsSync(path.join(root, name)))
+    cpSync(path.join(root, name), path.join(scratch, name), {
+      recursive: true,
+    });
 symlinkSync(
   path.join(root, "node_modules"),
   path.join(scratch, "node_modules"),
@@ -37,7 +40,7 @@ rmSync(path.join(scratch, "app/authorized"), { recursive: true, force: true });
 mkdirSync(path.join(scratch, "app/authorized"), { recursive: true });
 writeFileSync(
   path.join(scratch, "app/authorized/page.tsx"),
-  'import {InfoPage} from "@/components/info-page"; export default function Verify(){return <InfoPage title="Verify your Addis Cable" intro="Use our secure verification service to check the QR label on your cable packaging." primaryCta={{label:"Open cable verification",href:"https://www.addiscable.com/authorized"}}/>;}',
+  'import {VerificationScanner} from "@/components/verification-scanner"; export const metadata={title:"Verify product",description:"Scan your Addis Cable QR label or enter the product code to check authenticity.",robots:{index:false,follow:false}}; export default function Verify(){return <VerificationScanner resultBaseUrl="https://www.addiscable.com"/>;}',
 );
 writeFileSync(
   path.join(scratch, "next.config.mjs"),
@@ -75,5 +78,5 @@ if (result.status !== 0) process.exit(result.status || 1);
 rmSync(path.join(root, "out"), { recursive: true, force: true });
 cpSync(path.join(scratch, "out"), path.join(root, "out"), { recursive: true });
 console.log(
-  "Marketing site exported. The production PostgreSQL verification service remains at www.addiscable.com/authorized.",
+  "Site exported with QR scanner and manual entry. Results use the existing production verification database.",
 );

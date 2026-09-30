@@ -1,6 +1,6 @@
 import { Pool } from "pg";
 
-export type VerificationStatus = "fresh" | "repeat" | "invalid";
+export type VerificationStatus = "fresh" | "repeat" | "invalid" | "unavailable";
 
 export type VerificationResult = {
   status: VerificationStatus;
@@ -14,6 +14,7 @@ export type VerificationResult = {
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   max: 3,
+  connectionTimeoutMillis: 5000,
 });
 
 function normalizeSize(rawSize: string) {
@@ -22,10 +23,9 @@ function normalizeSize(rawSize: string) {
 }
 
 async function tableExists(tableName: string) {
-  const res = await pool.query(
-    "SELECT to_regclass($1)::text AS name",
-    [tableName],
-  );
+  const res = await pool.query("SELECT to_regclass($1)::text AS name", [
+    tableName,
+  ]);
   return Boolean(res.rows[0]?.name);
 }
 
@@ -45,7 +45,7 @@ export async function verifyCable(
   if (!process.env.DATABASE_URL) {
     console.error("DATABASE_URL is not set");
     return {
-      status: "invalid",
+      status: "unavailable",
       sizeLabel,
       encryptedId,
       scanCount: 0,

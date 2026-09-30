@@ -7,6 +7,7 @@ const links = [
   { label: "Our company", href: "/about" },
   { label: "Manufacturing", href: "/factory" },
   { label: "Resources", href: "/resources/product-catalog" },
+  { label: "Verify product", href: "/authorized" },
 ];
 export function Navigation() {
   const [open, setOpen] = useState(false);
@@ -66,7 +67,7 @@ export function Navigation() {
           </a>
         ))}
         <a href="/contact" onClick={() => setOpen(false)}>
-          <span>05</span>Start a project
+          <span>06</span>Start a project
           <Arrow diagonal />
         </a>
       </nav>

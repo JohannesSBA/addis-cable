@@ -27,9 +27,7 @@ export function Footer() {
             <a href="/contact">Contact our team</a>
             <a href="/resources/product-catalog">Product catalog</a>
             <a href="/company/quality-standards">Quality & standards</a>
-            <a href="https://www.addiscable.com/authorized">
-              Verify your cable <span aria-hidden="true">↗</span>
-            </a>
+            <a href="/authorized">Verify product</a>
           </div>
         </div>
       </div>
