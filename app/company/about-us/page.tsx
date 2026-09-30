@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "About Addis Cable",
+  description:
+    "An Ethiopian cable manufacturer committed to powering growth with dependable conductors and customer-first support.",
+  alternates: { canonical: "/company/about-us" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [

@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Terms of Service",
+  description:
+    "The terms that govern your use of Addis Cable websites and the information we provide online.",
+  alternates: { canonical: "/terms-of-service" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [

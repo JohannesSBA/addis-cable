@@ -1,140 +1,118 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
-
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
-
+const display = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+const body = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
+const mono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono",
+  display: "swap",
+});
+const origin =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "https://addis-cable.zippy-field-2275.chatgpt.site";
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.addiscable.com"),
+  metadataBase: new URL(origin),
   title: {
-    default:
-      "Addis Cable Manufacturing PLC | Ethiopia's Leading Cable & Conductor Manufacturer",
-    template: "%s | Addis Cable Manufacturing PLC",
+    default: "Addis Cable — Powering What Comes Next",
+    template: "%s | Addis Cable",
   },
-  applicationName: "Addis Cable Manufacturing PLC",
   description:
-    "Addis Cable Manufacturing PLC supplies Addis Ababa and Ethiopia with certified copper and aluminum electrical cables, conductors, and winding wires for utilities, infrastructure, industry, and real estate projects.",
-  keywords: [
-    "Addis Cable",
-    "Addis Ababa cable",
-    "Ethiopia cables",
-    "Ethiopian wires",
-    "electrical cables Ethiopia",
-    "power cables Addis",
-    "wires in Ethiopia",
-    "copper cable manufacturer Ethiopia",
-    "aluminum cable manufacturer Ethiopia",
-    "conductors Ethiopia",
-  ],
+    "Precision copper and aluminum electrical cables, conductors, and winding wires. Proudly manufactured in Ethiopia for homes, utilities, industry, and infrastructure.",
+  applicationName: "Addis Cable Manufacturing PLC",
   category: "Manufacturing",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.addiscable.com",
+    url: origin,
     siteName: "Addis Cable Manufacturing PLC",
-    title:
-      "Addis Cable Manufacturing PLC | Ethiopia's Leading Cable & Conductor Manufacturer",
-    description:
-      "Ethiopia's trusted source for copper and aluminum power cables, conductors, and winding wires serving Addis Ababa and nationwide infrastructure.",
-    images: ["/Addis_in_night.png"],
+    title: "Addis Cable — Powering What Comes Next",
+    description: "Engineered in Ethiopia. Precision in every strand.",
+    images: [
+      {
+        url: "/brand/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Addis Cable — The power behind progress",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Addis Cable Manufacturing PLC | Ethiopia's Leading Cable & Conductor Manufacturer",
-    description:
-      "Certified copper and aluminum electrical cables engineered in Ethiopia for utilities, industrial parks, rail, and real estate projects.",
-    images: ["/Addis_in_night.png"],
+    title: "Addis Cable — Powering What Comes Next",
+    description: "Engineered in Ethiopia. Precision in every strand.",
+    images: ["/brand/og-image.png"],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
+  robots: { index: true, follow: true },
   icons: {
     icon: [
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      "/favicon.ico",
+      { url: "/brand/favicon.svg", type: "image/svg+xml" },
+      { url: "/brand/favicon-32.png", type: "image/png", sizes: "32x32" },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
-  verification: {
-    google: "Yv08BcKxGBXuAJfHLLv-uEiTb2pHQdmfB5PCZJx0dZU",
+    apple: "/brand/apple-touch-icon.png",
   },
 };
-
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
-  const organizationSchema = {
+}) {
+  const schema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Addis Cable Manufacturing PLC",
-    url: "https://www.addiscable.com",
-    logo: "https://www.addiscable.com/logo.jpeg",
-    sameAs: ["https://www.addiscable.com"],
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Gelan Industrial Zone, Sheger City",
-      addressLocality: "Sheger City",
-      addressRegion: "Oromia",
-      addressCountry: "ET",
-    },
-    contactPoint: [
+    "@graph": [
       {
-        "@type": "ContactPoint",
-        contactType: "Sales & Customer Support",
-        email: "info@addiscable.com",
-        areaServed: "ET",
-        availableLanguage: ["en"],
+        "@type": "Organization",
+        name: "Addis Cable Manufacturing PLC",
+        url: origin,
+        logo: origin + "/brand/logo.svg",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Gelan Industrial Zone",
+          addressLocality: "Sheger City",
+          addressRegion: "Oromia",
+          addressCountry: "ET",
+        },
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "Sales",
+          email: "info@addiscable.com",
+          telephone: "+251114627841",
+          areaServed: "ET",
+        },
+      },
+      {
+        "@type": "WebSite",
+        name: "Addis Cable Manufacturing PLC",
+        url: origin,
+        inLanguage: "en",
       },
     ],
   };
-
-  const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Addis Cable Manufacturing PLC",
-    url: "https://www.addiscable.com",
-    inLanguage: "en",
-    potentialAction: {
-      "@type": "SearchAction",
-      target:
-        "https://www.addiscable.com/resources/product-catalog?search={query}",
-      "query-input": "required name=query",
-    },
-  };
-
   return (
     <html lang="en">
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(websiteSchema),
+            __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
           }}
         />
       </head>
-      <body className={`font-sans antialiased`}>
+      <body className={`${display.variable} ${body.variable} ${mono.variable}`}>
+        <a className="skip-link" href="#main-content">
+          Skip to content
+        </a>
         <Navigation />
         {children}
         <Footer />

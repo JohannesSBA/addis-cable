@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Quality Standards",
+  description:
+    "Disciplined quality control, certified processes, and documented testing underpin every cable that leaves our factory.",
+  alternates: { canonical: "/company/quality-standards" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [

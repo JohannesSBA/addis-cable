@@ -1,3 +1,4 @@
+import "@/styles/legacy.css";
 import { verifyCable } from "@/lib/qr-verification";
 import {
   AlertTriangle,
@@ -50,7 +51,9 @@ const theme = {
   },
 };
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { size, encryptedId } = await params;
   const decodedId = decodeURIComponent(encryptedId);
   return {
@@ -106,7 +109,9 @@ export default async function AuthorizedCheckPage({ params }: PageProps) {
               className={`px-8 py-10 border-b border-white/10 bg-gradient-to-r ${visual.gradient}`}
             >
               <div className="flex flex-wrap items-center gap-3 text-sm">
-                <span className={`inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold ${visual.badge}`}>
+                <span
+                  className={`inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold ${visual.badge}`}
+                >
                   <Icon className="h-4 w-4" />
                   {verification.status === "fresh"
                     ? "Authentic • First check"
@@ -161,8 +166,6 @@ export default async function AuthorizedCheckPage({ params }: PageProps) {
                       label="Table used"
                       value={verification.tableName ?? "—"}
                     />
-                    
-                    
                   </div>
                 </div>
 
@@ -221,8 +224,6 @@ export default async function AuthorizedCheckPage({ params }: PageProps) {
                     Updated to {updatedCount} after recording this check.
                   </div>
                 </div>
-
-                
               </aside>
             </div>
           </div>

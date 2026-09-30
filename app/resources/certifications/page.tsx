@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Certifications",
+  description:
+    "Certified processes and test evidence that demonstrate compliance with IEC and local standards.",
+  alternates: { canonical: "/resources/certifications" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [

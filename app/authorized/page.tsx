@@ -1,4 +1,5 @@
 "use client";
+import "@/styles/legacy.css";
 
 import type { FormEvent } from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -14,7 +15,10 @@ import {
   ScanLine,
   VideoOff,
 } from "lucide-react";
-import type { BrowserMultiFormatReader, IScannerControls } from "@zxing/browser";
+import type {
+  BrowserMultiFormatReader,
+  IScannerControls,
+} from "@zxing/browser";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -121,7 +125,9 @@ export default function AuthorizedLanding() {
 
       if (!parsed) {
         setScanState("error");
-        setErrorText("QR read, but format could not be parsed. Paste manually?");
+        setErrorText(
+          "QR read, but format could not be parsed. Paste manually?",
+        );
         return;
       }
 
@@ -164,7 +170,10 @@ export default function AuthorizedLanding() {
           if (result) {
             setScanState("found");
             handleParsedResult(result.getText(), "camera");
-          } else if (err && (err as { name?: string }).name !== "NotFoundException") {
+          } else if (
+            err &&
+            (err as { name?: string }).name !== "NotFoundException"
+          ) {
             // Ignore routine "not found" ticks while scanning
             setStatusText("Hold steady… scanning");
           }
@@ -199,11 +208,23 @@ export default function AuthorizedLanding() {
       case "scanning":
         return { label: "Scanning", icon: ScanLine, tone: "text-emerald-200" };
       case "requesting":
-        return { label: "Requesting camera", icon: Loader2, tone: "text-amber-200" };
+        return {
+          label: "Requesting camera",
+          icon: Loader2,
+          tone: "text-amber-200",
+        };
       case "found":
-        return { label: "Code found", icon: CheckCircle2, tone: "text-cyan-200" };
+        return {
+          label: "Code found",
+          icon: CheckCircle2,
+          tone: "text-cyan-200",
+        };
       case "error":
-        return { label: "Camera issue", icon: AlertTriangle, tone: "text-rose-200" };
+        return {
+          label: "Camera issue",
+          icon: AlertTriangle,
+          tone: "text-rose-200",
+        };
       default:
         return { label: "Idle", icon: CircleDashed, tone: "text-white/70" };
     }
@@ -235,8 +256,8 @@ export default function AuthorizedLanding() {
             </h1>
             <p className="text-white/70 max-w-3xl">
               Use your device camera to capture the QR label on your Addis Cable
-              reel. We will route you to the verification record and increment the
-              scan counter automatically.
+              reel. We will route you to the verification record and increment
+              the scan counter automatically.
             </p>
           </div>
 
@@ -310,7 +331,8 @@ export default function AuthorizedLanding() {
                 </div>
                 <p className="text-white/75 text-sm">
                   Paste the QR content or the full URL if the camera is not
-                  available. We will parse the size and encrypted id automatically.
+                  available. We will parse the size and encrypted id
+                  automatically.
                 </p>
                 <form onSubmit={handleManualSubmit} className="space-y-3">
                   <textarea
@@ -349,7 +371,9 @@ export default function AuthorizedLanding() {
                   <div className="flex items-start gap-2 rounded-2xl border border-amber-400/50 bg-amber-500/15 p-3 text-sm text-amber-50">
                     <AlertTriangle className="h-4 w-4 mt-0.5" />
                     <div>
-                      <div className="font-medium">We couldn't parse that code</div>
+                      <div className="font-medium">
+                        We couldn't parse that code
+                      </div>
                       <div className="text-amber-100/80">{errorText}</div>
                     </div>
                   </div>
@@ -364,7 +388,10 @@ export default function AuthorizedLanding() {
                 <ul className="list-disc list-inside space-y-2">
                   <li>Use the rear camera on mobile for faster focus.</li>
                   <li>Hold the QR label 15–25 cm away in good light.</li>
-                  <li>If redirected automatically, the scan counter is already recorded.</li>
+                  <li>
+                    If redirected automatically, the scan counter is already
+                    recorded.
+                  </li>
                 </ul>
               </div>
             </aside>

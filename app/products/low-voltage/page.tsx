@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Low Voltage Cables",
+  description:
+    "PVC, XLPE, and LSZH low voltage power and control cables engineered for reliable distribution up to 1 kV.",
+  alternates: { canonical: "/products/low-voltage" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [
@@ -34,7 +40,10 @@ export default function LowVoltagePage() {
       title="Low Voltage Cables"
       intro="PVC, XLPE, and LSZH low voltage power and control cables engineered for reliable distribution up to 1 kV."
       sections={sections}
-      primaryCta={{ label: "Request LV datasheets", href: "/resources/technical-specs" }}
+      primaryCta={{
+        label: "Request LV datasheets",
+        href: "/resources/technical-specs",
+      }}
     />
   );
 }

@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Conductors & ABC",
+  description:
+    "Aerial bundled conductors and bare overhead solutions built to improve reliability and safety for distribution networks.",
+  alternates: { canonical: "/products/conductors-abc" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [
@@ -34,7 +40,10 @@ export default function ConductorsPage() {
       title="Conductors & ABC"
       intro="Aerial bundled conductors and bare overhead solutions built to improve reliability and safety for distribution networks."
       sections={sections}
-      primaryCta={{ label: "Download ABC overview", href: "/resources/product-catalog" }}
+      primaryCta={{
+        label: "Download ABC overview",
+        href: "/resources/product-catalog",
+      }}
     />
   );
 }

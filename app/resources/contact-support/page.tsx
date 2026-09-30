@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Contact Support",
+  description:
+    "Tell us about your project and we will connect you with a sales engineer to recommend the right conductors.",
+  alternates: { canonical: "/resources/contact-support" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [

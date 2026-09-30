@@ -6,3 +6,8 @@ node_modules
 
 .next/dev/lock
 
+
+.sites-runtime/
+out/
+artifacts/
+*.tsbuildinfo

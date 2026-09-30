@@ -1,178 +1,32 @@
-"use client";
-
-import { Building2, Hammer, Train, Sun, Store, Zap } from "lucide-react";
-import { motion } from "framer-motion";
-
+import { InfoPage } from "./info-page";
 export function Markets() {
   return (
-    <section
-      id="markets"
-      className="relative py-28 px-4 sm:px-6 lg:px-8 bg-[#020710] text-white overflow-hidden"
-    >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.12),rgba(2,7,16,0.9))]" />
-      <div className="relative max-w-7xl mx-auto grid lg:grid-cols-[0.9fr,1.1fr] gap-16 items-start">
-        <div className="space-y-8">
-          <p className="uppercase tracking-[0.4em] text-xs text-white/50">
-            Deployment
-          </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-            {"Powering Ethiopia's strategic assets"}
-          </h2>
-          <p className="text-lg text-white/70">
-            {
-              "Addis Cable maps each conductor family to live demand across national utilities, private grids, heavy industry, and distributed energy developers within Ethiopia."
-            }
-          </p>
-          <div className="space-y-6">
-            {[
-              {
-                title: "Mega Grid",
-                text: "HV transmission, substations, and nationwide distribution corridors.",
-              },
-              {
-                title: "Urban Growth",
-                text: "Transit-oriented development, airports, industrial parks, and digital campuses.",
-              },
-              {
-                title: "Resilience",
-                text: "Hybrid microgrids, industrial redundancy, and mission-critical systems.",
-              },
-            ].map((item, idx) => (
-              <div key={item.title} className="relative pl-8">
-                <div className="absolute left-0 top-0 h-full w-px bg-white/15" />
-                <div className="absolute left-0 top-1.5 w-3 h-3 rounded-full bg-primary shadow-[0_0_15px_rgba(231,152,92,0.8)]" />
-                <p className="text-sm uppercase tracking-[0.35em] text-white/40">
-                  {String(idx + 1).padStart(2, "0")}
-                </p>
-                <h3 className="text-xl font-semibold">{item.title}</h3>
-                <p className="text-white/70">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="space-y-6">
-          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] h-[260px] sm:h-[320px]">
-            <div className="absolute inset-0 bg-[url('/train_lines.webp')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#020710]/95 via-[#020710]/65 to-transparent" />
-            <div className="relative z-10 h-full flex flex-col justify-between p-6 sm:p-8">
-              <div className="flex items-center gap-3 text-sm text-white/80">
-                <div className="w-11 h-11 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md flex items-center justify-center">
-                  <Train className="w-5 h-5 text-accent" />
-                </div>
-                <div>
-                  <p className="uppercase tracking-[0.3em] text-white/60 text-xs">
-                    Rail & Logistics
-                  </p>
-                  <p className="text-white/70">
-                    Dedicated signaling and traction cable supply
-                  </p>
-                </div>
-              </div>
-              <div>
-                <p className="text-sm text-white/60">Corridors</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] h-[260px] sm:h-[320px]">
-            <div className="absolute inset-0 bg-[url('/lines1.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#020710]/95 via-[#020710]/65 to-transparent" />
-            <div className="relative z-10 h-full flex flex-col justify-between p-6 sm:p-8">
-              <div className="flex items-center gap-3 text-sm text-white/80">
-                <div className="w-11 h-11 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md flex items-center justify-center">
-                  <Zap className="w-5 h-5 text-accent" />
-                </div>
-                <div>
-                  <p className="uppercase tracking-[0.3em] text-white/60 text-xs">
-                    Energy & Power Utilities
-                  </p>
-                  <p className="text-white/70">
-                    Key supplier to EEU and EEP for grid modernization and rural
-                    electrification.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <p className="text-sm text-white/60">
-                  Energy & Power Utilities
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] h-[260px] sm:h-[320px]">
-            <div className="absolute inset-0 bg-[url('/image.png')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#020710]/95 via-[#020710]/65 to-transparent" />
-            <div className="relative z-10 h-full flex flex-col justify-between p-6 sm:p-8">
-              <div className="flex items-center gap-3 text-sm text-white/80">
-                <div className="w-11 h-11 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md flex items-center justify-center">
-                  <Building2 className="w-5 h-5 text-accent" />
-                </div>
-                <div>
-                  <p className="uppercase tracking-[0.3em] text-white/60 text-xs">
-                    Renewable Energy Projects
-                  </p>
-                  <p className="text-white/70">
-                    Solar and wind-compatible cables for Ethiopia's green energy
-                    transition.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <p className="text-sm text-white/60">
-                  Renewable Energy Projects
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] h-[260px] sm:h-[320px]">
-            <div className="absolute inset-0 bg-[url('/urban_dev.jpeg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#020710]/95 via-[#020710]/65 to-transparent" />
-            <div className="relative z-10 h-full flex flex-col justify-between p-6 sm:p-8">
-              <div className="flex items-center gap-3 text-sm text-white/80">
-                <div className="w-11 h-11 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md flex items-center justify-center">
-                  <Building2 className="w-5 h-5 text-accent" />
-                </div>
-                <div>
-                  <p className="uppercase tracking-[0.3em] text-white/60 text-xs">
-                    Urban Development & Real Estate
-                  </p>
-                  <p className="text-white/70">
-                    Reliable partner for residential and commercial projects in
-                    Addis Ababa, Adama, Hawassa, and beyond.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <p className="text-sm text-white/60">Urban Development</p>
-              </div>
-            </div>
-          </div>
-          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] h-[260px] sm:h-[320px]">
-            <div className="absolute inset-0 bg-[url('/corridor.jpg')] bg-bottom bg-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#020710]/95 via-[#020710]/65 to-transparent" />
-            <div className="relative z-10 h-full flex flex-col justify-between p-6 sm:p-8">
-              <div className="flex items-center gap-3 text-sm text-white/80">
-                <div className="w-11 h-11 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md flex items-center justify-center">
-                  <Hammer className="w-5 h-5 text-accent" />
-                </div>
-                <div>
-                  <p className="uppercase tracking-[0.3em] text-white/60 text-xs">
-                    Infastructure & Construction
-                  </p>
-                  <p className="text-white/70">
-                    Powering airports, roads, factories, and government
-                    infrastructure under the Homegrown Economic Reform Plan.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <p className="text-sm text-white/60">Infrastructure</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <InfoPage
+      title="Where progress takes shape"
+      intro="Cables connect more than circuits. They connect communities, enable industry, and help important projects move forward."
+      sections={[
+        {
+          title: "Energy & utilities",
+          description:
+            "Conductors for grid connections, distribution networks, and renewable energy installations.",
+        },
+        {
+          title: "Buildings & real estate",
+          description:
+            "Reliable low voltage cables for residential, commercial, and mixed-use development.",
+        },
+        {
+          title: "Industry & manufacturing",
+          description:
+            "Robust constructions for industrial parks, factories, motors, and electrical equipment.",
+        },
+        {
+          title: "Transport & infrastructure",
+          description:
+            "Cable solutions for the systems that keep cities and communities moving.",
+        },
+      ]}
+      primaryCta={{ label: "Find your cable solution", href: "/contact" }}
+    />
   );
 }

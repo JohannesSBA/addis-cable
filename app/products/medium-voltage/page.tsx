@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Medium Voltage Cables",
+  description:
+    "XLPE insulated MV cables for dependable power transmission in utilities, renewables, and industrial networks.",
+  alternates: { canonical: "/products/medium-voltage" },
+};
 import { InfoPage, InfoSection } from "@/components/info-page";
 
 const sections: InfoSection[] = [
@@ -34,7 +40,10 @@ export default function MediumVoltagePage() {
       title="Medium Voltage Cables"
       intro="XLPE insulated MV cables for dependable power transmission in utilities, renewables, and industrial networks."
       sections={sections}
-      primaryCta={{ label: "Discuss MV projects", href: "/resources/contact-support" }}
+      primaryCta={{
+        label: "Discuss MV projects",
+        href: "/resources/contact-support",
+      }}
     />
   );
 }

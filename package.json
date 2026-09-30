@@ -1,12 +1,16 @@
 {
-  "name": "my-v0-project",
+  "name": "addis-cable",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
-    "start": "next start"
+    "start": "next start",
+    "build:site": "node scripts/build-static.mjs",
+    "brand:render": "node scripts/create-brand-assets.mjs && node scripts/render-brand.mjs",
+    "typecheck": "tsc --noEmit",
+    "verify:site": "node scripts/verify-site.mjs"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
@@ -64,8 +68,11 @@
     "zod": "3.25.76"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
     "@tailwindcss/postcss": "^4.1.9",
     "@types/node": "^22",
+    "@types/pg": "^8.23.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "postcss": "^8.5",
@@ -79,5 +86,5 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Addis Cable Manufacturing PLC \u2014 precision electrical cables, engineered in Ethiopia."
 }
