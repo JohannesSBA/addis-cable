@@ -32,6 +32,8 @@ Generate one bespoke cinematic widescreen 16:9 studio photograph for the hero of
 
 Three hero depths (0.19, 0.10, 0.045) use translate3d, a single passive listener, and a frame loop that stops at rest. Mobile motion is scaled to 55%. Reduced-motion and data-saving preferences prevent automatic playback; reduced motion also disables parallax. Offscreen and hidden-tab video is paused.
 
-Production preview checks passed on desktop and mobile. Lighthouse under simulated mobile throttling with HTTP compression: performance 96, accessibility 100, best practices 100, SEO 100; FCP 0.8 seconds, LCP 2.8 seconds, total blocking time 60ms, CLS 0. These are local production measurements, not a guarantee of every visitor’s connection.
+Production preview checks passed on desktop and mobile. Lighthouse under simulated mobile throttling with HTTP compression: performance 94, accessibility 100, best practices 100, SEO 100; FCP 0.8 seconds, LCP 3.1 seconds, total blocking time 10ms, CLS 0. These are local production measurements, not a guarantee of every visitor’s connection.
 
 Verification is linked from desktop/mobile navigation, the footer, and the site map. Camera access begins only on explicit Start camera; stopping, hiding the page, or navigating releases the stream. Database unavailability is distinguished from an unrecognized label. Result pages are excluded from indexing.
+
+Private review: https://addis-cable.johannesbekele537.chatgpt.site. A cold live Lighthouse run measured performance 85, accessibility 100, best practices 81, SEO 100, and CLS 0. The best-practices warning and largest long task originate in the hosting provider’s injected Cloudflare challenge script; its deprecated storage API is outside the application source. Initial private-host response time was approximately 845ms.

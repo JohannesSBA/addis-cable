@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 
 const baseUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://addis-cable.zippy-field-2275.chatgpt.site";
+  "https://addis-cable.johannesbekele537.chatgpt.site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
